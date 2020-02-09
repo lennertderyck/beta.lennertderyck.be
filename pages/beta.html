@@ -1,0 +1,171 @@
+---
+layout: page
+widgets: true
+title: Beta projects
+permalink: "/beta-projects"
+ft-image: ''
+short-desc: ''
+titlebar: true
+add-to-menu: false
+full-width: false
+widgets-bottom: false
+widget-settings:
+  widget-blocks:
+  - template: widget
+    show-button: true
+    title: Berichten
+    subtitle: overzicht
+    content: Bekijk en verwijder berichten, download bijlagen
+    button-url: https://getsimpleform.com/messages?api_token=836f185cefa43bb3193dd990b6266768
+    button-label: Bekijken
+  - template: widget
+    show-button: true
+    subtitle: dashboard
+    content: Instellingen voor het formulier
+    button-url: https://getsimpleform.com/instructions?api_token=836f185cefa43bb3193dd990b6266768
+    button-label: instellingen
+redirect_plugin:
+  redirect_to: ''
+  redirect_from: ''
+widget-blocks:
+- template: widget-code
+  code: <img src="https://api.netlify.com/api/v1/badges/7321a0b1-0f3a-4c2a-b4d3-ccbac41e9eae/deploy-status"
+    class="no-save">
+  content: ''
+  subtitle: Jekyll build
+  title: Status
+  button-label: Bekijk status
+  button-url: https://app.netlify.com/sites/lennertderyckbe/deploys?filter=master
+  new-tab: true
+- template: widget
+  button-url: https://getsimpleform.com/messages?api_token=836f185cefa43bb3193dd990b6266768
+  subtitle: Overzicht
+  title: Berichten
+  content: Bekijk en verwijder berichten, download bijlagen
+  button-label: Openen
+  new-tab: true
+- template: widget
+  button-url: https://getsimpleform.com/instructions?api_token=836f185cefa43bb3193dd990b6266768
+  subtitle: dashboard
+  content: Instellingen voor het formulier
+  button-label: Installingen
+  new-tab: true
+
+---
+<div class="d-none">
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+<script src="https://ce.lennertderyck.be/library/elements.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://lennertderyck.be/assets/css/app.css">
+
+<nav id="navMain" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+      <img src="https://lennertderyck.be/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
+    </a>
+</nav>
+
+<div class="bg-color-white">
+  <div id="pageTitle" class="bg-main">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <small class="txt-modern d-block">
+            <span class="txt-color-white" style="color: white">Contact</span>   
+          </small>
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0" style="color: white">Nieuw bericht</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" class="bg-color-white py-5" style="max-width: 800px;">
+    <div class="row">
+      <div class="col">          
+            <p class="txt-modern mb-0">Gegevens</p>
+            <p>
+              Naam: {{ name }}<br>
+              Email: {{ email }}
+            </p>
+
+            {% if is-org-bedrijf == "on" %} 
+              <p class="txt-modern mb-0">Organisatie</p>
+              <p>{{ org-bedrijf }}</p>
+            {% endif %}
+            
+            <p class="txt-modern mb-0">Onderwerp</hp>
+            <p>
+              {{ onderwerp }}
+            </p>
+            
+            <p class="txt-modern mb-0">Bericht</hp>
+            <p>
+              {{ bericht }}
+            </p>
+            
+            <h3 class="mb-0">Offerte</h3>
+            {% if onderwerp == "offerte" %}
+              {% if logo-nieuw == "on" or logo-iconen == "on" or job-logo-deadline == "on" %}
+                <p>
+                    <p class="txt-modern mb-0">Logo's</p>
+                  <strong>Soort</strong><br>
+                  Logo nieuw / vernieuwing {{ logo-nieuw }}<br>
+                  Iconen {{ logo-iconen }}<br><br>
+                  <strong>Deadline {{ job-logo-deadline }}</strong>
+                </p>
+              {% endif %}
+            
+              {% if digitaal-reclame == "on" or digtaal-banner == "on" or digitaal-andere == "on" %}
+                <p>
+                  <p class="txt-modern mb-0">Digitaal</p>
+                  <strong>Soort</strong><br>
+                  Reclame {{ digitaal-reclame }}<br>
+                  Banner {{ digitaal-banner }}<br>
+                  Andere {{ digitaal-andere }}<br><br>
+                  <strong>Deadline {{ digitaal-deadline }}</strong>
+                </p>
+              {% endif %}
+            {% endif %}
+
+            {{ file }}
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="p-3 mb-5 bg-color-2 bd-radius">
+  <div class="h-section">
+    <p class="txt-modern mb-3">
+      Filter
+    </p>
+  </div>
+  <input class="w-100 bg-color-white" type="text" id="filterMyData" onkeyup="filterJson()" placeholder="Zoek een bericht">
+</div>
+
+<div id="myData"></div>
+
+<script>
+  var mydata = document.getElementById("myData");
+  var div = document.createElement("div");
+  var filterMyData = document.getElementById("filterMyData")
+
+  var item = mydata.getElementsByClassName('jsonItem');
+
+  function filterJson() {
+    var input, filter, myData, li, a, i, txtValue;
+    input = document.getElementById("filterMyData");
+    filter = input.value.toUpperCase();
+    myData = document.getElementById("myData");
+    li = myData.getElementsByClassName('jsonItem');
+    for (i = 0; i < li.length; i++) {
+        // a = li[i].getElementsByTagName("div");
+        txtValue = li[i].textContent || li[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
