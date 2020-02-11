@@ -6,7 +6,7 @@ tags:
 title: Bongobon herwerking
 client: Edugo Campus Glorieux
 project-url: ''
-ft-img: "/uploads/IMG_20170529_151736-compressor.jpg"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/IMG_20170529_151707-compressor_sldodc.jpg"
 galery:
 - "/uploads/IMG_20170529_151747-compressor.jpg"
 - "/uploads/IMG_20170529_151707-compressor.jpg"

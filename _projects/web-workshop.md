@@ -4,7 +4,7 @@ tags:
 title: Web workshop
 client: Persoonlijk
 project-url: https://github.lennertderyck.be/web-workshop/
-ft-img: "/uploads/photo-1510493648510-d11f5bf55f33.jpeg"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282808/photo-1510493648510-d11f5bf55f33_oegtk4.jpg"
 galery:
 - "/uploads/1557955744171.png"
 - "/uploads/1557955829302.png"

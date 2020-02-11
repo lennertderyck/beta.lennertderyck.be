@@ -1,0 +1,47 @@
+#menuMain {
+    --header-h: 148px;
+    position: fixed;
+    top: var(--header-h);
+    left: 0px;
+    z-index: 1000;
+    width: 100vw;
+    height: calc(100vh - var(--header-h));
+    background-color: white;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+}
+
+body {
+    &.sesam.sesam-hidden {
+        #menuMain {
+            display: none;
+        }
+    }
+
+    &.sesam.sesam-show {
+        overflow-y: hidden;
+
+        [data-label="portfolioCards"] {
+            z-index: 1001;
+            position: fixed;
+            left: 0px;
+            right: unset;
+            width: 100vw;
+            transition: all .2s ease;
+
+            .card {
+                transition: inherit;
+
+                .card-body {
+                    justify-content: flex-start;
+                    background: transparent linear-gradient(328deg, #00000000 50%, #000000e0 100%) 64% 760% no-repeat padding-box;
+                    transition: inherit;
+                }
+            }
+        }
+    }
+}

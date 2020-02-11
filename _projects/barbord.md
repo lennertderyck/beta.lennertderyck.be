@@ -5,7 +5,7 @@ tags:
 title: Barbord
 client: Persoonlijk
 project-url: https://github.com/lennertderyck/bar-board
-ft-img: "/uploads/photo-1457382713369-161d1d986f54.jpg"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1457382713369-161d1d986f54_ld6jys.jpg"
 galery:
 - "/uploads/LOGO_BARBORD_Tekengebied 1-1.svg"
 

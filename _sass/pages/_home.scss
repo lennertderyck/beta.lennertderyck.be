@@ -1,0 +1,73 @@
+[data-label="homeHero"] {
+    min-height: 50vh;
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
+[data-label="portfolioCards"] {
+    overflow-x: scroll;
+    overflow-y: visible;
+    scrollbar-width: none;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    scroll-snap-type: both mandatory;
+    scroll-padding: calc((245px/2));
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        position: relative;
+        min-width: 245px;
+        height: 325px;
+        margin-left: calc(35px/2);
+        margin-right: calc(35px/2);
+        border: none;
+        box-shadow: 0 6px 25px 3px rgba(0, 0, 0, 0.164);
+        border-radius: 13px;
+        transition: all .2s ease;
+        transform-origin: center;
+
+        scroll-snap-align: start;
+
+        &:first-child {
+            margin-left: 35px;
+        }
+
+        &:hover {
+            // min-width: 275px;
+            // height: 385px;
+            transform: scale(1.08);
+            // margin-left: 35px;
+            // margin-right: 35px;
+            // margin-left: 19px;
+            // margin-right: 55px;
+        }
+
+        img.card-background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            border-radius: inherit;
+            background: transparent linear-gradient(208deg, #00000000 50%, #000000e0 100%) 64% 760% no-repeat padding-box;
+        
+            * {color: white;}
+        }
+    }
+}

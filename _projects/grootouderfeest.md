@@ -6,7 +6,7 @@ tags:
 title: Grootouderfeest
 client: Edugo Internaat
 project-url: ''
-ft-img: "/uploads/poffertjes_0.jpg"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/poffertjes_0_q2bypt.jpg"
 galery:
 - "/uploads/uitnodiging_grootouderfeest-1024x510.png"
 - "/uploads/BUTTON_TALENT-01.png"

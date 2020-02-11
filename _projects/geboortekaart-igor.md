@@ -5,7 +5,7 @@ tags:
 title: Geboortekaart Igor
 client: ''
 project-url: ''
-ft-img: "/uploads/GEBOORTEK_LOGO_IGOR-1024x589.png"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282842/GEBOORTEK_LOGO_IGOR-1024x589_qjovjt.png"
 galery:
 - "/uploads/GEBOORTEK_LOGO_IGOR-1024x589.png"
 

@@ -6,12 +6,12 @@
 # ─────────────
 # baseurl: lennertderyckbe # the subpath of your site, e.g. /blog
 host   : 127.0.0.1
-port   : 4000
+port   : 5000
 
 # Custom Site variables
 # ─────────────────────
-show-style-guide: false # Show style guide in footer.
 title: Lennert De Ryck
+domain: beta.lennertderyck.be
 
 # Build settings
 # ──────────────
@@ -49,11 +49,6 @@ collections:
     output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "repos"
-    values:
-      layout: "repo"
   - scope:
       path: ""
       type: "projects"

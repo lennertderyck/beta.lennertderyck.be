@@ -1,0 +1,85 @@
+// TOASTS
+#toastContainer {
+    --distance: 30px;
+    position: fixed;
+    top: var(--distance);
+    right: var(--distance);
+    z-index: 100000;
+
+    .toast {
+        align-items: center;
+        justify-content: space-between;
+        min-width: 340px;
+        margin-bottom: 17px;
+        border-radius: 15px;
+        padding: 15px;
+        backdrop-filter: none;
+        background-color: white;
+        border: none;
+
+        .toast-title {
+            font-weight: 500;
+        }
+
+        .feather {
+            stroke-width: 3px;
+        }
+
+        &:not(.hide) {
+            display: flex;
+        }
+    }
+}
+
+// BUTTONS
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: fit-content;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding: 6px 7px 4px 8px;
+    background: #01706946 0% 0% no-repeat padding-box;
+    color: $accentMain;
+    font-size: 70%;
+    border-radius: 6px;
+    @extend .text-modern;
+
+    &:hover {
+        color: $accentMain;
+    }
+
+    &:active, &:focus, &:focus-within {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &::after {
+        transform: scale(0.8) translateY(2px);
+        content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="hsl(185, 100%, 22%)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>');
+    }
+
+    svg.feather {
+        margin-left: 6px;
+        stroke-width: 2.2;
+    }
+}
+
+// WIDGET TEXT
+[data-label="widget-text"] {
+    .widget-text-title, .widget-text-subtitle {color: $accent6}
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    [data-label="portfolioCards"] {
+        scroll-padding: calc((245px/2) + 35px);
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

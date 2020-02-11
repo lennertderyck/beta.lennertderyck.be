@@ -5,7 +5,7 @@ widgets: true
 ft-image: ''
 title: Wat ik doe
 permalink: wat-ik-doe
-add-to-menu: false
+add-to-menu: true
 full-width: false
 redirect_plugin:
   redirect_to: ''

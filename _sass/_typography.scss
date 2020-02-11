@@ -1,0 +1,37 @@
+body {
+    font-family: $fontScnd;
+    color: #6C6C6C;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+      font-family: $fontMain;
+      font-weight: 300;
+    //   font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.75px;
+    }
+}
+
+.text-modern {
+    font: Bold 1rem/15px $fontScnd;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    &.md {
+        font-size: 91%;
+    }
+
+    &.small {
+        font-size: 80%;
+    }
+
+    &.xsm {
+        font-size: 65%;
+    }
+}

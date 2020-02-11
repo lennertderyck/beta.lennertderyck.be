@@ -11,7 +11,7 @@ tags:
 title: QR pay
 client: Persoonlijk
 project-url: https://pay.lennertderyck.be/
-ft-img: "/uploads/Schermafbeelding 2019-12-25 om 17.55.21.png"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282823/Schermafbeelding_2019-12-25_om_17.55.21_zqlz74.png"
 galery:
 - "/uploads/Schermafbeelding 2019-12-25 om 18.15.18.png"
 - "/uploads/Schermafbeelding 2019-12-25 om 18.15.27.png"

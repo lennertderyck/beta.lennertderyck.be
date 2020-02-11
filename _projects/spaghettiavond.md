@@ -6,7 +6,7 @@ tags:
 title: Spaghettiavond
 client: Scouts Haegepoorters Destelbergen
 project-url: ''
-ft-img: "/uploads/banner_spaghettiavond_2017-1024x390.png"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png"
 galery:
 - "/uploads/banner_spaghettiavond_2017-1024x390.png"
 - "/uploads/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276.png"

@@ -6,7 +6,7 @@ tags:
 title: Hotel Iconografie
 client: Edugo Campus Glorieux
 project-url: ''
-ft-img: "/uploads/PROJECT_FOCUSED-1024x768.jpg"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg"
 galery:
 - "/uploads/PROJECT_FOCUSED-1024x768.jpg"
 

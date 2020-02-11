@@ -11,72 +11,62 @@ short-desc: Jong grafisch ontwerper met grote dromen en een passie voor vormgevi
 widgets-bottom: false
 
 ---
-<div style="margin-top: -70px;" class="bg-main mb-5">
-    <div class="container" style="padding-bottom: 234.375px; padding-top: 168.750px;">
-        <div class="row">
-            <div class="col">
-                <p class="d-none d-sm-block strong font-scnd uppc fontw-600 txt-color-white no-select" style="font-size: 75px; line-height: 75px;">
-                    Een jong grafisch ontwerper met grote dromen en een passie voor vormgeving
-                </p>
-                <p class="d-block d-sm-none strong font-scnd uppc fontw-600 txt-color-white no-select" style="font-size: 60px; line-height: 75px;">
-                    Een jong grafisch ontwerper met grote dromen en een passie voor vormgeving
-                </p>
+<section class="section-ignore container d-flex align-items-center" data-label="homeHero">
+    <div class="my-5">
+        <h2 class="fontw-500">Jong grafisch geweld,<br>Grote dromen, en passie<br>voor design & code</h2>
+    </div>
+</section>
+<section>
+    <div data-label="portfolioCards" class="first-test">
+        {% for project in site.projects %}
+            <div class="card">
+                <img class="card-background" src="{{ project.ft-img }}" alt="">
+                <div class="card-body">
+                    <h4 class="mb-1">{{ project.title }}</h4>
+                    <p class="mb-0 text-modern md">{{ project.tags | first }}</p>
+                </div>
             </div>
+        {% endfor %}
+    </div>
+    <div class="container">
+        <div class="d-flex align-items-center ml-auto w-fit">
+            <p class="text-modern mb-0 small mr-3">
+                scroll door<br>mijn projecten
+            </p>
+            <i data-feather="arrow-right"></i>
         </div>
     </div>
-</div>
-<div class="container">
+</section>
+<section class="container">
     <div class="row">
-        <div class="col-12 h-section mb-0">
-            <h2>portfolio</h2>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            {% include widget-text.html title="Wat ik doe" subTitle="Diensten" content="Tegenwoordig hou ik me vooral bezig met webdesign, maar ook drukwerk blijft een passie!" btnTitle="Ontdek wat ik doe" btnUrl="#" %}
         </div>
-        <div class="col-12 mb-4">
-            <a onclick="filterPortfolio('All')" class="txt-modern fontw-400 mr-3">ALL</a>
-            <a onclick="filterPortfolio('Branding')" class="txt-modern fontw-400 mr-3">BRANDING</a>
-            <a onclick="filterPortfolio('Fotografie')" class="txt-modern fontw-400 mr-3">FOTOGRAFIE</a>
-            <a onclick="filterPortfolio('Online')" class="txt-modern fontw-400 mr-3">ONLINE</a>
-            <a onclick="filterPortfolio('Print')" class="txt-modern fontw-400 mr-3">PRINT</a>
-            <a onclick="filterPortfolio('School')" class="txt-modern fontw-400 mr-3">SCHOOL</a>
-            <a onclick="filterPortfolio('Sign')" class="txt-modern fontw-400 mr-3">SIGN</a>
-            <a onclick="filterPortfolio('Web')" class="txt-modern fontw-400 mr-3">WEB</a>
-            <a onclick="filterPortfolio('Wvd')" class="txt-modern fontw-400">WERK VOOR DERDEN</a>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            {% include widget-text.html title="Over mij" subTitle="Bio" content="Een jong grafisch designer die zich een weg baant door de grafische wereld." btnTitle="Kom meer te weten" btnUrl="#" %}
         </div>
-        <div id="portfolio-wrapper" class="p-0">
-            <div id="portfolio" class="cards-portfolio pt-4 wide">
-                {% assign items = site.projects | sort: 'date' %}
-                {% assign tags = item.tags | split: ", " %}
-                {% for item in items limit:5 %}
-                    <a class="card portfolio-item no-select {% for tags in item.tags %}{{ tags }} {% endfor %}" href="{{ item.url | remove:'.html' }}">
-                        <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
-                        <div class="card-body txt-color-white">
-                            <div class="d-flex flex-column justify-content-end w-100 h-100">
-                                <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">{{ item.title }}</h3>
-                                <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag sep">{{ tags }}</span>{% endfor %}</p>
-                            </div>
-                        </div>
-                    </a>
-                {% endfor %}
-
-                <div class="card no-select">
-                    <div class="card-body px-0 txt-color-white">
-                        <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1">Nog meer projecten ontdekken?</h3>
-                            <p class="card-text txt-modern mb-3">bekijk alles</p>
-                            <a class="btn" href="/projects">portfolio</a>
-                        </div>
-                    </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+            {% include widget-text.html title="Praktisch" subTitle="Meer info" content="Je zou graag met mij in zee gaan? Fantastisch! Dan vind je hier alle info die je nodig hebt." btnTitle="Meer lezen" btnUrl="#" %}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 text-color-6">
+                <h2 class="mb-1">Geïnteresseerd?</h2>
+                <p class="widget-text-subtitle text-modern md mb-2">Laat iets achter na de piep</p>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="form-group">
+                    <label for="homeFormEmail">email</label>
+                    <input type="email" class="form-control" id="homeFormEmail">
+                </div>
+                <div class="form-group form-control-textarea">
+                    <label for="homeFormEmail">bericht</label>
+                    <textarea class="form-control" rows="2"></textarea>
                 </div>
             </div>
         </div>
-        <div class="col-12">
-            <small class="txt-modern">Scroll door mijn projecten <span class="transl-up-2"><span class="scale-child-75"><i data-feather="arrow-right"></i></span></span></small>
-        </div>
-        <div class="col-12 d-none">
-            <div class="h-section">
-                <h3 class="card-title lspacing-1 uppc mb-1">Meer projecten</h3>
-                <p class="card-text txt-modern mb-3">ontdek meer</p>
-                <a class="btn" href="/projects">Bekijken</a>
-            </div>
-        </div>
     </div>
-</div>
+</section>

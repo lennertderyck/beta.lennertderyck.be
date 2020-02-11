@@ -6,7 +6,7 @@ tags:
 title: The Docks
 client: Arteveldehogeschool
 project-url: https://github.lennertderyck.be/the-docks/
-ft-img: "/uploads/MV5BZDI4YTQzOTktYTgzNC00ZmE4LWFlNmQtZTQwYmRkZmRhYWIzXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MV5BZDI4YTQzOTktYTgzNC00ZmE4LWFlNmQtZTQwYmRkZmRhYWIzXkEyXkFqcGdeQXVyNTI5NjIyMw_._V1__oewbtm.jpg"
 galery:
 - "/uploads/Schermafbeelding-2018-06-20-om-22.36.26-1024x524.png"
 - "/uploads/Schermafbeelding-2018-06-20-om-22.41.28-e1529574020237.png"
