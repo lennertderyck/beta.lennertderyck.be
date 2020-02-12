@@ -2706,8 +2706,6 @@ h6 {
     scroll-snap-align: start; }
     [data-label="portfolioCards"] .card:first-child {
       margin-left: 35px; }
-    [data-label="portfolioCards"] .card:hover {
-      transform: scale(1.08); }
     [data-label="portfolioCards"] .card img.card-background {
       width: 100%;
       height: 100%;
@@ -2729,7 +2727,9 @@ h6 {
 
 @media (min-width: 768px) {
   [data-label="portfolioCards"] > .card {
-    min-width: calc(100vw/2 - 35px*2); } }
+    min-width: calc(100vw/2 - 35px*2); }
+    [data-label="portfolioCards"] > .card:hover {
+      transform: scale(1.08); } }
 @media (min-width: 992px) {
   [data-label="portfolioCards"] > .card {
     min-width: 245px; } }
