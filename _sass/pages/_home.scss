@@ -13,8 +13,8 @@
     padding: 60px 0;
     display: flex;
     align-items: center;
-    scroll-snap-type: both mandatory;
-    scroll-padding: calc((245px/2));
+    scroll-snap-type: x mandatory;
+    scroll-padding: 35px;
 
     &::-webkit-scrollbar {
         display: none;
@@ -22,7 +22,7 @@
 
     .card {
         position: relative;
-        min-width: 245px;
+        min-width: calc(100vw - 35px*2);
         height: 325px;
         margin-left: calc(35px/2);
         margin-right: calc(35px/2);
@@ -71,3 +71,19 @@
         }
     }
 }
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    [data-label="portfolioCards"] > .card {
+        min-width: calc(100vw/2 - 35px*2)
+    }
+}
+
+@media (min-width: 992px) {
+    [data-label="portfolioCards"] > .card {
+        min-width: 245px;
+    }
+}
+
+@media (min-width: 1200px) {}
