@@ -32,7 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Overpass+Mono:400,600,700|Overpass:300,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     
     <!-- local assets -->
-    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body data-sesam-target="burgerMenu">
     <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
@@ -53,8 +53,18 @@
 </header>
         <main>
             <div id="pageContent">
-                <div class="container">
-    <form id="formContact" action method="post" enctype="multipart/form-data">
+                <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-lg-4">
+            <h1 class="page-title fontw-300">
+                Contactformulier
+            </h1>
+            <p class="page-subtitle text-modern md mb-5 mb-lg-0">
+                
+            </p>
+        </div>
+        <div class="col-12 col-lg-8" id="contentBody">
+            <form id="formContact" action method="post" enctype="multipart/form-data">
   <nav>
     <div class="nav nav-tabs" id="tabContact" role="tablist">
       <a class="nav-item nav-link active" id="nav-contact-info-tab" data-toggle="tab" href="#nav-contact-info" role="tab" aria-controls="nav-contact-info" aria-selected="true">Info</a>
@@ -386,6 +396,8 @@
     output.innerHTML += '</ul>';
   }
 </script>
+        </div>
+    </div>
 </div>
             </div>
         </main>
@@ -407,23 +419,31 @@
     <nav class="mb-auto">
         <ul>
             <li>
-                <h3 class="text-color-6 text-right mb-3 fontw-400">Wat ik doe</h3>
+                <a href="/wat-ik-doe">
+                    <h3 class="text-left mb-3 fontw-400">Wat ik doe</h3>
+                </a>
             </li>
             <li>
-                <h3 class="text-color-6 text-right mb-3 fontw-400">Over mij</h3>
+                <a href="/over">
+                    <h3 class="text-left mb-3 fontw-400">Over mij</h3>
+                </a>
             </li>
             <li>
-                <h3 class="text-color-6 text-right mb-3 fontw-400">Social</h3>
+                <a href="/social">
+                    <h3 class="text-left mb-3 fontw-400">Social</h3>
+                </a>
             </li>
             <li>
-                <h3 class="text-color-6 text-right fontw-400">Contact</h3>
+                <a href="/contact">
+                    <h3 class="text-left fontw-400">Contact</h3>
+                </a>
             </li>
         </ul>
     </nav>
     <div class="row">
         <div class="col">
-            <p class="text-modern text-md-right small text-color-3">volg mij</p>
-            <div class="w-fit ml-auto">
+            <p class="text-modern text-left small text-color-3">volg mij</p>
+            <div class="w-fit mr-auto">
                 <a target="_blank" rel="noopener" href="https://www.facebook.com/lennertderyck.grafischontwerp/">
                     <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_FACEBOOK_msbslu.svg" alt="">
                 </a>

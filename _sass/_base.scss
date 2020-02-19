@@ -119,6 +119,15 @@ header {
 
 main {
     min-height: calc(100vh - 77px);
+    
+    .page-title {
+        color: $accent6;
+        font-size: 34Px;
+    }
+    
+    .page-subtitle {
+        color: $accent6;
+    }
 }
 
 section:not(.section-ignore) {

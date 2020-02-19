@@ -78,6 +78,11 @@ header {
 
 main {
   min-height: calc(100vh - 77px); }
+  main .page-title {
+    color: #4A4A4A;
+    font-size: 34Px; }
+  main .page-subtitle {
+    color: #4A4A4A; }
 
 section:not(.section-ignore) {
   margin-bottom: 180px; }
@@ -2600,16 +2605,22 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 1.75px; }
 
-.text-modern, input.form-control::placeholder, textarea.form-control::placeholder, .form-group, .btn {
+.text-modern, input.form-control::placeholder, textarea.form-control::placeholder, .form-group, #contentBody h5, .btn {
   font: Bold 1rem/15px "Overpass", sans-serif;
   letter-spacing: 2.5px;
   text-transform: uppercase; }
-  .text-modern.md, input.md.form-control::placeholder, textarea.md.form-control::placeholder, .md.form-group, .md.btn {
+  .text-modern.md, input.md.form-control::placeholder, textarea.md.form-control::placeholder, .md.form-group, #contentBody h5.md, .md.btn {
     font-size: 91%; }
-  .text-modern.small, input.small.form-control::placeholder, textarea.small.form-control::placeholder, .small.form-group, .small.btn {
+  .text-modern.small, input.small.form-control::placeholder, textarea.small.form-control::placeholder, .small.form-group, #contentBody h5.small, .small.btn {
     font-size: 80%; }
-  .text-modern.xsm, input.xsm.form-control::placeholder, textarea.xsm.form-control::placeholder, .xsm.form-group, .xsm.btn {
+  .text-modern.xsm, input.xsm.form-control::placeholder, textarea.xsm.form-control::placeholder, .xsm.form-group, #contentBody h5.xsm, .xsm.btn {
     font-size: 65%; }
+
+#contentBody h3, #contentBody h4, #contentBody h5 {
+  color: #4A4A4A; }
+#contentBody p + h5, #contentBody p .text-modern, #contentBody p input.form-control::placeholder, #contentBody p textarea.form-control::placeholder, #contentBody p .form-group, #contentBody p h5, #contentBody p .btn {
+  margin-top: 30px;
+  font-size: 16px; }
 
 /* 
 * {
@@ -2744,15 +2755,15 @@ h6 {
     min-width: 245px; } }
 #menuMain {
   --header-h: 148px;
-  --menu-main-w: 300px;
+  --menu-main-w: 720px;
   z-index: 1000;
   position: fixed;
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: 300px;
+  width: 720px;
   height: 100vh;
-  padding: 35px;
+  padding: 85px;
   padding-top: var(--header-h);
   background-color: #F1F2F3;
   transition: all .4s ease; }
@@ -2767,6 +2778,15 @@ h6 {
     margin: 0px;
     padding: 0px;
     list-style-type: none; }
+  #menuMain ul:hover h3 {
+    color: #707070; }
+  #menuMain ul h3 {
+    font-size: 3rem;
+    transition: all .5s ease;
+    color: #4A4A4A; }
+    #menuMain ul h3:hover {
+      transform: translateX(7px);
+      color: #4A4A4A; }
 
 * {
   transition: all .4s ease; }
@@ -2774,7 +2794,7 @@ h6 {
 body {
   transition: all .4s ease; }
   body.sesam.sesam-hidden #menuMain {
-    transform: translateX(280px); }
+    transform: translateX(700px); }
   body.sesam.sesam-show {
         /* [data-label="portfolioCards"] {
             position: fixed;
@@ -2798,4 +2818,4 @@ body {
     body.sesam.sesam-show #page {
       filter: blur(5px); }
     body.sesam.sesam-show [data-label="burgerMenu"] {
-      transform: translateX(-300px) rotate(90deg); }
+      transform: translateX(-720px) rotate(90deg); }

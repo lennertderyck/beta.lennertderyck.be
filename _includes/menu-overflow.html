@@ -9,23 +9,31 @@
     <nav class="mb-auto">
         <ul>
             <li>
-                <h3 class="text-color-6 text-right mb-3 fontw-400">Wat ik doe</h3>
+                <a href="{{ "/wat-ik-doe" | relative_url }}">
+                    <h3 class="text-left mb-3 fontw-400">Wat ik doe</h3>
+                </a>
             </li>
             <li>
-                <h3 class="text-color-6 text-right mb-3 fontw-400">Over mij</h3>
+                <a href="{{ "/over" | relative_url }}">
+                    <h3 class="text-left mb-3 fontw-400">Over mij</h3>
+                </a>
             </li>
             <li>
-                <h3 class="text-color-6 text-right mb-3 fontw-400">Social</h3>
+                <a href="{{ "/social" | relative_url }}">
+                    <h3 class="text-left mb-3 fontw-400">Social</h3>
+                </a>
             </li>
             <li>
-                <h3 class="text-color-6 text-right fontw-400">Contact</h3>
+                <a href="{{ "/contact" | relative_url }}">
+                    <h3 class="text-left fontw-400">Contact</h3>
+                </a>
             </li>
         </ul>
     </nav>
     <div class="row">
         <div class="col">
-            <p class="text-modern text-md-right small text-color-3">volg mij</p>
-            <div class="w-fit ml-auto">
+            <p class="text-modern text-left small text-color-3">volg mij</p>
+            <div class="w-fit mr-auto">
                 <a target="_blank" rel="noopener"
                     href="https://www.facebook.com/lennertderyck.grafischontwerp/">
                     <img class="mr-3"

@@ -35,3 +35,22 @@ a, a:hover {
         font-size: 65%;
     }
 }
+
+#contentBody {
+    h5 {
+        // font-size: 91%;
+        @extend .text-modern;
+    }
+    
+    h3, h4, h5 {
+        color: $accent6;
+    }
+    
+    p {
+        & + h5, .text-modern {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    }
+}
+
