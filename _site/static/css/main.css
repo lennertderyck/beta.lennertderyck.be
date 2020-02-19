@@ -2621,6 +2621,17 @@ h6 {
 #contentBody p + h5, #contentBody p .text-modern, #contentBody p input.form-control::placeholder, #contentBody p textarea.form-control::placeholder, #contentBody p .form-group, #contentBody p h5, #contentBody p .btn {
   margin-top: 30px;
   font-size: 16px; }
+#contentBody a:not(.btn) {
+  position: relative; }
+  #contentBody a:not(.btn)::after {
+    content: ' ';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #0195a2; }
 
 /* 
 * {
@@ -2796,6 +2807,7 @@ body {
   body.sesam.sesam-hidden #menuMain {
     transform: translateX(700px); }
   body.sesam.sesam-show {
+    overflow: hidden;
         /* [data-label="portfolioCards"] {
             position: fixed;
             left: 0px;

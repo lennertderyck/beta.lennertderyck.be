@@ -68,6 +68,8 @@ body {
     }
 
     &.sesam.sesam-show {
+        overflow: hidden;
+        
         #menuMain {
             transform: translateX(0px);
         }
