@@ -1,12 +1,28 @@
+$menu-main-w: 300px;
 #menuMain {
     --header-h: 148px;
-    position: fixed;
-    top: var(--header-h);
-    left: 0px;
+    --menu-main-w: 300px;
     z-index: 1000;
-    width: 100vw;
-    height: calc(100vh - var(--header-h));
-    background-color: white;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: $menu-main-w;
+    height: 100vh;
+    padding: 35px;
+    padding-top: var(--header-h);
+    background-color: $accent1;
+    transition: all .4s ease;
+
+    > .wrapper {
+        --m: 30px;
+        box-shadow: 0 6px 25px 3px rgba(0, 0, 0, 0.164);
+        width: 100vw;
+        height: 100%;
+        margin-left: auto;
+        // padding-top: var(--header-h);
+        border-radius: 13px;
+    }
 
     ul {
         margin: 0px;
@@ -15,18 +31,33 @@
     }
 }
 
+* {
+    transition: all .4s ease;
+}
+
 body {
+    transition: all .4s ease;
+    
     &.sesam.sesam-hidden {
         #menuMain {
-            display: none;
+            transform: translateX($menu-main-w - 20px);
         }
     }
 
     &.sesam.sesam-show {
-        overflow-y: hidden;
+        #menuMain {
+            transform: translateX(0px);
+        }
 
-        [data-label="portfolioCards"] {
-            z-index: 1001;
+        #page {
+            filter: blur(5px);
+        }
+        
+        [data-label="burgerMenu"] {
+            transform: translateX(-300px) rotate(90deg);
+        }
+        
+        /* [data-label="portfolioCards"] {
             position: fixed;
             left: 0px;
             right: unset;
@@ -42,6 +73,6 @@ body {
                     transition: inherit;
                 }
             }
-        }
+        } */
     }
 }

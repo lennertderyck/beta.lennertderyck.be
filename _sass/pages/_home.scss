@@ -15,6 +15,7 @@
     align-items: center;
     scroll-snap-type: x mandatory;
     scroll-padding: 35px;
+    // z-index: 1001;
 
     &::-webkit-scrollbar {
         display: none;

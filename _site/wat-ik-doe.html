@@ -36,7 +36,8 @@
 </head>
 <body data-sesam-target="burgerMenu">
     <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
-    <header class="py-5">
+    <div id="page">
+        <header class="py-5">
     <div class="container d-flex flex-row align-items-center justify-content-between">
         <svg data-label="logoLdr" width="250px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 390.5 86.85">
     <title>Logo Lennert De Ryck</title>
@@ -48,97 +49,11 @@
         </g>
     </g>
 </svg>
-        <div class="ml-4" data-label="burgerMenu" data-sesam-trigger="burgerMenu">
-            <div class="burger-bun">
-                <span class="top"></span>
-                <span class="bottom"></span>
-            </div>
-            <div class="burger-label text-modern md fontw-800">menu</div>
-        </div>
     </div>
 </header>
-<div id="menuMain" class="pt-lg-5 pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 mb-5">
-                <nav>
-                    <ul>
-                        <li><h3 class="text-color-6 mb-3 fontw-400">Wat ik doe</h3></li>
-                        <li><h3 class="text-color-6 mb-3 fontw-400">Over mij</h3></li>
-                        <li><h3 class="text-color-6 mb-3 fontw-400">Social</h3></li>
-                        <li><h3 class="text-color-6 fontw-400">Contact</h3></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-12 col-md-6">
-                <div>
-                    <div class="row mb-3 pb-3">
-                        <div class="col">
-                            <p class="text-modern text-md-right md text-color-3">volg mij</p>
-                            <div class="w-fit ml-md-auto">
-                                <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_FACEBOOK_msbslu.svg" alt="">
-                                <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_MESSENGER_mcfh2f.svg" alt="">
-                                <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_PINTREST_yoaqzy.svg" alt="">
-                                <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_UNSPLASH_egfbb9.svg" alt="">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_SPOTIFY_ti5b07.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p class="text-modern text-md-right md text-color-3">bestanden</p>
-                            <div class="d-flex flex-row w-fit ml-md-auto">
-                                <a href="#" class="btn mr-3">code invoeren</a>
-                                <a href="#" class="btn">bekijken</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <li>Over mij</li>
-    
-
-    
-
-    
-
-    
-
-    
-        <li>Wat ik doe</li>
-    
-
-    
-
-    
-
-    
-
-    
- -->
-    <main>
-        <div id="pageContent">
-            <div class="container">
+        <main>
+            <div id="pageContent">
+                <div class="container">
     <h3 id="over">Over</h3>
 
 <p>Het voornaamste wat ik doe is grafisch ontwerp, zowel drukwerk als digitaal of print. De productie van de ontwerpen neem ik niet voor mijn rekening, ik zal enkel de bestanden aanleveren. Daarbij is het ook mogelijk documenten te laten controleren en voorzien van de juiste eigenschappen om het te kunnen publiceren.</p>
@@ -201,14 +116,109 @@
 </blockquote>
 
 </div>
-        </div>
-    </main>
-    <footer class="mt-5 p-3">
+            </div>
+        </main>
+        <footer class="mt-5 p-3">
     <div class="container container-xl">
         <h4 class="mb-1 fontw-300">#THINKBEYONDTHEBOX</h4>
         <p class="text-modern xsm mb-0">© 2020 Lennert De Ryck  ・ Alle rechten voorbehouden  ⎥   <a href="/privacy">Privacy</a>  ・  <a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a></p>
     </div>
 </footer>
+    </div>
+    <div class="ml-4" data-label="burgerMenu" data-sesam-trigger="burgerMenu">
+    <div class="burger-bun">
+        <span class="top"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="burger-label text-modern md fontw-800">menu</div>
+</div>
+<div id="menuMain" class="lvl-9 d-flex flex-column">
+    <nav class="mb-auto">
+        <ul>
+            <li>
+                <h3 class="text-color-6 text-right mb-3 fontw-400">Wat ik doe</h3>
+            </li>
+            <li>
+                <h3 class="text-color-6 text-right mb-3 fontw-400">Over mij</h3>
+            </li>
+            <li>
+                <h3 class="text-color-6 text-right mb-3 fontw-400">Social</h3>
+            </li>
+            <li>
+                <h3 class="text-color-6 text-right fontw-400">Contact</h3>
+            </li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <p class="text-modern text-md-right small text-color-3">volg mij</p>
+            <div class="w-fit ml-auto">
+                <a target="_blank" rel="noopener" href="https://www.facebook.com/lennertderyck.grafischontwerp/">
+                    <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_FACEBOOK_msbslu.svg" alt="">
+                </a>
+                <a target="_blank" rel="noopener" href="https://www.messenger.com/t/1997323257173637">
+                    <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_MESSENGER_mcfh2f.svg" alt="">
+                </a>
+                <a target="_blank" rel="noopener" href="https://nl.pinterest.com/lennertderyck/">
+                    <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_PINTREST_yoaqzy.svg" alt="">
+                </a>
+                <a target="_blank" rel="noopener" href="https://unsplash.com/@lennertderyck">
+                    <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_UNSPLASH_egfbb9.svg" alt="">
+                </a>
+                <a target="_blank" rel="noopener" href="https://open.spotify.com/user/twoledery?si=Ts0RauVJRCSMd8cWl0tGjQ">
+                    <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_SPOTIFY_ti5b07.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row d-none">
+        <div class="col">
+            <p class="text-modern text-md-right md text-color-3">bestanden</p>
+            <div class="d-flex flex-column w-fit ml-md-auto">
+                <a href="#" class="btn ml-auto mb-2">bekijken</a>
+                <a href="#" class="btn ml-auto">code invoeren</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <li>Over mij</li>
+    
+
+    
+
+    
+
+    
+
+    
+        <li>Wat ik doe</li>
+    
+
+    
+
+    
+
+    
+
+    
+ -->
 
     <!-- bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -46,6 +46,7 @@ function createToast(title, message) {
     console.log(toastIndex);
 
     let now, moment;
+
     function addZero(i) {
         if (i < 10) {
             i = "0" + i;
@@ -62,7 +63,7 @@ function createToast(title, message) {
     }
 
     let toast = document.createElement('div');
-    toastIndex ++;
+    toastIndex++;
 
     toast.classList.add('toast', 'animated', 'fadeInRight', 'faster');
     toast.setAttribute('data-toast', `toastIndex${toastIndex}`);
@@ -82,14 +83,16 @@ function createToast(title, message) {
         </button>
     `
 
-    toast.addEventListener('animationend', function() {toast.classList.add('animated', 'fadeOutRight', 'delay-3s')})
+    toast.addEventListener('animationend', function () {
+        toast.classList.add('animated', 'fadeOutRight', 'delay-3s')
+    })
 
     document.querySelector('#toastContainer').appendChild(toast);
     feather.replace();
     $(`[data-toast="toastIndex${toastIndex}"]`).toast('show');
 }
 
-window.addEventListener('mousewheel', (() => {
+/* window.addEventListener('mousewheel', (() => {
     console.log('window.pageYOffset');
 }));
 
@@ -116,4 +119,4 @@ window.addEventListener("optimizedScroll", function(){
     if (document.body.classList.contains('sesam-show')) {
         cards.style.transform = "translateY(-" + window.pageYOffset + "px)";
     }
-})
+}) */
