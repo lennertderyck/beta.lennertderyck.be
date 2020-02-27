@@ -6,7 +6,7 @@ ft-image: ''
 short-desc: ''
 titlebar: true
 add-to-menu: false
-full-width: false
+fullWidth: false
 widgets: false
 widgets-bottom: false
 widget-blocks: []

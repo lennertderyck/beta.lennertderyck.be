@@ -4,7 +4,7 @@ titlebar: true
 title: Social
 permalink: "/social"
 add-to-menu: false
-full-width: false
+fullWidth: false
 ft-image: ''
 redirect_plugin:
   redirect_to: ''

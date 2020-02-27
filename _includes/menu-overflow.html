@@ -1,11 +1,5 @@
-<div class="ml-4" data-label="burgerMenu" data-sesam-trigger="burgerMenu">
-    <div class="burger-bun">
-        <span class="top"></span>
-        <span class="bottom"></span>
-    </div>
-    <div class="burger-label text-modern md fontw-800">menu</div>
-</div>
 <div id="menuMain" class="lvl-9 d-flex flex-column">
+    {% include menu-toggle.html text="sluiten" %}
     <nav class="mb-auto">
         <ul>
             <li>
@@ -24,7 +18,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ "/contact" | relative_url }}">
+                <a href="{{ "/contact-beta" | relative_url }}">
                     <h3 class="text-left fontw-400">Contact</h3>
                 </a>
             </li>
@@ -33,7 +27,13 @@
     <div class="row">
         <div class="col">
             <p class="text-modern text-left small text-color-3">volg mij</p>
-            <div class="w-fit mr-auto">
+            <div class="w-fit mr-auto" data-label="socialIcons">
+                <a target="_blank" rel="noopener"
+                    href="https://www.linkedin.com/in/lenndertderyck/">
+                    <img class="mr-3"
+                        src="https://res.cloudinary.com/lennertderyck/image/upload/v1582830610/LOGO_LINKEDIN_gw9qtp.svg"
+                        alt="">
+                </a>
                 <a target="_blank" rel="noopener"
                     href="https://www.facebook.com/lennertderyck.grafischontwerp/">
                     <img class="mr-3"

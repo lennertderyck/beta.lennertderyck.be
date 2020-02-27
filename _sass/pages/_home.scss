@@ -1,8 +1,14 @@
 [data-label="homeHero"] {
     min-height: 50vh;
-
+    background-image: url();
+    
     h2 {
         font-size: 36px;
+        color: $accentMain;
+    }
+    
+    a {
+        color: $accentMain;
     }
 }
 

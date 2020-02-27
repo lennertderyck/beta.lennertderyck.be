@@ -14,37 +14,6 @@ svg.feather {
   width: 15px;
   stroke-width: 2.7; }
 
-input.form-control, textarea.form-control {
-  border: none;
-  border-bottom: 2px solid #D0D0D0;
-  border-radius: 0px;
-  padding: 0px; }
-  input.form-control::placeholder, textarea.form-control::placeholder {
-    font-size: 91% !important;
-    color: #D0D0D0; }
-  input.form-control:active, input.form-control:focus, input.form-control:focus-within, textarea.form-control:active, textarea.form-control:focus, textarea.form-control:focus-within {
-    outline: none;
-    box-shadow: none;
-    border-bottom-color: #01706946; }
-
-.form-group {
-  display: flex;
-  align-items: center;
-  font-size: 91% !important;
-  color: #D0D0D0;
-  border-bottom: 2px solid #D0D0D0; }
-  .form-group label {
-    margin: 0px;
-    margin-right: 15px;
-    cursor: text; }
-  .form-group input.form-control, .form-group textarea.form-control {
-    border: none; }
-  .form-group.form-control-textarea {
-    position: relative;
-    display: block; }
-    .form-group.form-control-textarea label {
-      margin-bottom: 7px; }
-
 header {
   position: relative;
   z-index: 1000; }
@@ -52,11 +21,7 @@ header {
 [data-label="burgerMenu"] {
   display: flex;
   cursor: pointer;
-  position: fixed;
-  top: 50%;
-  right: -24.3px;
-  z-index: 1000;
-  transform: rotate(90deg); }
+  z-index: 1000; }
   [data-label="burgerMenu"] .burger-bun {
     display: flex;
     flex-direction: column;
@@ -86,6 +51,15 @@ main {
 
 section:not(.section-ignore) {
   margin-bottom: 180px; }
+
+[data-label="pageWidgets"] {
+  margin-top: 110px;
+  margin-bottom: 110px; }
+
+[data-label="footerWidgets"] {
+  --py: 70px;
+  padding-top: var(--py);
+  padding-bottom: var(--py); }
 
 footer {
   background-color: #F1F2F3; }
@@ -2605,20 +2579,20 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 1.75px; }
 
-.text-modern, input.form-control::placeholder, textarea.form-control::placeholder, .form-group, #contentBody h5, .btn {
+.text-modern, #contentBody h5, .btn, .form-group {
   font: Bold 1rem/15px "Overpass", sans-serif;
   letter-spacing: 2.5px;
   text-transform: uppercase; }
-  .text-modern.md, input.md.form-control::placeholder, textarea.md.form-control::placeholder, .md.form-group, #contentBody h5.md, .md.btn {
+  .text-modern.md, #contentBody h5.md, .md.btn, .md.form-group {
     font-size: 91%; }
-  .text-modern.small, input.small.form-control::placeholder, textarea.small.form-control::placeholder, .small.form-group, #contentBody h5.small, .small.btn {
+  .text-modern.small, #contentBody h5.small, .small.btn, .small.form-group {
     font-size: 80%; }
-  .text-modern.xsm, input.xsm.form-control::placeholder, textarea.xsm.form-control::placeholder, .xsm.form-group, #contentBody h5.xsm, .xsm.btn {
+  .text-modern.xsm, #contentBody h5.xsm, .xsm.btn, .xsm.form-group {
     font-size: 65%; }
 
 #contentBody h3, #contentBody h4, #contentBody h5 {
   color: #4A4A4A; }
-#contentBody p + h5, #contentBody p .text-modern, #contentBody p input.form-control::placeholder, #contentBody p textarea.form-control::placeholder, #contentBody p .form-group, #contentBody p h5, #contentBody p .btn {
+#contentBody p + h5, #contentBody p .text-modern, #contentBody p h5, #contentBody p .btn, #contentBody p .form-group {
   margin-top: 30px;
   font-size: 16px; }
 #contentBody a:not(.btn) {
@@ -2708,9 +2682,13 @@ h6 {
   [data-label="portfolioCards"] {
     scroll-padding: calc((245px/2) + 35px); } }
 [data-label="homeHero"] {
-  min-height: 50vh; }
+  min-height: 50vh;
+  background-image: url(); }
   [data-label="homeHero"] h2 {
-    font-size: 36px; }
+    font-size: 36px;
+    color: #006770; }
+  [data-label="homeHero"] a {
+    color: #006770; }
 
 [data-label="portfolioCards"] {
   overflow-x: scroll;
@@ -2772,7 +2750,7 @@ h6 {
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: 720px;
+  width: 100vw;
   height: 100vh;
   padding: 85px;
   padding-top: var(--header-h);
@@ -2789,15 +2767,22 @@ h6 {
     margin: 0px;
     padding: 0px;
     list-style-type: none; }
-  #menuMain ul:hover h3 {
-    color: #707070; }
-  #menuMain ul h3 {
-    font-size: 3rem;
-    transition: all .5s ease;
-    color: #4A4A4A; }
-    #menuMain ul h3:hover {
-      transform: translateX(7px);
+    #menuMain ul:hover h3 {
+      color: #707070; }
+    #menuMain ul h3 {
+      font-size: 3rem;
+      transition: all .5s ease;
       color: #4A4A4A; }
+      #menuMain ul h3:hover {
+        transform: translateX(7px);
+        color: #4A4A4A; }
+  #menuMain [data-label="socialIcons"] a > img {
+    object-fit: fill;
+    height: 22px;
+    width: 22px; }
+  #menuMain [data-label="burgerMenu"] {
+    position: absolute;
+    top: 80px; }
 
 * {
   transition: all .4s ease; }
@@ -2829,5 +2814,41 @@ body {
       transform: translateX(0px); }
     body.sesam.sesam-show #page {
       filter: blur(5px); }
-    body.sesam.sesam-show [data-label="burgerMenu"] {
-      transform: translateX(-720px) rotate(90deg); }
+
+@media (min-width: 768px) {
+  #menuMain {
+    width: 720px; } }
+.form-group {
+  font-size: 91% !important;
+  color: #D0D0D0;
+  border-bottom: 2px solid #D0D0D0; }
+  .form-group label {
+    margin: 0px;
+    margin-right: 15px;
+    cursor: text; }
+  .form-group input.form-control, .form-group textarea.form-control {
+    border: none; }
+  .form-group.form-control-textarea {
+    position: relative;
+    display: block; }
+    .form-group.form-control-textarea label {
+      margin-bottom: 7px; }
+
+input.form-control, textarea.form-control {
+  border: none;
+  border-bottom: 2px solid #D0D0D0;
+  border-radius: 0px;
+  padding: 0px; }
+  input.form-control::placeholder, textarea.form-control::placeholder {
+    text-transform: unset;
+    letter-spacing: unset;
+    color: #9D9D9D;
+    font-weight: normal;
+    font-size: 16px; }
+  input.form-control:active, input.form-control:focus, input.form-control:focus-within, textarea.form-control:active, textarea.form-control:focus, textarea.form-control:focus-within {
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: #01706946; }
+
+form .form-group + .btn {
+  margin-top: 30px; }

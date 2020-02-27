@@ -6,7 +6,7 @@ ft-image: ''
 title: Privacy
 permalink: privacy
 add-to-menu: false
-full-width: false
+fullWidth: false
 widget-blocks:
 - template: widget
   show-button: false
@@ -28,7 +28,7 @@ redirect_plugin:
 widgets-bottom: false
 more_settings:
   titlebar: true
-  full-width: false
+  fullWidth: false
 
 ---
 ### OVER

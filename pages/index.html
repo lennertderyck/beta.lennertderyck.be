@@ -6,7 +6,7 @@ titlebar: false
 add-to-menu: false
 ft-image: 
 widgets: false
-full-width: false
+fullWidth: false
 short-desc: Jong grafisch ontwerper met grote dromen en een passie voor vormgeving
 widgets-bottom: false
 
@@ -14,6 +14,7 @@ widgets-bottom: false
 <section class="section-ignore container d-flex align-items-center" data-label="homeHero">
     <div class="my-5">
         <h2 class="fontw-500">Jong grafisch geweld,<br>Grote dromen, en passie<br>voor design & code</h2>
+        <a href="{{ '/over' | url }}" class="text-modern">Lees meer</a>
     </div>
 </section>
 <section>
@@ -58,14 +59,19 @@ widgets-bottom: false
                 <p class="widget-text-subtitle text-modern md mb-2">Laat iets achter na de piep</p>
             </div>
             <div class="col-12 col-md-8">
-                <div class="form-group">
+                <div class="form-group mb-4">
+                    <label for="homeFormName">naam</label>
+                    <input type="text" class="form-control" id="homeFormName">
+                </div>
+                <div class="form-group mb-4">
                     <label for="homeFormEmail">email</label>
                     <input type="email" class="form-control" id="homeFormEmail">
                 </div>
                 <div class="form-group form-control-textarea">
-                    <label for="homeFormEmail">bericht</label>
-                    <textarea class="form-control" rows="2"></textarea>
+                    <label for="homeFormMessage">bericht</label>
+                    <textarea class="form-control" id="homeFormMessage" rows="2"></textarea>
                 </div>
+                <a class="btn" href="#">verzenden</a>
             </div>
         </div>
     </div>

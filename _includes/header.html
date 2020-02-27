@@ -1,5 +1,10 @@
 <header class="py-5">
     <div class="container d-flex flex-row align-items-center justify-content-between">
-        {% include logo-svg.html width="250px" %}
+        <a href="{{ '/' | url }}">
+            {% include logo-svg.html width="250px" %}
+        </a>
+        <div class="ml-4">
+            {% include menu-toggle.html %}
+        </div>
     </div>
 </header>

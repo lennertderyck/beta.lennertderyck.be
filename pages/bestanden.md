@@ -6,7 +6,7 @@ ft-image: ''
 short-desc: ''
 titlebar: true
 add-to-menu: false
-full-width: false
+fullWidth: false
 widgets: true
 widget-settings:
   widget-blocks:
@@ -27,7 +27,7 @@ more_settings:
   titlebar: false
   centered-titlebar: false
   add-to-menu: false
-  full-width: false
+  fullWidth: false
 published: false
 
 ---

@@ -1,150 +1,14 @@
 ---
 layout: page
 titlebar: true
-widgets: true
 ft-image: ''
 title: Wat ik doe
 subTitle: Diensten
 permalink: wat-ik-doe
 add-to-menu: true
-full-width: false
-redirect_plugin:
-  redirect_to: ''
-  redirect_from: ''
+fullWidth: false
 short-desc: De diensten die ik aanbied, zoals het ontwerpen van logo's, banners of
   omslagen, ...
-widgets-bottom: false
-widget-blocks:
-- template: widget
-  title: Portfolio
-  subtitle: Projecten en stijl
-  content: Ontdek wat ik al deed van projecten, ontdek mijn stijl.
-  button-label: Portfolio
-  button-url: "/projects"
-  show-button: true
-- template: widget
-  title: Github
-  subtitle: Webdev
-  content: Ontdek wat ik doe op vlak van webdesign
-  button-label: Github
-  button-url: https://github.com/lennertderyck
-  show-button: true
-  new-tab: true
-- template: widget
-  title: Mijn uitrusting
-  content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
-    het makkelijk delen van bestanden en maken van backups\n\n##### Adobe Creative
-    Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic CC 2018  \nIllustrator
-    CC 2018  \nInDesign CC 2018\n\n##### Canon EOS D1300\n\nMet 18-55mm IS II lens
-    \ \nUV-filter  \nVelbon statief"
-  subtitle: ''
-  button-label: ''
-  button-url: ''
-  show-button: false
-more_settings:
-  titlebar: true
-code: |-
-  <div class="slider-wrapper d-none">
-
-  <div class="slider">
-
-  <div class="slider-item p-4 bd-radius mr-4 no-select">
-
-  <div class="h-section">
-
-  <h2>Logo's</h2>
-
-  <p class="txt-modern txt-color-white">Nieuw, vernieuwing of iconen</p>
-
-  </div>
-
-  <p class="mb-0">
-
-  Start u een nieuw bedrijf? Heb je een lokale club? Of moet je mensen wegwijs maken in een gebouw?
-
-  </p>
-
-  </div>
-
-  <div class="slider-item p-4 bd-radius mr-4 no-select">
-
-  <div class="h-section">
-
-  <h2>Digitaal</h2>
-
-  <p class="txt-modern txt-color-white">banners en omslagen</p>
-
-  </div>
-
-  <p class="mb-0">
-
-  Geef je pagina op social media dat extra met een mooie omslag of maak online reclame.
-
-  </p>
-
-  </div>
-
-  <div class="slider-item p-4 bd-radius mr-4 no-select">
-
-  <div class="h-section">
-
-  <h2>Drukwerk</h2>
-
-  <p class="txt-modern txt-color-white">Persoonlijk & commercieel</p>
-
-  </div>
-
-  <p class="mb-0">
-
-  Ontwerp voor persoonlijk drukwerk, brochures voor uw bedrijf of organisatie of affiches en posters
-
-  </p>
-
-  </div>
-
-  <div class="slider-item p-4 bd-radius mr-4 no-select">
-
-  <div class="h-section">
-
-  <h2>Flex & flox</h2>
-
-  <p class="txt-modern txt-color-white">Bestickering & textieldruk</p>
-
-  </div>
-
-  <p class="mb-0">
-
-  Een ontwerp voor bestickering van ramen of bedrukking van andere materialen
-
-  </p>
-
-  </div>
-
-  <div class="slider-item p-4 bd-radius mr-4 no-select">
-
-  <div class="h-section">
-
-  <h2>Andere</h2>
-
-  <p class="txt-modern txt-color-white">Neem contact op</p>
-
-  </div>
-
-  <p class="mb-0">
-
-  Heb je nog iets anders in gedachten of valt uw project niet in één van deze categorieën?
-
-  </p>
-
-  </div>
-
-  </div>
-
-  </div>
-
-  <style>
-  .slider-wrapper { /* --margin-x: calc(100vw - 35px;) / overflow: scroll; / margin-left: var(--margin-x); margin-right: var(--margin-x); */ margin: 0 calc(-50vw + 50%); margin-top: -35px; padding: 35px 35px; }.slider-wrapper::-webkit-scrollbar { display: none; }.slider { display: flex; flex-direction: row; width: fit-content; overflow: visible; }.slider-item { width: 370px; max-width: 370px; max-height: 350px; background-color: #006771; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.55); }.slider-item * { color: white; }.slider-item:hover { box-shadow: 0 5px 24px rgba(0, 0, 0, .64); }
-  </style>
 
 ---
 Het voornaamste wat ik doe is grafisch ontwerp, zowel drukwerk als digitaal of print. De productie van de ontwerpen neem ik niet voor mijn rekening, ik zal enkel de bestanden aanleveren. Daarbij is het ook mogelijk documenten te laten controleren en voorzien van de juiste eigenschappen om het te kunnen publiceren.
@@ -171,12 +35,12 @@ Ook het laten ontwikkelen van een volledige website voor persoonlijk gebruik, ee
 
 ##### FUNCTIONALITEITEN
 
-\- Volledig responsive (goede weergave op mobiele apparaten)  
-\- Het aanmaken van berichten of pagina's zonder enige kennis van html of css  
-\- Verzamelingen toevoegen (personen in uw organisatie tonen, portfolio, etc.)  
-\- Meldingen tonen die kunnen verborgen worden  
-\- Eenvoudige formulieren  
-\- en meer ...
+- Volledig responsive (goede weergave op mobiele apparaten)  
+- Het aanmaken van berichten of pagina's zonder enige kennis van html of css  
+- Verzamelingen toevoegen (personen in uw organisatie tonen, portfolio, etc.)  
+- Meldingen tonen die kunnen verborgen worden  
+- Eenvoudige formulieren  
+- en meer ...
 
 Bekijk mijn [GitHub portfolio](https://github.lennertderyck.be/) voor voorbeelden van mijn werk
 
@@ -187,7 +51,7 @@ Bekijk mijn [GitHub portfolio](https://github.lennertderyck.be/) voor voorbeelde
 De kostprijs wordt bepaald door een aantal factoren, waaronder het doel en de kwaliteit die u als klant wilt.
 
 Ik werk op twee manieren:  
-\- per uur aan een vast bedrag.  
-\- aan een vooraf besproken prijs waar na, afhankelijk van de prijs, een aantal veranderingen kunnen doorgevoerd worden tijdens het ontwerpen.
+- per uur aan een vast bedrag.  
+- aan een vooraf besproken prijs waar na, afhankelijk van de prijs, een aantal veranderingen kunnen doorgevoerd worden tijdens het ontwerpen.
 
 > Voor organisaties en dergelijke kan een andere prijs worden afgesproken.

@@ -30,16 +30,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600|Overpass+Mono:400,600,700|Overpass:300,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     
     <!-- local assets -->
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body data-sesam-target="burgerMenu">
     <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
-    <div id="page">
+    <div id="page" class="animated fadeIn slow">
         <header class="py-5">
     <div class="container d-flex flex-row align-items-center justify-content-between">
-        <svg data-label="logoLdr" width="250px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 390.5 86.85">
+        <a href="/">
+            <svg data-label="logoLdr" width="250px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 390.5 86.85">
     <title>Logo Lennert De Ryck</title>
     <g data-name="Laag 2">
         <g data-name="Laag 1">
@@ -49,13 +51,24 @@
         </g>
     </g>
 </svg>
+        </a>
+        <div class="ml-4">
+            <div data-label="burgerMenu" data-sesam-trigger="burgerMenu">
+    <div class="burger-bun">
+        <span class="top"></span>
+        <span class="bottom"></span>
+    </div>
+    <div class="burger-label text-modern md fontw-800"> menu </div>
+</div>
+        </div>
     </div>
 </header>
         <main>
-            <div id="pageContent">
+            <div id="pageContent" class="">
                 <section class="section-ignore container d-flex align-items-center" data-label="homeHero">
     <div class="my-5">
         <h2 class="fontw-500">Jong grafisch geweld,<br>Grote dromen, en passie<br>voor design &amp; code</h2>
+        <a href="/over" class="text-modern">Lees meer</a>
     </div>
 </section>
 <section>
@@ -283,14 +296,19 @@
                 <p class="widget-text-subtitle text-modern md mb-2">Laat iets achter na de piep</p>
             </div>
             <div class="col-12 col-md-8">
-                <div class="form-group">
+                <div class="form-group mb-4">
+                    <label for="homeFormName">naam</label>
+                    <input type="text" class="form-control" id="homeFormName">
+                </div>
+                <div class="form-group mb-4">
                     <label for="homeFormEmail">email</label>
                     <input type="email" class="form-control" id="homeFormEmail">
                 </div>
                 <div class="form-group form-control-textarea">
-                    <label for="homeFormEmail">bericht</label>
-                    <textarea class="form-control" rows="2"></textarea>
+                    <label for="homeFormMessage">bericht</label>
+                    <textarea class="form-control" id="homeFormMessage" rows="2"></textarea>
                 </div>
+                <a class="btn" href="#">verzenden</a>
             </div>
         </div>
     </div>
@@ -298,21 +316,51 @@
 
             </div>
         </main>
-        <footer class="mt-5 p-3">
+        <div data-label="footerWidgets" class="mt-5 d-none">
+    <div class="container container-xl">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div data-label="widget-text">
+    <h4 class="widget-text-title mb-1">Wat ik doe</h4>
+    <p class="widget-text-subtitle text-modern md mb-2">Diensten</p>
+    <p>Tegenwoordig hou ik me vooral bezig met webdesign, maar ook drukwerk blijft een passie!</p>
+    <a class="btn" href="#">Ontdek wat ik doe</a>
+</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div data-label="widget-text">
+    <h4 class="widget-text-title mb-1">Over mij</h4>
+    <p class="widget-text-subtitle text-modern md mb-2">Bio</p>
+    <p>Een jong grafisch designer die zich een weg baant door de grafische wereld.</p>
+    <a class="btn" href="#">Kom meer te weten</a>
+</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div data-label="widget-text">
+    <h4 class="widget-text-title mb-1">Praktisch</h4>
+    <p class="widget-text-subtitle text-modern md mb-2">Meer info</p>
+    <p>Je zou graag met mij in zee gaan? Fantastisch! Dan vind je hier alle info die je nodig hebt.</p>
+    <a class="btn" href="#">Meer lezen</a>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="p-3">
     <div class="container container-xl">
         <h4 class="mb-1 fontw-300">#THINKBEYONDTHEBOX</h4>
         <p class="text-modern xsm mb-0">© 2020 Lennert De Ryck  ・ Alle rechten voorbehouden  ⎥   <a href="/privacy">Privacy</a>  ・  <a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a></p>
     </div>
 </footer>
     </div>
-    <div class="ml-4" data-label="burgerMenu" data-sesam-trigger="burgerMenu">
+    <div id="menuMain" class="lvl-9 d-flex flex-column">
+    <div data-label="burgerMenu" data-sesam-trigger="burgerMenu">
     <div class="burger-bun">
         <span class="top"></span>
         <span class="bottom"></span>
     </div>
-    <div class="burger-label text-modern md fontw-800">menu</div>
+    <div class="burger-label text-modern md fontw-800"> sluiten </div>
 </div>
-<div id="menuMain" class="lvl-9 d-flex flex-column">
     <nav class="mb-auto">
         <ul>
             <li>
@@ -331,7 +379,7 @@
                 </a>
             </li>
             <li>
-                <a href="/contact">
+                <a href="/contact-beta">
                     <h3 class="text-left fontw-400">Contact</h3>
                 </a>
             </li>
@@ -340,7 +388,10 @@
     <div class="row">
         <div class="col">
             <p class="text-modern text-left small text-color-3">volg mij</p>
-            <div class="w-fit mr-auto">
+            <div class="w-fit mr-auto" data-label="socialIcons">
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/lenndertderyck/">
+                    <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1582830610/LOGO_LINKEDIN_gw9qtp.svg" alt="">
+                </a>
                 <a target="_blank" rel="noopener" href="https://www.facebook.com/lennertderyck.grafischontwerp/">
                     <img class="mr-3" src="https://res.cloudinary.com/lennertderyck/image/upload/v1581451871/LOGO_FACEBOOK_msbslu.svg" alt="">
                 </a>
@@ -378,7 +429,7 @@
     
 
     
-
+        <li>Samenwerken?</li>
     
 
     
@@ -386,7 +437,11 @@
     
 
     
-        <li>Over mij</li>
+
+    
+
+    
+        <li>Hallo!</li>
     
 
     
