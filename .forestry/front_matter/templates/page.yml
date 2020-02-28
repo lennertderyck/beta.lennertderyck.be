@@ -1,0 +1,31 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: boolean
+  name: titlebar
+  label: titlebar
+- type: text
+  name: ft-image
+  label: ft-image
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subTitle
+  label: subTitle
+- type: text
+  name: permalink
+  label: permalink
+- type: boolean
+  name: add-to-menu
+  label: add-to-menu
+- type: boolean
+  name: fullWidth
+  label: fullWidth
+- type: text
+  name: short-desc
+  label: short-desc
