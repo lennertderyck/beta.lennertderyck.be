@@ -9,6 +9,7 @@ fields:
 - type: text
   name: title
   label: Title
+  description: If custom title is empty this will be displayed.
 - name: customTitle
   type: text
   config:
