@@ -5,12 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: boolean
-  name: titlebar
-  label: titlebar
-- type: text
-  name: ft-image
-  label: ft-image
+  hidden: true
 - type: text
   name: title
   label: title
@@ -19,13 +14,22 @@ fields:
   label: subTitle
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
+- type: text
+  name: short-desc
+  label: Short description
+- type: boolean
+  name: titlebar
+  label: titlebar
+  hidden: true
+- type: text
+  name: ft-image
+  label: ft-image
+  hidden: true
 - type: boolean
   name: add-to-menu
   label: add-to-menu
+  hidden: true
 - type: boolean
   name: fullWidth
-  label: fullWidth
-- type: text
-  name: short-desc
-  label: short-desc
+  label: Full width
