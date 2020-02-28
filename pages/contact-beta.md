@@ -8,9 +8,9 @@ subTitle: Laat een berichtje achter
 permalink: Contact-beta
 add-to-menu: true
 fullWidth: false
-short-desc: 
----
+short-desc: ''
 
+---
 <div class="row">
   <div class="col-12">
     <form action="">
@@ -38,5 +38,3 @@ short-desc:
     </form>
   </div>
 </div>
-
-
