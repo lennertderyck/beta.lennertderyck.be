@@ -16,7 +16,7 @@ Dat mijn naam Lennert is, had je waarschijnlijk al vernomen ;). Sinds 2012 stude
 
 29 juli ’17 studeerde ik af aan [EDUGO Campus Glorieux t.i.]( "https://www.edugo.be/secundair-onderwijs/glorieux/studieaanbod/?study=48") met een diploma Grafische/Printmedia en vervolgens zette ik de stap naar het hoger.
 
-Tot juni 2019 volgde ik Crossmedia Ontwerp, maar toch voelde ik mij niet op mijn plaats. Ik veranderde naar het[ graduaat Programming / Front-end-development]( "https://www.arteveldehogeschool.be/opleidingen/graduaat/programmeren") (eveneens aan Artevelde te Mariakerke en vond mijn tweede passie, code.
+Tot juni 2019 volgde ik Crossmedia Ontwerp, maar toch voelde ik mij niet op mijn plaats. Ik veranderde naar het [graduaat Programming / Front-end-development]( "https://www.arteveldehogeschool.be/opleidingen/graduaat/programmeren") (eveneens aan Artevelde te Mariakerke en vond mijn tweede passie, code.
 
 Ik hou van goed design, mooie illustraties, verbluffende foto’s en clean code; Dit met een hele hoop passie voor het vak.
 
