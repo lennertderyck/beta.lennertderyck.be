@@ -1,0 +1,44 @@
+---
+label: WIDGET - page
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: '200'
+  label: Body
+- name: buttonShow
+  type: boolean
+  label: Button
+  default: true
+- name: buttonLabel
+  type: text
+  config:
+    required: false
+  label: Button label
+  showOnly:
+    field: buttonShow
+    value: true
+- name: buttonHref
+  type: text
+  config:
+    required: false
+  label: Button href
+  showOnly:
+    field: buttonShow
+    value: true
