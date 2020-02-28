@@ -34,8 +34,6 @@ subTitle: ''
 short-desc: ''
 
 ---
-### OVER
-
 Ons privacybeleid is simpel, uw gegevens zijn veilig.  
 Doch zijn wij verplicht u hier goed over te informeren. Daarom houden we het eenvoudig en straight-forward.
 
