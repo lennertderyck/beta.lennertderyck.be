@@ -9,6 +9,12 @@ fields:
 - type: text
   name: title
   label: Title
+- name: customTitle
+  type: text
+  config:
+    required: false
+  label: Custom title
+  description: Display another title than {{ page.title }}
 - type: text
   name: subTitle
   label: Subtitle
