@@ -32,6 +32,7 @@ more_settings:
 customTitle: ''
 subTitle: ''
 short-desc: ''
+pageWidgets: []
 
 ---
 Ons privacybeleid is simpel, uw gegevens zijn veilig.  

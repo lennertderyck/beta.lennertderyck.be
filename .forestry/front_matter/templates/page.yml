@@ -50,3 +50,4 @@ fields:
   label: Full width
 pages:
 - pages/over.md
+- pages/privacy.md
