@@ -5,7 +5,8 @@ fields:
 - name: pageWidgets
   type: blocks
   label: Page widgets
-  template_types: []
+  template_types:
+  - widget-page
   config:
     min: 
     max: '3'
