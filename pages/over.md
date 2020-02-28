@@ -1,7 +1,8 @@
 ---
 layout: page
 titlebar: true
-title: Hallo!
+title: Over mij
+customTitle: Hallo!
 subTitle: me even voorstellen
 permalink: "/over"
 add-to-menu: true

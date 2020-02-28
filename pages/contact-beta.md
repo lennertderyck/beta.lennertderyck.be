@@ -2,7 +2,8 @@
 layout: page
 titlebar: true
 ft-image: ''
-title: Samenwerken?
+title: Contact [beta]
+customTitle: Samenwerken?
 subTitle: Laat een berichtje achter
 permalink: Contact-beta
 add-to-menu: true

@@ -5,7 +5,11 @@ layout   : default
     <div class="row">
         <div class="col-12 col-lg-4">
             <h1 class="page-title fontw-300">
-                {{ page.title }}
+                {% if page.customTitle != '' %}
+                    {{ page.customTitle }}
+                {% else %}
+                    {{ page.title }}
+                {% endif %}
             </h1>
             <p class="page-subtitle text-modern md mb-5 mb-lg-0">
                 {{ page.subTitle }}
