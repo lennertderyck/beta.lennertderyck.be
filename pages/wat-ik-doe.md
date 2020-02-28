@@ -46,7 +46,7 @@ Enkele van deze diensten zijn:
 
 Ik leg wel graag de nadruk op kleinere websites aangezien de systemen eerder geschikt zijn voor kleinschaligere projecten waar content niet dynamisch geladen wordt (gepersonaliseerde content voor de gebruiker) of waar maar een kleiner aantal pagina's of posts bij worden aangemaakt.
 
-Het is dus ideaal om je portfolio te tonen, voor bloggers of vloggers, persoonlijke websites en meer.
+Het is dus ideaal om je portfolio te tonen, voor bloggers of vloggers, persoonlijke websites, sites met een kleiner aantal bezoekers en meer ...
 
 ##### Folders / boekjes / magazines
 
