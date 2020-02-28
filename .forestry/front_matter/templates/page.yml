@@ -40,7 +40,12 @@ fields:
 - type: boolean
   name: fullWidth
   label: Full width
+- name: pageWidgets
+  type: blocks
+  label: Page widgets
+  template_types: []
+  config:
+    min: 
+    max: '3'
 pages:
 - pages/contact-beta.md
-- pages/privacy.md
-- pages/wat-ik-doe.md
