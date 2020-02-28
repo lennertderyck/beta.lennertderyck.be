@@ -42,4 +42,5 @@ fields:
   label: Full width
 pages:
 - pages/contact-beta.md
+- pages/privacy.md
 - pages/wat-ik-doe.md

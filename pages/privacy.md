@@ -29,6 +29,9 @@ widgets-bottom: false
 more_settings:
   titlebar: true
   fullWidth: false
+customTitle: ''
+subTitle: ''
+short-desc: ''
 
 ---
 ### OVER
