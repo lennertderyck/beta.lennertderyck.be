@@ -8,26 +8,6 @@ titlebar: true
 add-to-menu: false
 fullWidth: false
 widgets: true
-widget-settings:
-  widget-blocks:
-  - template: widget
-    title: Stack login
-    subtitle: aanvragen
-    content: U kan een login aanvragen als u klant bent
-    button-label: Aanvragen
-    button-url: "/contact/form"
-    show-button: true
-redirect_plugin:
-  redirect_to: ''
-  redirect_from: ''
-widgets-bottom: false
-widget-blocks: []
-top-widget: ''
-more_settings:
-  titlebar: false
-  centered-titlebar: false
-  add-to-menu: false
-  fullWidth: false
 published: false
 
 ---
