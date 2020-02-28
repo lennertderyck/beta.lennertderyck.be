@@ -4,9 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-pages
+- type: directory
+  path: pages
   label: Pages
   create: all
+  match: "**/*"
 - type: heading
   label: Andere
 - type: directory
