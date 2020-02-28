@@ -48,3 +48,5 @@ fields:
 - type: boolean
   name: fullWidth
   label: Full width
+pages:
+- pages/over.md

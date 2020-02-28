@@ -10,6 +10,8 @@ ft-image: ''
 fullWidth: false
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
+buttonShow: true
+pageWidgets: []
 
 ---
 Dat mijn naam Lennert is, had je waarschijnlijk al vernomen ;). Sinds 2012 studeer ik in het grafisch vakgebied en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? Zelfstandig grafisch vormgever worden en daarbovenop ga ik voor een opleiding leerkracht secundair Grafische / Print Media, om les te kunnen geven aan 2e en 3e graad en eventueel in het hoger onderwijs.
