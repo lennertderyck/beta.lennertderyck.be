@@ -13,6 +13,49 @@ customTitle: ''
 pageWidgets: []
 
 ---
+Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor drukwerk en digitale media (banners etc. voor social media en dergelijke).
+
+Nu heb ik de stap gezet naar webdesign en -development.
+
+### Diensten
+
+##### Componenten
+
+Zijn er bepaalde onderdelen op je website die wat opfrissing nodig hebben of niet goed werken? Of heb je een traag werkende site.
+
+Je kan kiezen dat ik je voorzie van enkel het visual design, puur het ontwerp dus, of ik kan het ontwerp ook verder uitwerken en implementeren.
+
+Enkele voorbeelden zijn de header, navigatie, footer, typografie, ...
+
+Geen idee waar te beginnen, of hoor je gewoon graag eens wat ik je voor je kan betekenen? Je kan me altijd iets laten weten via de [contactpagina]()
+
+##### Een blog of kleine site
+
+Naast enkele kleine delen kan ik ook een blog voor je uitwerken of zelfs een (kleine) volledige site.
+
+Hierbij maak ik gebruik van enkele gratis diensten die ik tot mijn beschikking heb zodat de kosten laag blijven, maar ik voorzie je van een uniek eindresultaat.
+
+Enkele van deze diensten zijn:
+
+* Eleventy of Jekyll
+* Forestry
+* Cloudinary
+* Netlify
+* Bootstrap
+* ...
+
+Ik leg wel graag de nadruk op kleinere websites aangezien de systemen eerder geschikt zijn voor kleinschaligere projecten waar content niet dynamisch geladen wordt (gepersonaliseerde content voor de gebruiker) of waar maar een kleiner aantal pagina's of posts bij worden aangemaakt.
+
+Het is dus ideaal om je portfolio te tonen, voor bloggers of vloggers, persoonlijke websites en meer.
+
+##### Folders / boekjes / magazines
+
+\[content verder aanvullen\]
+
+**\[ OLD CONTENT BELOW \]**
+
+Ben je niet zeker of dit wel iets voor jou is? Neem dan zeker [contact](/contact) met me op en we bespreken samen je opties!
+
 Het voornaamste wat ik doe is grafisch ontwerp, zowel drukwerk als digitaal of print. De productie van de ontwerpen neem ik niet voor mijn rekening, ik zal enkel de bestanden aanleveren. Daarbij is het ook mogelijk documenten te laten controleren en voorzien van de juiste eigenschappen om het te kunnen publiceren.
 
 De aangeleverde bestanden zullen voldoen aan de basisvoorwaarden die de meeste bedrijven opleggen. Indien er toch speciale voorwaarden zijn waar de bestanden moeten aan voldoen raden wij u aan dit van in het begin door te geven, zo kunnen mogelijke problemen vermeden worden.
@@ -27,7 +70,7 @@ Bent u niet zeker op welk materiaal u wilt drukken (papier, karton, stickervelle
 
 Ik doe geen fotografie op vraag. Wanneer beelden vereist zijn voor een job is het echter mogelijk dat ik zelf beelden aanlever. Deze worden dan ook verrekend bij de kostenberekening.
 
-Op **[Unsplash](https://unsplash.com/@lennertderyck)** vind je mij beelden die je gratis voor commercieel kan gebruiken.
+Op [**Unsplash**](https://unsplash.com/@lennertderyck) vind je mij beelden die je gratis voor commercieel kan gebruiken.
 
 ### WEBDESIGN
 
@@ -37,12 +80,12 @@ Ook het laten ontwikkelen van een volledige website voor persoonlijk gebruik, ee
 
 ##### FUNCTIONALITEITEN
 
-- Volledig responsive (goede weergave op mobiele apparaten)  
-- Het aanmaken van berichten of pagina's zonder enige kennis van html of css  
-- Verzamelingen toevoegen (personen in uw organisatie tonen, portfolio, etc.)  
-- Meldingen tonen die kunnen verborgen worden  
-- Eenvoudige formulieren  
-- en meer ...
+* Volledig responsive (goede weergave op mobiele apparaten)
+* Het aanmaken van berichten of pagina's zonder enige kennis van html of css
+* Verzamelingen toevoegen (personen in uw organisatie tonen, portfolio, etc.)
+* Meldingen tonen die kunnen verborgen worden
+* Eenvoudige formulieren
+* en meer ...
 
 Bekijk mijn [GitHub portfolio](https://github.lennertderyck.be/) voor voorbeelden van mijn werk
 
@@ -52,8 +95,9 @@ Bekijk mijn [GitHub portfolio](https://github.lennertderyck.be/) voor voorbeelde
 
 De kostprijs wordt bepaald door een aantal factoren, waaronder het doel en de kwaliteit die u als klant wilt.
 
-Ik werk op twee manieren:  
-- per uur aan een vast bedrag.  
-- aan een vooraf besproken prijs waar na, afhankelijk van de prijs, een aantal veranderingen kunnen doorgevoerd worden tijdens het ontwerpen.
+Ik werk op twee manieren:
+
+* per uur aan een vast bedrag.
+* aan een vooraf besproken prijs waar na, afhankelijk van de prijs, een aantal veranderingen kunnen doorgevoerd worden tijdens het ontwerpen.
 
 > Voor organisaties en dergelijke kan een andere prijs worden afgesproken.
