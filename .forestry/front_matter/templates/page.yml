@@ -49,6 +49,7 @@ fields:
   name: fullWidth
   label: Full width
 pages:
+- pages/custom-editable/contact.html
 - pages/over.md
 - pages/privacy.md
 - pages/wat-ik-doe.md
