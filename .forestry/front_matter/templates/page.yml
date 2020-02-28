@@ -2,6 +2,13 @@
 label: Page
 hide_body: false
 fields:
+- name: pageWidgets
+  type: blocks
+  label: Page widgets
+  template_types: []
+  config:
+    min: 
+    max: '3'
 - type: text
   name: layout
   label: layout
@@ -40,12 +47,5 @@ fields:
 - type: boolean
   name: fullWidth
   label: Full width
-- name: pageWidgets
-  type: blocks
-  label: Page widgets
-  template_types: []
-  config:
-    min: 
-    max: '3'
 pages:
 - pages/contact-beta.md
