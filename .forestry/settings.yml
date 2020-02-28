@@ -5,7 +5,7 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: pages
+  path: pages/cms-editable
   label: Pages
   create: all
   match: "**/*"
