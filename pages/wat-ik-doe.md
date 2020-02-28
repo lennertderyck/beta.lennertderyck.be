@@ -21,7 +21,7 @@ Nu heb ik de stap gezet naar webdesign en -development.
 
 ##### Componenten
 
-Zijn er bepaalde onderdelen op je website die wat opfrissing nodig hebben of niet goed werken? Of heb je een traag werkende site.
+Zijn er bepaalde onderdelen op je website die wat opfrissing nodig hebben of niet goed werken? Of heb je een traag werkende site?
 
 Je kan kiezen dat ik je voorzie van enkel het visual design, puur het ontwerp dus, of ik kan het ontwerp ook verder uitwerken en implementeren.
 
