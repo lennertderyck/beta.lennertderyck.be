@@ -21,7 +21,7 @@ fields:
   label: Subtitle
 - type: text
   name: permalink
-  label: Permalink
+  label: lennertderyck.be/...
 - type: text
   name: short-desc
   label: Short description
