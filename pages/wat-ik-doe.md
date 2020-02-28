@@ -9,6 +9,7 @@ add-to-menu: true
 fullWidth: false
 short-desc: De diensten die ik aanbied, zoals het ontwerpen van logo's, banners of
   omslagen, ...
+customTitle: ''
 
 ---
 Het voornaamste wat ik doe is grafisch ontwerp, zowel drukwerk als digitaal of print. De productie van de ontwerpen neem ik niet voor mijn rekening, ik zal enkel de bestanden aanleveren. Daarbij is het ook mogelijk documenten te laten controleren en voorzien van de juiste eigenschappen om het te kunnen publiceren.
