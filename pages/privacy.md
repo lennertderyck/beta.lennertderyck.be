@@ -29,8 +29,8 @@ widgets-bottom: false
 more_settings:
   titlebar: true
   fullWidth: false
-customTitle: GDPR & cookies, jum
-subTitle: ''
+customTitle: ''
+subTitle: GDPR & cookies, jum
 short-desc: ''
 pageWidgets: []
 
