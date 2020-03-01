@@ -9,8 +9,31 @@ permalink: Contact-beta
 add-to-menu: true
 fullWidth: false
 short-desc: ''
+pageWidgets:
+- template: widget-page
+  buttonShow: true
+  title: Mail me
+  subtitle: Direct mailen
+  body: Antwoord binnen een paar uur tot 2 dagen
+  buttonLabel: Mailen
+  buttonHref: hello@lennertderyck.be?subject=Hallo!
+- template: widget-page
+  buttonShow: true
+  title: Linked In
+  subtitle: Zakelijk
+  body: Antwoord binnen een paar uur
+  buttonLabel: Linked In
+  buttonHref: https://www.linkedin.com/in/lenndertderyck/
+- template: widget-page
+  buttonShow: true
+  title: Messenger
+  body: Antwoord binnen een paar uur
+  subtitle: Let's have a chat
+  buttonHref: https://www.messenger.com/t/1997323257173637
+  buttonLabel: Messenger
 
 ---
+
 <div class="row">
   <div class="col-12">
     <form action="">

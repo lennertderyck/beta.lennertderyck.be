@@ -4,14 +4,14 @@ layout   : default
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-lg-4">
-            <h1 class="page-title fontw-300">
+            <h1 class="page-title fontw-400">
                 {% if page.customTitle != '' %}
                     {{ page.customTitle }}
                 {% else %}
                     {{ page.title }}
                 {% endif %}
             </h1>
-            <p class="page-subtitle text-modern md mb-5 mb-lg-0">
+            <p class="page-subtitle text-modern mb-5 mb-lg-0 fontw-900">
                 {{ page.subTitle }}
             </p>
         </div>
@@ -29,17 +29,24 @@ layout   : default
             </div>
         </div>
     {% endif %}
+    <h2>{{sou}}</h2>
+    <h1></h1>
     <div data-label="pageWidgets">
         <div class="row">
-          <div class="col-12 col-md-4 mb-lg-0 mb-5">
-              {% include widget-text.html title="Mail me" subTitle="direct contact" content="Sla een stap over en mail me rechtstreeks" btnTitle="Mailen" btnUrl="mailto:hello@lennertderyck.be?subject=Hallo!" %}
-          </div>
-          <div class="col-12 col-md-4 mb-lg-0 mb-5">
-              {% include widget-text.html title="Linked In" subTitle="Proffesioneel" content="Chatten via Linked In" btnTitle="Linked in" btnUrl="#" %}
-          </div>
-          <div class="col-12 col-md-4 mb-lg-0 mb-5">
-              {% include widget-text.html title="Messenger" subTitle="Let's have a chat" content="Ook via Facebook kan je een berichtje achterlaten" btnTitle="Messenger" btnUrl="#" %}
-          </div>
+            {% assign pageWidgetsAmount = page.pageWidgets.size | plus: 0 %}
+            {% if pageWidgetsAmount == 1 %}
+                {% for widget in page.pageWidgets %}
+                    <div class="col-12 col-md-{{ 12 | divided_by: 1}} mb-lg-0 mb-5">
+                        {% include widget-text.html title="Mail me" subTitle="direct contact" content="Sla een stap over en mail me rechtstreeks" btnTitle="Mailen" btnUrl="mailto:hello@lennertderyck.be?subject=Hallo!" %}
+                    </div>
+                {% endfor %}
+            {% elsif pageWidgetsAmount == 2 %}
+                {% for widget in page.pageWidgets %}
+                    <div class="col-12 col-md-{{ 12 | divided_by: 2}} mb-lg-0 mb-5">
+                        {% include widget-text.html title="Mail me" subTitle="direct contact" content="Sla een stap over en mail me rechtstreeks" btnTitle="Mailen" btnUrl="mailto:hello@lennertderyck.be?subject=Hallo!" %}
+                    </div>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>
