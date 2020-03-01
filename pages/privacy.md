@@ -30,25 +30,25 @@ more_settings:
   titlebar: true
   fullWidth: false
 customTitle: ''
-subTitle: ''
+subTitle: GDPR & cookies, jum
 short-desc: ''
 pageWidgets: []
 
 ---
 Ons privacybeleid is simpel, uw gegevens zijn veilig.  
-Doch zijn wij verplicht u hier goed over te informeren. Daarom houden we het eenvoudig en straight-forward.
+Doch is verplicht u hier goed over te informeren. Daarom hou ik het eenvoudig en straight-forward.
 
-> **Goed nieuws!** Sinds we overgestapt zijn naar een andere CMS (contentmanager) hebben we minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
+> **Goed nieuws!** Sinds ik overgestapt zijn naar een andere CMS (contentmanager) zijn er minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
 
 ### DOELEINDEN
 
-Wanneer u een formulier invult gaan we er vanuit dat u contact wil opnemen. Daarom worden uw gegevens doorgestuurd naar ons en houden we een kopietje op onze server, als backup wanneer er iets zou fout gaan. We bewaren deze gegevens zolang ze relevant zijn voor ons. Geeft u aan dat u geen klant meer wil zijn? Dan verwijderen wij uw gegevens. Enkel uw naam en e-mailadres bewaren uit zekerheid moesten we het nodig hebben.
+Wanneer u een formulier invult ga ik er vanuit dat u contact wil opnemen. Daarom worden uw gegevens doorgestuurd naar ons en wordt er een kopietje bewaart, als backup wanneer er iets zou fout gaan. Deze gegevens worden bewaart zolang ze relevant zijn. Geeft u aan dat u geen klant meer wil zijn? Dan worden u gegevens verwijderd. Enkel uw naam en e-mailadres worden bijgehouden uit zekerheid moest ik deze nodig hebben.
 
-Logischerwijs spelen wij uw gegevens nooit door aan derden. Deze zijn en blijven van u.
+Logischerwijs worden uw gegevens nooit door aan derden doorgegeven. Deze zijn en blijven van u.
 
 ### COOKIES
 
-Je zal ongetwijfeld al honderden keren de cookie-banner weggeklikt hebben op een website, het is echter verplicht u er goed over te informeren.
+Je zal ongetwijfeld al honderden keren de cookie-banner weg geklikt hebben op een website, het is echter verplicht u er goed over te informeren.
 
 Allereerst, als u het woord ‘cookie’ hoort denkt u waarschijnlijk aan hetgeen u verorbert bij een klein goestingske of het blauwe wezen in Sesamstraat. Wel de betekenis kon er niet verder van liggen. Cookies zijn kleine bestandjes die bewaard worden op uw eigen computer die een aantal dingen over u aangeven. Zo kunnen we je herkennen wanneer je terug komt, er voor zorgen dat je niet elke keer je login moet opgeven of voorkeuren bewaren.
 
