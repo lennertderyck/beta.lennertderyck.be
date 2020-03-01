@@ -52,7 +52,7 @@ Enkele functionaliteiten:
 
 * **Responsive** (goede weergave op mobiele apparaten)
 * **Content managing**: Aanmaken en bewerken van berichten of pagina's zonder technische kennis
-* **Collection**: een portfolio, personen binnen een organisatie of bedrijf, ...
+* **Collections**: een portfolio, personen binnen een organisatie of bedrijf, ...
 * **Meldingen** die getoond kunnen worden bij het uitvoeren van een handeling of om de bezoeker op de hoogte te brengen van iets
 * **Cookiebanner**, dit is vaak verplicht door de GDPR
 * **Formulieren** zodat bezoekers contact kunnen opnemen en dergelijke
