@@ -33,8 +33,6 @@ svg.feather {
     stroke-width: 2.7;
 }
 
-
-
 header {
     position: relative;
     z-index: 1000;
@@ -89,17 +87,6 @@ section:not(.section-ignore) {
     margin-bottom: 180px;
 }
 
-[data-label="pageWidgets"] {
-    margin-top: 110px;
-    margin-bottom: 110px;
-}
-
-[data-label="footerWidgets"] {
-    --py: 70px;
-    padding-top: var(--py);
-    padding-bottom: var(--py);
-    // background-color: $accent1;
-}
 
 footer {
     background-color: $accent1;

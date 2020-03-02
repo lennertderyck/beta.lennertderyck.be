@@ -52,6 +52,11 @@ main {
 section:not(.section-ignore) {
   margin-bottom: 180px; }
 
+footer {
+  background-color: #F1F2F3; }
+  footer *, footer h4 {
+    color: #9D9D9D; }
+
 [data-label="pageWidgets"] {
   margin-top: 110px;
   margin-bottom: 110px; }
@@ -61,10 +66,16 @@ section:not(.section-ignore) {
   padding-top: var(--py);
   padding-bottom: var(--py); }
 
-footer {
-  background-color: #F1F2F3; }
-  footer *, footer h4 {
-    color: #9D9D9D; }
+#contentBody blockquote {
+  padding: 20px;
+  background-color: #0170691f;
+  border-radius: 6px;
+  font-weight: 600;
+  border-left: 6px solid #0195a2; }
+  #contentBody blockquote :last-child {
+    margin-bottom: 0px; }
+  #contentBody blockquote + h3 {
+    margin-top: 38px; }
 
 .lvl-0 {
   z-index: 0 !important; }
@@ -2590,10 +2601,18 @@ h6 {
   .text-modern.xsm, #contentBody h5.xsm, .xsm.btn, .xsm.form-group {
     font-size: 65%; }
 
+#contentBody :first-child {
+  margin-top: 0; }
+#contentBody h3 {
+  margin-top: 29px; }
+  #contentBody h3 + h5 {
+    margin-top: 0px; }
+#contentBody h5 {
+  margin-bottom: 13px; }
 #contentBody h3, #contentBody h4, #contentBody h5 {
   color: #4A4A4A; }
 #contentBody p + h5, #contentBody p .text-modern, #contentBody p h5, #contentBody p .btn, #contentBody p .form-group {
-  margin-top: 30px;
+  margin-top: 19px;
   font-size: 16px; }
 #contentBody a:not(.btn) {
   position: relative; }
