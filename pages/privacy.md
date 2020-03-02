@@ -40,13 +40,13 @@ Doch is verplicht u hier goed over te informeren. Daarom hou ik het eenvoudig en
 
 > **Goed nieuws!** Sinds ik overgestapt zijn naar een andere CMS (contentmanager) zijn er minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
 
-### DOELEINDEN
+### Doeleinden
 
 Wanneer u een formulier invult ga ik er vanuit dat u contact wil opnemen. Daarom worden uw gegevens doorgestuurd naar ons en wordt er een kopietje bewaart, als backup wanneer er iets zou fout gaan. Deze gegevens worden bewaart zolang ze relevant zijn. Geeft u aan dat u geen klant meer wil zijn? Dan worden u gegevens verwijderd. Enkel uw naam en e-mailadres worden bijgehouden uit zekerheid moest ik deze nodig hebben.
 
 Logischerwijs worden uw gegevens nooit door aan derden doorgegeven. Deze zijn en blijven van u.
 
-### COOKIES
+### Cookies
 
 Je zal ongetwijfeld al honderden keren de cookie-banner weg geklikt hebben op een website, het is echter verplicht u er goed over te informeren.
 
@@ -54,36 +54,38 @@ Allereerst, als u het woord ‘cookie’ hoort denkt u waarschijnlijk aan hetgee
 
 Specifieker heb je cookies die worden opgeslagen door ons en door derden.
 
-Die door ons zijn die die er voor zorgen dat je maar één keer hoeft in te loggen of je geen last meer hebt van irritante banners.  
-Die van derden, daar hebben we minder controle over. Onder andere bewaart Facebook een cookie voor het gebruik van de chat-functie, Jetpack om te checken hoeveel bezoekers we krijgen en wat ze bekijken op onze site, en WordPress (zij zorgen er voor dat onze website correct werkt) voor het gebruiken van handige functies.
+Die door ons zijn die die er voor zorgen dat je maar één keer hoeft in te loggen of je geen last meer hebt van irritante banners.
 
-Er worden vast en zeker nog cookies bewaard, maar bovenstaande zijn de belangrijkste voor ons.
+Die van derden, daar hebben we minder controle over. Zo  bewaart Facebook bijvoorbeeld een cookie voor het gebruik van de chat-functie. Er worden uiteraard nog meer cookies bewaard.
 
-De gegevens die we ontvangen door door het gebruik van cookies zijn volledig anoniem en blijven zoals eerder vermeld binnenshuis.
+Ontvangen gegevens door het gebruik van cookies zijn volledig anoniem en blijven zoals eerder vermeld binnenshuis.
 
-##### SESSIE COOKIES
+##### Sessie cookies
 
 Sessiecookies zijn tijdelijk, en geldig tot wanneer je je browser afsluit, hierna worden ze verwijderd.
 
-##### PERMANENTE COOKIES
+##### Permanente cookies
 
 Deze cookies worden voor een tijdje bewaart, in principe zolang de uitgever van de website dat wilt. Hierdoor hoef je maar één keer aan te melden of moet je niet telkens die vervelende meldingen wegklikken.
 
-##### 3RD PARTY COOKIES
+##### 33rd Party Cookies
 
-Deze cookies worden geplaatst door diensten waar wij rechtstreeks gebruik van maken. Deze cookies zijn nodig om de de functies van die diensten goed te laten werken. Deze diensten kunnen zowel sessiecookies als permanente cookies plaatsten.
+Deze cookies worden geplaatst door diensten waar wij rechtstreeks gebruik van maken en zijn nodig om de de functies van die diensten goed te laten werken. Deze diensten kunnen zowel sessiecookies als permanente cookies plaatsten.
 
-##### TOESTEMMINGEN
+##### Toestemmingen
 
 Voor functionele cookies, de cookies die er voor zorgen dat de site überhaupt kan werken, hoeven we geen toestemming te vragen. Enkele voorbeelden zijn de banners die u weg klikt, sessiecookies, etc.
 
 Voor cookies die uw IP-adres registreren en het niet anonimiseren en voor andere specifieke informatie die wordt bijgehouden moeten we wel toestemming vragen. Dit gaat dan vooral om cookies die door derden worden geplaatst. Daarom worden diensten van derden sowieso geblokkeerd wanneer u aangeeft geen cookies te willen toestaan. U kan deze voorkeuren ten alle tijden aanpassen.
 
-### MAILING
+### Gebruik en bewaring
 
-Wanneer u uw e-mailadres opgeeft gebruiken wij dit enkel als direct communicatiemiddel, niet om commerciële boodschappen te verzenden.  
-We zullen u alleen mailen wanneer u ons mailt, om u op de hoogte te houden van de zaken of om een probleem te melden.
+##### Mailing
 
-### EIGENDOM
+Wanneer je een e-mailadres opgeeft wordt dit enkel gebruikt als direct communicatiemiddel, niet om commerciële boodschappen te verzenden. 
 
-Uw gegevens zijn uw eigendom, als u wenst deze te verwijderen kan u dit aangeven door te mailen naar hello@lennertderyck.be. Hou er dan wel rekening mee dat door uw gegevens te verwijderen u geen klant meer bij ons kan zijn tot zolang u ons weer hiertoe toegang verschaft aangezien wij niet meer kunnen communiceren met u.
+Je zal enkel gemaild worden wanneer je zelf contact opneemt, om je op de hoogte te houden van de zaken of om een probleem te melden.
+
+##### Eigendom
+
+Je gegevens zijn jouw eigendom, als je wenst deze te verwijderen kan je dit aangeven door te mailen naar hello@lennertderyck.be. Hou er dan wel rekening mee dat door uw gegevens te verwijderen ik je niet langer van dienst kan zijn zolang je hier weer toegang tot verschaft.
