@@ -42,7 +42,7 @@ Doch is verplicht u hier goed over te informeren. Daarom hou ik het eenvoudig en
 
 ### Doeleinden
 
-Wanneer u een formulier invult ga ik er vanuit dat u contact wil opnemen. Daarom worden uw gegevens doorgestuurd naar ons en wordt er een kopietje bewaart, als backup wanneer er iets zou fout gaan. Deze gegevens worden bewaart zolang ze relevant zijn. Geeft u aan dat u geen klant meer wil zijn? Dan worden u gegevens verwijderd. Enkel uw naam en e-mailadres worden bijgehouden uit zekerheid moest ik deze nodig hebben.
+Wanneer u een formulier invult ga ik er vanuit dat u contact wil opnemen. Daarom worden uw gegevens doorgestuurd naar ons en wordt er een kopietje bewaart, als backup wanneer er iets zou fout gaan. Deze gegevens worden bewaart zolang ze relevant zijn. Geeft u aan dat u geen klant meer wil zijn? Dan worden u gegevens verwijderd. Enkel je naam en e-mailadres worden bijgehouden uit zekerheid moest ik deze nodig hebben.
 
 Logischerwijs worden uw gegevens nooit door aan derden doorgegeven. Deze zijn en blijven van u.
 
