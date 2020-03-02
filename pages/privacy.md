@@ -78,7 +78,15 @@ Voor functionele cookies, de cookies die er voor zorgen dat de site überhaupt k
 
 Voor cookies die uw IP-adres registreren en het niet anonimiseren en voor andere specifieke informatie die wordt bijgehouden moeten we wel toestemming vragen. Dit gaat dan vooral om cookies die door derden worden geplaatst. Daarom worden diensten van derden sowieso geblokkeerd wanneer u aangeeft geen cookies te willen toestaan. U kan deze voorkeuren ten alle tijden aanpassen.
 
-### Gebruik en bewaring
+### Analythics
+
+Analythics laten het toe het gebruik van gebruikers op te volgen op een site. Zo is het mogelijk om te achterhalen via welk kanaal je op deze site terechtgekomen bent, welke pagina's bezocht worden en populair zijn en of deze site wel gebruiksvriendelijk is.
+
+##### Google Analythics
+
+Met deze dienst is het mogelijk om allerlei informatie te achterhalen van de gebruikers. Niet per individuele gebruiker, maar er wordt een model opgesteld over hoe deze site gebruikt wordt.
+
+##### Gebruik en bewaring
 
 ##### Mailing
 
