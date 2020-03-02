@@ -86,7 +86,7 @@ Analythics laten het toe het gebruik van gebruikers op te volgen op een site. Zo
 
 Met deze dienst is het mogelijk om allerlei informatie te achterhalen van de gebruikers. Niet per individuele gebruiker, maar er wordt een model opgesteld over hoe deze site gebruikt wordt.
 
-##### Gebruik en bewaring
+### Gebruik en bewaring
 
 ##### Mailing
 
