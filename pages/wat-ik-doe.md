@@ -57,13 +57,13 @@ Enkele functionaliteiten:
 * **Cookiebanner**, dit is vaak verplicht door de GDPR
 * **Formulieren** zodat bezoekers contact kunnen opnemen en dergelijke
 
-Natuurlijk is het niet mogelijk om hier alle functionaliteiten op te sommen maar dit zijn de meest voorkomende. 
+Natuurlijk is het niet mogelijk om hier alle functionaliteiten op te sommen maar dit zijn de meest voorkomende.
 
 Heb je toch speciale verzoeken of ben je niet zeker wat je nodig hebt? Neem dan zeker [contact](/contact) met me op en we bespreken samen je opties!
 
 ##### Folders / boekjes / magazines
 
-Je kan nog steeds bij me terecht voor drukwerk. Meer bepaald folders, boekjes, magazines, ... Alles wat eigenlijk uit meerdere pagina's bestaat en waar een bepaalde stijl doorheen het drukwerk moet lopen.
+Je kan nog steeds bij me terecht voor drukwerk. Meer bepaald folders, boekjes en magazines. Eigenlijk alles wat uit meerdere pagina's bestaat en waar een bepaalde stijl doorheen het drukwerk moet lopen.
 
 Voor meer informatie neem je best [contact](/contact) op.
 
