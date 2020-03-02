@@ -38,7 +38,7 @@ pageWidgets: []
 Ons privacybeleid is simpel, uw gegevens zijn veilig.  
 Doch is verplicht u hier goed over te informeren. Daarom hou ik het eenvoudig en straight-forward.
 
-> **Goed nieuws!** Sinds ik overgestapt zijn naar een andere CMS (contentmanager) zijn er minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
+> **Goed nieuws!** Sinds ik overgestapt ben naar een andere CMS (contentmanager) zijn er minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
 
 ### Doeleinden
 
