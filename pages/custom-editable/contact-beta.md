@@ -54,8 +54,9 @@ pageWidgets:
         <input type="text" class="form-control" id="contactFormSubject" placeholder="Zalmtoastjes en Orvallekes">
       </div>
       <div class="form-group form-control-textarea">
-          <label for="contactFormMessage">bericht</label>
-          <textarea class="form-control" id="contactFormMessage" rows="2"></textarea>
+        <label for="contactFormMessage">bericht</label>
+        <small class="d-block mb-3 fontw-700"><i class="fab fa-markdown"></i><span class="ml-1">Markdown supported</span></small>
+        <textarea class="form-control" id="contactFormMessage" rows="2"></textarea>
       </div>
       <a class="btn" href="#">verzenden</a>
     </form>

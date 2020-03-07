@@ -1,0 +1,15 @@
+.juicer-feed {
+    .referral {
+        display: none !important;
+    }
+}
+
+.j-stacker {
+    li.feed-item {
+        border-radius: 6px !important;
+        
+        &.juicer-ad {
+            display: none;
+        }
+    }
+}

@@ -41,8 +41,6 @@ sass:
 #  style: compressed
 
 collections:
-  repos:
-    output: true
   projects:
     output: true
   redirects:
@@ -53,7 +51,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "project"
+      layout: "page"
       widgets-bottom: false
   - scope:
       path: ""

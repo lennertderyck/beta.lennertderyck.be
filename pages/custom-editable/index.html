@@ -20,13 +20,13 @@ widgets-bottom: false
 <section>
     <div data-label="portfolioCards" class="first-test">
         {% for project in site.projects %}
-            <div class="card">
+            <a class="card" href="{{ project.url }}">
                 <img class="card-background" src="{{ project.ft-img }}" alt="">
                 <div class="card-body">
                     <h4 class="mb-1">{{ project.title }}</h4>
                     <p class="mb-0 text-modern md">{{ project.tags | first }}</p>
                 </div>
-            </div>
+            </a>
         {% endfor %}
     </div>
     <div class="container">

@@ -4,7 +4,7 @@ titlebar: true
 title: Social
 permalink: "/social"
 add-to-menu: false
-fullWidth: false
+fullWidth: true
 ft-image: ''
 redirect_plugin:
   redirect_to: ''
@@ -16,4 +16,4 @@ more_settings:
 
 ---
 <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
-<ul class="juicer-feed" data-feed-id="lennertderyck" data-gutter="50"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer</a></h1></ul>
+<ul class="juicer-feed" data-feed-id="lennertderyck" data-gutter="30"></ul>

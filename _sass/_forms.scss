@@ -4,16 +4,17 @@
     @extend .text-modern;
     font-size: 91% !important;
     color: $accent2;
-    border-bottom: 2px solid $accent2;
 
     label {
         margin: 0px;
         margin-right: 15px;
         cursor: text;
+        color: $accent3;
     }
 
     input.form-control, textarea.form-control {
         border: none;
+        border-bottom: 2px solid $accent2;
     }
 
     &.form-control-textarea {
@@ -28,7 +29,6 @@
 
 input.form-control, textarea.form-control {
     border: none;
-    border-bottom: 2px solid $accent2;
     border-radius: 0px;
     padding: 0px;
 

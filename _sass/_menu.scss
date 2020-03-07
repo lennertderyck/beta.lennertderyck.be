@@ -1,7 +1,7 @@
-$menu-main-w: 720px;
+$menu-main-w: 700px;
 #menuMain {
     --header-h: 148px;
-    --menu-main-w: 720px;
+    --menu-main-w: 700px;
     z-index: 1000;
     position: fixed;
     top: 0px;
@@ -74,7 +74,7 @@ body {
     
     &.sesam.sesam-hidden {
         #menuMain {
-            transform: translateX($menu-main-w - 20px);
+            transform: translateX($menu-main-w);
         }
     }
 
