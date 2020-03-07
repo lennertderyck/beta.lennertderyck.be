@@ -96,3 +96,22 @@ footer {
     }
 }
 
+[data-label="cookie"] {
+    width: 40px;
+    // background-color: burlywood;
+    position: fixed;
+    border-radius: 100%;
+    transition: all .3s ease;
+    z-index: 1000;
+}
+
+[data-label="cookieWall"] {
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+

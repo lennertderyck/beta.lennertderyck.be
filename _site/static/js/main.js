@@ -92,6 +92,45 @@ function createToast(title, message) {
     $(`[data-toast="toastIndex${toastIndex}"]`).toast('show');
 }
 
+const cookieImg = document.querySelector('[data-label="cookie"]');
+
+createCookie('cookieConsent')
+console.log(readCookie('cookieConsent'));
+if(readCookie('cookieConsent') != 'true') {
+    let img = document.createElement('img');
+    img.src ='https://res.cloudinary.com/lennertderyck/image/upload/v1583618012/COOKIE_bljwhf.png';
+    img.setAttribute('data-label', 'cookie');
+    document.body.appendChild(img);
+    
+    let cookieWall = document.createElement('div');
+    cookieWall.setAttribute('data-label', 'cookieWall');
+    document.body.appendChild(cookieWall);
+    
+    cookieWall.addEventListener('click', (event) => {
+        const button1 = document.querySelector('#staticBackdrop .modal-footer button:nth-child(1)');
+        const button2 = document.querySelector('#staticBackdrop .modal-footer button:nth-child(2)');
+    
+        if(event.target !== button1 && event.target !== button2 && event.target.href !== '') {
+            $('#staticBackdrop').modal('show');
+        };
+        
+        // Just add layer, then add cookie
+        
+        button1.onclick = createCookie('cookieConsent', true);
+        button2.onclick = createCookie('cookieConsent', true);
+    });
+    
+    document.onmousemove = (e) => {
+        const offset = 10;
+        let xPos = e.clientX, yPos = e.clientY;
+        img.style.top = `${yPos + offset}px`;
+        img.style.left = `${xPos + offset}px`;
+        // console.log(`mouse pos x: ${xPos}, y: ${yPos}`);
+    }
+}
+
+
+
 /* window.addEventListener('mousewheel', (() => {
     console.log('window.pageYOffset');
 }));

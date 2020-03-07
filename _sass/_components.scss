@@ -65,11 +65,38 @@
         margin-left: 6px;
         stroke-width: 2.2;
     }
+    
+    &-simple {
+        background-color: transparent;
+    }
 }
 
 // WIDGET TEXT
 [data-label="widget-text"] {
     .widget-text-title, .widget-text-subtitle {color: $accent6}
+}
+
+// MODALS
+.modal {
+    &-content {
+        border: none;
+        border-radius: 6px;
+        
+        .modal-header {
+            padding: 24px;
+            padding-bottom: 0;
+            border: inherit;
+        }
+        
+        .modal-body {
+            padding: 24px;
+            padding-bottom: 0;
+        }
+        
+        .modal-footer {
+            border: inherit;
+        }
+    }
 }
 
 @media (min-width: 576px) {}
