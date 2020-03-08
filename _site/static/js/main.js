@@ -94,7 +94,6 @@ function createToast(title, message) {
 
 const cookieImg = document.querySelector('[data-label="cookie"]');
 
-createCookie('cookieConsent')
 console.log(readCookie('cookieConsent'));
 if(readCookie('cookieConsent') != 'true') {
     let img = document.createElement('img');
@@ -116,8 +115,8 @@ if(readCookie('cookieConsent') != 'true') {
         
         // Just add layer, then add cookie
         
-        button1.onclick = createCookie('cookieConsent', true);
-        button2.onclick = createCookie('cookieConsent', true);
+        button1.onclick = createCookie('cookieConsent', true) && cookieWall.remove();
+        button2.onclick = createCookie('cookieConsent', true) && cookieWall.remove();
     });
     
     document.onmousemove = (e) => {
@@ -129,6 +128,11 @@ if(readCookie('cookieConsent') != 'true') {
     }
 }
 
+/**
+ * CONTENT TO MARKDOWN
+ */
+
+console.log(document.querySelectorAll('[markdown="1"]'))
 
 
 /* window.addEventListener('mousewheel', (() => {

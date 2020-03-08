@@ -4,6 +4,7 @@ titlebar: true
 ft-image: ''
 title: Wat ik doe
 subTitle: Diensten
+showCustomTitle: false
 permalink: wat-ik-doe
 add-to-menu: true
 fullWidth: false

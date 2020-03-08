@@ -91,6 +91,10 @@
         .modal-body {
             padding: 24px;
             padding-bottom: 0;
+            
+            > :last-child {
+                margin-bottom: 0;
+            }
         }
         
         .modal-footer {

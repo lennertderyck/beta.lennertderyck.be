@@ -65,6 +65,14 @@ a, a:hover {
             font-size: 16px;
         }
         
+        & + h4 {
+            margin-top: 29px;
+            
+            & + h5 {
+                margin-top: 0px;
+            }
+        }
+        
         a:not(.btn) {
             position: relative;
             &::after {

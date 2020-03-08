@@ -5,19 +5,23 @@ layout   : default
     <div class="row">
         <div class="col-12 col-lg-4">
             <h1 class="page-title fontw-400">
-                {% if page.customTitle != '' %}
-                    {{ page.customTitle }}
-                {% else %}
+                {% if page.showCustomTitle == false or page.showCustomTitle.blank or page.type == 'project' %}
                     {{ page.title }}
+                {% else %}
+                    {{ page.customTitle }}
                 {% endif %}
             </h1>
             <p class="page-subtitle text-modern mb-5 mb-lg-0">
-                {{ page.subTitle }}
+                {% if page.type == 'project' %}
+                    {{ page.tags | first }}
+                {% else %}
+                    {{ page.subTitle }}
+                {% endif %}
             </p>
         </div>
         {% unless page.fullWidth == true %} 
             <div class="col-12 col-lg-8" id="contentBody">
-                {{content }}
+                {{ content }}
             </div>
         {% endunless %}
     </div>
@@ -25,13 +29,10 @@ layout   : default
     {% if page.fullWidth == true %}
         <div class="row mt-5">
             <div class="col-12" id="contentBody">
-                {{ page.title }}
                 {{ content }}
             </div>
         </div>
     {% endif %}
-    <h2>{{sou}}</h2>
-    <h1></h1>
     <div data-label="pageWidgets">
         <div class="row">
             {% assign pageWidgetsAmount = page.pageWidgets.size | plus: 0 %}

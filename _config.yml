@@ -35,10 +35,10 @@ plugins:
   - jekyll-menus
 
 sass:
-  style: nested
+  # style: nested
 #  style: expanded
 #  style: compact
-#  style: compressed
+  style: compressed
 
 collections:
   projects:
@@ -53,6 +53,7 @@ defaults:
     values:
       layout: "page"
       widgets-bottom: false
+      type: project    
   - scope:
       path: ""
       type: "redirects"

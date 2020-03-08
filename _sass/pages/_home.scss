@@ -19,8 +19,6 @@
     padding: 60px 0;
     display: flex;
     align-items: center;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 35px;
     // z-index: 1001;
 
     &::-webkit-scrollbar {
@@ -38,8 +36,6 @@
         border-radius: 13px;
         transition: all .2s ease;
         transform-origin: center;
-
-        scroll-snap-align: start;
 
         &:first-child {
             margin-left: 35px;
@@ -67,6 +63,18 @@
             * {color: white;}
         }
     }
+}
+
+@media (max-width: 576px) {
+    [data-label="portfolioCards"] {
+        scroll-snap-type: x mandatory;
+        scroll-padding: 35px;
+    
+        .card {
+            scroll-snap-align: start;
+        }
+    }
+    
 }
 
 @media (min-width: 576px) {}

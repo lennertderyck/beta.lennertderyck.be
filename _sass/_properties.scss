@@ -4,9 +4,9 @@
     }
 }
 
-@for $i from 100 through 900 {
-    .fontw-#{$i} {
-      font-weight: $i !important;
+@for $i from 1 through 9 {
+    .fontw-#{$i}00 {
+      font-weight: $i*100 !important;
     }
 }
 
@@ -17,6 +17,17 @@
 
 .w-fit {
     width: fit-content;
+}
+
+.object-fit {
+  object-fit: cover;
+}
+
+.bd-radius-6 {
+  border-radius: 6px !important;
+}
+.bd-radius-15 {
+  border-radius: 15px !important;
 }
 
 .text-color-1 {color: $accent1 !important;}

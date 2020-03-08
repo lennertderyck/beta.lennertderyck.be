@@ -2,6 +2,8 @@
 layout: page
 titlebar: true
 title: Social
+subTitle: Instagram & Pintrest
+showCustomTitle: false
 permalink: "/social"
 add-to-menu: false
 fullWidth: true
