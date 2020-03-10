@@ -37,27 +37,28 @@ pageWidgets:
 <div class="row">
   <div class="col-12">
     <form action="https://forms.lennertderyck.be/setup/process.php" method="post" id="formContact">
-      <input type="hidden" name="form_tools_form_id" value="4" />
+      <input type="hidden" name="form_tools_initialize_form" value="1" />
+      <input type="hidden" name="form_tools_form_id" value="5" />
       <div class="form-group mb-4">
         <label for="contactFormName">naam</label>
-        <input type="text" class="form-control" id="contactFormName" placeholder="Fons Van Calleberghe">
+        <input type="text" name="name" class="form-control" id="contactFormName" placeholder="Fons Van Calleberghe">
       </div>
       <div class="form-group mb-4">
         <label for="contactFormEmail">email</label>
-        <input type="email" class="form-control" id="contactFormEmail" placeholder="willyfons@gmail.com">
+        <input type="email" name="email" class="form-control" id="contactFormEmail" placeholder="willyfons@gmail.com">
       </div>
       <div class="form-group mb-4">
         <label for="contactFormCompany">organisatie / bedrijf</label>
-        <input type="text" class="form-control" id="contactFormCompany" placeholder="Planeet Jamaica">
+        <input type="text" name="org" class="form-control" id="contactFormCompany" placeholder="Planeet Jamaica">
       </div>
       <div class="form-group mb-4">
         <label for="contactFormSubject">onderwerp</label>
-        <input type="text" class="form-control" id="contactFormSubject" placeholder="Zalmtoastjes en Orvallekes">
+        <input type="text" name="subject" class="form-control" id="contactFormSubject" placeholder="Zalmtoastjes en Orvallekes">
       </div>
       <div class="form-group form-control-textarea">
         <label for="contactFormMessage">bericht</label>
         <small class="d-block mb-3 fontw-700"><i class="fab fa-markdown"></i><span class="ml-1">Markdown supported</span></small>
-        <textarea class="form-control" id="contactFormMessage" rows="2"></textarea>
+        <textarea class="form-control" name="message" id="contactFormMessage" rows="2"></textarea>
       </div>
       <!-- <input class="btn" type="submit" value="Submit"> -->
       <!-- <a class="btn" href="#">verzenden</a> -->
