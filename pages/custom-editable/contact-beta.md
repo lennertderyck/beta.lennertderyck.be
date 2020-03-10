@@ -60,7 +60,7 @@ pageWidgets:
         <small class="d-block mb-3 fontw-700"><i class="fab fa-markdown"></i><span class="ml-1">Markdown supported</span></small>
         <textarea class="form-control" id="contactFormMessage" rows="2"></textarea>
       </div>
-      <a class="btn" href="#">verzenden</a>
+      <input class="btn" type="submit" value="Submit">
     </form>
   </div>
 </div>
