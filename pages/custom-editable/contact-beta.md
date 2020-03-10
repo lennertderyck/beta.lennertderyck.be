@@ -36,7 +36,7 @@ pageWidgets:
 
 <div class="row">
   <div class="col-12">
-    <form action="https://forms.lennertderyck.be/setup/process.php" method="post">
+    <form action="https://forms.lennertderyck.be/setup/process.php" method="post" id="formContact">
       <input type="hidden" name="form_tools_initialize_form" value="1"/>
       <input type="hidden" name="form_tools_form_id" value="3"/>
       <div class="form-group mb-4">
@@ -60,7 +60,9 @@ pageWidgets:
         <small class="d-block mb-3 fontw-700"><i class="fab fa-markdown"></i><span class="ml-1">Markdown supported</span></small>
         <textarea class="form-control" id="contactFormMessage" rows="2"></textarea>
       </div>
-      <input class="btn" type="submit" value="Submit">
+      <!-- <input class="btn" type="submit" value="Submit"> -->
+      <!-- <a class="btn" href="#">verzenden</a> -->
+      <button type="submit" class="btn" form="formContact" value="Submit">verzenden</button>
     </form>
   </div>
 </div>
