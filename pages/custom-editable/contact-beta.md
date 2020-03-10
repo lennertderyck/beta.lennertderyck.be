@@ -36,7 +36,9 @@ pageWidgets:
 
 <div class="row">
   <div class="col-12">
-    <form action="">
+    <form action="https://forms.lennertderyck.be/setup/process.php" method="post">
+    <input type="hidden" name="form_tools_initialize_form" value="1" />
+    <input type="hidden" name="form_tools_form_id" value="1" />
       <div class="form-group mb-4">
         <label for="contactFormName">naam</label>
         <input type="text" class="form-control" id="contactFormName" placeholder="Fons Van Calleberghe">
