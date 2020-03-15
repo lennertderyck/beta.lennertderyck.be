@@ -14,7 +14,8 @@ customTitle: ''
 pageWidgets: []
 
 ---
-> Lees meer over workshops en bijlessen!
+> Info over workshops en bijlessen!<a href="#"></a>
+
 
 Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor drukwerk en digitale media (banners etc. voor social media en dergelijke).
 
@@ -90,7 +91,7 @@ Hou er rekening mee dat het budget afhankelijk is van de eisen die je als klant 
 
 Voor meer info omtrent de prijs van een project kan je altijd [contact opnemen.]()
 
-### Workshops & bijlessen
+### Workshops
 
 De dag van vandaag is het internet niet meer weg te denken uit onze levens. Dagelijks gebruiken we het, zelfs zonder dat we het weten.
 
