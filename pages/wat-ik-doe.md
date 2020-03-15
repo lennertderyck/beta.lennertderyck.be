@@ -100,18 +100,20 @@ Helaas is de kennis hiervan beperkt tot de ontwikkelaars en de studenten die het
 
 Sinds dit jaar geef ik ook workshops omtrent het opzetten van een website. De workshop is heel laagdrempelig waardoor er iedereen aan kan deelnemen. Ook het materiaal dat je er voor nodig hebt heeft vrijwel iedereen voor handen.
 
-Het enige dat je nodig hebt om te starten is ...
+Daarbij kan je kiezen uit verschillende niveaus in het geval dat je graag van een uitdaging houdt of al voorkennis hebt.
+
+Meerdere niveau's kunnen gegeven worden in een enkele workshop of gespreid over verschillende workshops of bepaalde onderdelen van een niveau kunnen weg gelaten worden.
+
+**Faciliteiten workshops**
+
+Het enige dat ik nodig heb is een **beamer** zodat ik goed instructies kan uitleggen.
+
+Het enige dat deelnemers nodig hebben ...
 
 * Een Windows (minstens [Windows 7](https://support.microsoft.com/nl-be/help/13443/windows-which-version-am-i-running)) of een Apple (minstens [macOs Yosemite](https://support.apple.com/nl-nl/HT210717)) computer (bij voorkeur per persoon die deelneemt)
 * Microsoft [Visual Studio Code](https://code.visualstudio.com/) (gratis)
 
 De vereisten zijn dus zeer laag.
-
-Daarbij kan je kiezen uit verschillende niveaus in het geval dat je graag van een uitdaging houdt of al voorkennis hebt.
-
-Meerdere niveau's kunnen gegeven worden in een enkele workshop of gespreid over verschillende workshops
-
-##### Faciliteiten
 
 ##### Starter
 
@@ -119,7 +121,7 @@ Meerdere niveau's kunnen gegeven worden in een enkele workshop of gespreid over 
 
 Hier beginnen we met de basis van het web. We zien hoe je heel simpel een website schrijft zonder voorkennis.
 
-Je leert hoe je tekst plaatst, afbeelding invoegt en kleuren toepast. Daarbij zie je ook hoe je kleuren en achtergrond toevoegt. 
+Je leert hoe je tekst plaatst, afbeelding invoegt en kleuren toepast. Daarbij zie je ook hoe je kleuren en achtergrond toevoegt.
 
 Als laatste leer je hoe je aan typografie doet en dus een lettertype kiest, lettergrootte aanpast en deze cursief of vet zet.
 
@@ -175,5 +177,31 @@ Items die aan bod komen
 * api's
 * data fetching
 * content managing / static site generators (Jekyll)
-* formulieren
 * liquid
+* formulieren
+
+### Bijlessen
+
+Ook bijlessen kunnen gegeven worden. Indien je moeite hebt op school of je wenst graag wat meer uitleg kan je ook contact opnemen om extra lessen te krijgen.
+
+Ik hou de prijzen laag, zodat de bijlessen voor iedereen toegankelijk zijn.
+
+##### Prijzen
+
+**Arteveldehogeschool studenten**
+
+* **Starter en Intermediate niveau** gratis
+* **Advanced en Pro** 3 euro per uur
+
+Een studentenkaart en e-mailadres van Arteveldehogeschool volstaan.
+
+##### Andere studenten
+
+* **Starter en Intermediate niveau** 3 euro per uur
+* **Advanced en Pro** 4 euro per uur
+
+Een studentenkaart en e-mailadres van je hogeschool of unief volstaan.
+
+##### Niet-studenten
+
+Niet studenten betalen voor alle lessen 4 euro per uur.
