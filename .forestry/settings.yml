@@ -9,6 +9,11 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+- type: directory
+  path: _projects
+  label: Projects
+  create: all
+  match: "**/*"
 - type: heading
   label: Andere
 - type: directory
