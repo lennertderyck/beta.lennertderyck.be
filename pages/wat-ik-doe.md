@@ -14,7 +14,10 @@ customTitle: ''
 pageWidgets: []
 
 ---
-> Info over workshops en bijlessen!<a href="#workshops">meer over workshops</a> <a href="#bijlessen">meer over bijlessen</a>
+<blockquote>
+  <p></p><h5>Info over workshops en bijlessen!</h5><p></p>
+  <a href="#workshops">meer over workshops</a> <a href="#bijlessen">meer over bijlessen</a>
+</blockquote>
 
 
 Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor drukwerk en digitale media (banners etc. voor social media en dergelijke).
