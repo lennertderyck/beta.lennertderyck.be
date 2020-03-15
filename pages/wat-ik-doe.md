@@ -14,11 +14,11 @@ customTitle: ''
 pageWidgets: []
 
 ---
-> Info over [workshops](#workshops) en [bijlessen](#bijlessen)!
-
 Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor drukwerk en digitale media (banners etc. voor social media en dergelijke).
 
 Nu heb ik de stap gezet naar webdesign en -development.
+
+> Info over [workshops](#workshops) en [bijlessen](#bijlessen)!
 
 ### Diensten
 
