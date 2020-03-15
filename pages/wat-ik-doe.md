@@ -14,6 +14,8 @@ customTitle: ''
 pageWidgets: []
 
 ---
+> Info over [workshops](#workshops) en [bijlessen](#bijlessen)!
+
 Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor drukwerk en digitale media (banners etc. voor social media en dergelijke).
 
 Nu heb ik de stap gezet naar webdesign en -development.
@@ -87,3 +89,119 @@ Je kan ook vragen dat er binnen een vooraf besproken budget gewerkt wordt, en af
 Hou er rekening mee dat het budget afhankelijk is van de eisen die je als klant stelt.
 
 Voor meer info omtrent de prijs van een project kan je altijd [contact opnemen.]()
+
+### Workshops
+
+De dag van vandaag is het internet niet meer weg te denken uit onze levens. Dagelijks gebruiken we het, zelfs zonder dat we het weten.
+
+Ook het maken van websites en -applicaties heeft een hele weg afgelegd. Tegenwoordig kan je met heel beperkte kennis en middelen een site op poten zetten.
+
+Helaas is de kennis hiervan beperkt tot de ontwikkelaars en de studenten die het onderwezen krijgen. En daar wil ik iets aan veranderen.
+
+Sinds dit jaar geef ik ook workshops omtrent het opzetten van een website. De workshop is heel laagdrempelig waardoor er iedereen aan kan deelnemen. Ook het materiaal dat je er voor nodig hebt heeft vrijwel iedereen voor handen.
+
+Daarbij kan je kiezen uit verschillende niveaus in het geval dat je graag van een uitdaging houdt of al voorkennis hebt.
+
+Meerdere niveau's kunnen gegeven worden in een enkele workshop of gespreid over verschillende workshops of bepaalde onderdelen van een niveau kunnen weg gelaten worden.
+
+**Faciliteiten workshops**
+
+Het enige dat ik nodig heb is een **beamer** zodat ik goed instructies kan uitleggen.
+
+Het enige dat deelnemers nodig hebben ...
+
+* Een Windows (minstens [Windows 7](https://support.microsoft.com/nl-be/help/13443/windows-which-version-am-i-running)) of een Apple (minstens [macOs Yosemite](https://support.apple.com/nl-nl/HT210717)) computer (bij voorkeur per persoon die deelneemt)
+* Microsoft [Visual Studio Code](https://code.visualstudio.com/) (gratis)
+
+De vereisten zijn dus zeer laag.
+
+##### Starter
+
+**Tijd: een halve workshop**
+
+Hier beginnen we met de basis van het web. We zien hoe je heel simpel een website schrijft zonder voorkennis.
+
+Je leert hoe je tekst plaatst, afbeelding invoegt en kleuren toepast. Daarbij zie je ook hoe je kleuren en achtergrond toevoegt.
+
+Als laatste leer je hoe je aan typografie doet en dus een lettertype kiest, lettergrootte aanpast en deze cursief of vet zet.
+
+Items die aan bod komen:
+
+* html
+* css
+
+##### Intermediate
+
+**Tijd: een halve workshop**
+
+Dit niveau kan samen gegeven worden met Starter.
+
+Hier gaan we een stapje verder en ontdekken we nog meer mogelijkheden van de talen die je zag bij het starter-niveau. Daarnaast gaan leer je nog meer over het vormgeven van een site en hoe je zelf je site op het internet kan publiceren waarbij je ook zelf afbeeldingen en dergelijke online zet.
+
+Items die aan bod komen:
+
+* html
+* css
+* git / hosting
+
+##### Advanced
+
+**Tijd: 2 workshops**
+
+Nu je een goede basis hebt en je zelf al een basis website op poten kan zetten gaan we nog wat verder.
+
+Je leert hoe je nog complexere css kan schrijven op een simpelere manier, je zorgt dat je site responsive is (goed weergegeven op mobiele apparaten) en wanneer dit het geval is, je menu verborgen wordt onder een knop.
+
+Daarbij leer je ook gebruik maken van een library waarmee je nog sneller en eenvoudiger goede websites leert maken.
+
+Als laatste leer je 'echt' programmeren en maken we gebruik van JavaScript. Een taal die onder andere gebruikt wordt om websites interactief te maken.
+
+Items die aan bod komen:
+
+* sass / scss
+* responsiveness
+* hamburger menu's
+* javascript
+* bootstrap
+
+##### Pro
+
+**Tijd: 4 workshops**
+
+De laatste stap is het gebruik maken van externe data en data leren weergeven op onze site; Je leert gebruik maken van formulieren zodat mensen je kunnen contacteren en om je site aan te passen.
+
+Je ziet ook hoe je makkelijker verschillende pagina's aanmaakt zodat je niet telkens jezelf hoeft te herhalen bij het aanmaken ervan.
+
+Items die aan bod komen
+
+* api's
+* data fetching
+* content managing / static site generators (Jekyll)
+* liquid
+* formulieren
+
+### Bijlessen
+
+Ook bijlessen kunnen gegeven worden. Indien je moeite hebt op school of je wenst graag wat meer uitleg kan je ook contact opnemen om extra lessen te krijgen.
+
+Ik hou de prijzen laag, zodat de bijlessen voor iedereen toegankelijk zijn.
+
+##### Prijzen
+
+**Arteveldehogeschool studenten**
+
+* **Starter en Intermediate niveau** gratis
+* **Advanced en Pro** 3 euro per uur
+
+Een studentenkaart en e-mailadres van Arteveldehogeschool volstaan.
+
+##### Andere studenten
+
+* **Starter en Intermediate niveau** 3 euro per uur
+* **Advanced en Pro** 4 euro per uur
+
+Een studentenkaart en e-mailadres van je hogeschool of unief volstaan.
+
+##### Niet-studenten
+
+Niet studenten betalen voor alle lessen 4 euro per uur.
