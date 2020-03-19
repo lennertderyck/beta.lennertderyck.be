@@ -72,7 +72,7 @@ Voor meer informatie neem je best [contact](/contact) op.
 
 ##### Fotografie
 
-Ik doe geen fotografie op aanvraag. Het is echter wel mogelijk dat ik zelf foto's neem voor een project.
+Ik doe geen fotografie op aanvraag, het is echter wel mogelijk dat ik zelf foto's neem voor een project.
 
 > Mijn beste beelden kan je vinden op [Unsplash](https://unsplash.com/@lennertderyck) en zijn gratis te gebruiken, ook voor commerciële doeleinden zonder bronvermelding. Toch is het altijd leuk om credits te krijgen voor mijn werk :)
 
@@ -102,7 +102,7 @@ Sinds dit jaar geef ik ook workshops omtrent het opzetten van een website. De wo
 
 Daarbij kan je kiezen uit verschillende niveaus in het geval dat je graag van een uitdaging houdt of al voorkennis hebt.
 
-Meerdere niveau's kunnen gegeven worden in een enkele workshop of gespreid over verschillende workshops of bepaalde onderdelen van een niveau kunnen weg gelaten worden.
+Meerdere niveau's kunnen gegeven worden in een enkele workshop of gespreid over verschillende workshops, daarbij kunnen bepaalde onderdelen van een niveau weg gelaten worden.
 
 **Faciliteiten workshops**
 
