@@ -212,11 +212,11 @@ Niet studenten betalen voor alle lessen 4 euro per uur.
 
 Beego is opgericht met het idee dat iedereen die dat wil, een computer kan gebruiken. Tegenwoordig gaan de ontwikkelingen op vlak van ICT zo snel dat het voor zowel oud, én jawel ook jong, moeilijk wordt om bij te benen.
 
-De missie van Beego is dus elke dag de digitale kloof een beetje kleiner maken. Daarom stuurt Beego slimme informatica-studenten aan huis in en rond steden in Vlaanderen.
+De missie van Beego is dus elke dag de **digitale kloof een beetje kleiner maken**. Daarom stuurt Beego slimme informatica-studenten aan huis in en rond steden in Vlaanderen.
 
 Ook ik werk bij Beego en het is dus mogelijk om mij bij jou aan huis te laten komen om je computerproblemen op te lossen.
 
-Ik ben beschikbaar in regio Gent (waaronder sommige deelgemeentes), Destelbergen en Lochristi.
+Ik ben beschikbaar in **regio Gent (waaronder sommige deelgemeentes), Destelbergen en Lochristi**.
 
 ##### Hoe we je helpen
 
@@ -229,8 +229,8 @@ Enkele zaken die we regelmatig doen voor klanten ...
 * E-mailproblemen
 * Allerhande smartdevices instellen
 
-We helpen je zowel met Windows als Mac, of Android en Apple. Ook voor gewoon wat uitleg kan je beroep op ons doen. En dat al vanaf een half uur.
+We helpen je **zowel met Windows als Mac, of Android en Apple**. Ook voor gewoon wat uitleg kan je beroep op ons doen. En dat al vanaf een half uur.
 
-Ben je niet zeker wat we voor je kunnen betekenen? Neem dan zeker even contact op met Beego, en je kan gerust naar mij vragen zodat ik bij je langs kom.
+Ben je niet zeker wat we voor je kunnen betekenen? **Neem dan zeker even contact op met Beego**, en je kan gerust naar mij vragen zodat ik bij je langs kom.
 
 [Contact opnemen of een afspraak maken](https://beego.be/afspraak/)
