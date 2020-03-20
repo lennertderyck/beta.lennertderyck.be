@@ -195,14 +195,14 @@ Ik hou de prijzen laag, zodat de bijlessen voor iedereen toegankelijk zijn.
 
 Een studentenkaart en e-mailadres van Arteveldehogeschool volstaan.
 
-##### Andere studenten
+**Andere studenten**
 
 * **Starter en Intermediate niveau** 3 euro per uur
 * **Advanced en Pro** 4 euro per uur
 
 Een studentenkaart en e-mailadres van je hogeschool of unief volstaan.
 
-##### Niet-studenten
+##### **Niet-studenten**
 
 Niet studenten betalen voor alle lessen 4 euro per uur.
 
