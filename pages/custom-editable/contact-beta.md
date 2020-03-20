@@ -56,7 +56,7 @@ pageWidgets:
       </div>
       <div class="form-group form-control-textarea">
         <label for="contactFormMessage">bericht</label>
-        <small class="d-block mb-3 fontw-700"><i class="fab fa-markdown"></i><span class="ml-1">Markdown supported</span></small>
+        <small class="d-block mb-3 fontw-700"><i class="fab fa-markdown"></i><span class="ml-1">Markdown ondersteund</span></small>
         <textarea class="form-control" name="message" id="contactFormMessage" rows="2"></textarea>
       </div>
       <!-- <input class="btn" type="submit" value="Submit"> -->

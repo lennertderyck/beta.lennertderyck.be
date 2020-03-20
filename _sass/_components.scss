@@ -43,7 +43,7 @@
     padding: 6px 7px 4px 8px;
     background: #01706946 0% 0% no-repeat padding-box;
     color: $accentMain;
-    font-size: 70%;
+    font-size: 70% !important;
     border-radius: 6px;
     @extend .text-modern;
 

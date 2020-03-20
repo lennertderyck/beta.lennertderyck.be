@@ -26,14 +26,14 @@ Tegenwoordig focus ik mij op webdesign en -development, maar mijn passie voor dr
 
 <h4>Mijn uitrusting</h4>
 
-<div class="row mb-4">
+<div class="row">
 <div class="col-12 col-md-6 mb-4">
 <h5>Apple MacBook Pro 2016</h5>
 13-inch <br>
 265GB SSD <br>
 Dongles
 </div>
-<div class="col-12 col-md-6">
+<div class="col-12 col-md-6 mb-4">
 <h5>Canon EOS D1300</h5>
 Met 18-55mm IS II lens<br>
 UV-filter<br>
