@@ -210,7 +210,7 @@ Niet studenten betalen voor alle lessen 4 euro per uur.
 
 ##### Computerhulp aan huis
 
-Beego is opgericht met het idee dat iedereen een computer kan gebruiken. Tegenwoordig gaan de ontwikkelingen op vlak van ICT zo snel dat het voor zowel oud, én jawel ook jong, moeilijk wordt om bij te benen.
+Beego is opgericht met het idee dat iedereen die dat wil, een computer kan gebruiken. Tegenwoordig gaan de ontwikkelingen op vlak van ICT zo snel dat het voor zowel oud, én jawel ook jong, moeilijk wordt om bij te benen.
 
 De missie van Beego is dus elke dag de digitale kloof een beetje kleiner maken. Daarom stuurt Beego slimme informatica-studenten aan huis in en rond steden in Vlaanderen.
 
