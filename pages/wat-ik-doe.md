@@ -216,6 +216,8 @@ De missie van Beego is dus elke dag de digitale kloof een beetje kleiner maken. 
 
 Ook ik werk bij Beego en het is dus mogelijk om mij bij jou aan huis te laten komen om je computerproblemen op te lossen.
 
+Ik ben beschikbaar in regio Gent (waaronder sommige deelgemeentes), Destelbergen en Lochristi.
+
 ##### Hoe we je helpen
 
 Enkele zaken die we regelmatig doen voor klanten ...
