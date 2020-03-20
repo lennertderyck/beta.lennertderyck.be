@@ -28,6 +28,10 @@ $accentMainXLight: #0170691f;
     --accent-main: #006771;
 }
 
+* {
+    scroll-behavior: smooth !important;
+}
+
 svg.feather {
     width: 15px;
     stroke-width: 2.7;
