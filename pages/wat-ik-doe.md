@@ -18,7 +18,7 @@ Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor druk
 
 Nu heb ik de stap gezet naar webdesign en -development.
 
-> Info over [workshops](#workshops) en [bijlessen](#bijlessen)!
+> Info over [workshops](#workshops) en [bijlessen](#bijlessen)
 
 ### Diensten
 
@@ -62,7 +62,7 @@ Enkele functionaliteiten:
 
 Natuurlijk is het niet mogelijk om hier alle functionaliteiten op te sommen maar dit zijn de meest voorkomende.
 
-Heb je toch speciale verzoeken of ben je niet zeker wat je nodig hebt? Neem dan zeker [contact](/contact) met me op en we bespreken samen je opties!
+Heb je toch speciale verzoeken of ben je niet zeker wat je nodig hebt? Neem dan zeker [contact](/contact) met me op en we bespreken samen je opties.
 
 ##### Folders / boekjes / magazines
 
@@ -205,3 +205,30 @@ Een studentenkaart en e-mailadres van je hogeschool of unief volstaan.
 ##### Niet-studenten
 
 Niet studenten betalen voor alle lessen 4 euro per uur.
+
+### Beego
+
+##### Computerhulp aan huis
+
+Beego is opgericht met het idee dat iedereen een computer kan gebruiken. Tegenwoordig gaan de ontwikkelingen op vlak van ICT zo snel dat het voor zowel oud, én jawel ook jong, moeilijk wordt om bij te benen.
+
+De missie van Beego is dus elke dag de digitale kloof een beetje kleiner maken. Daarom stuurt Beego slimme informatica-studenten aan huis in en rond steden in Vlaanderen.
+
+Ook ik werk bij Beego en het is dus mogelijk om mij bij jou aan huis te laten komen om je computerproblemen op te lossen.
+
+##### Hoe we je helpen
+
+Enkele zaken die we regelmatig doen voor klanten ...
+
+* Internet instellen
+* Virussen
+* Printers installeren
+* Smartphones & tablets instellen
+* E-mailproblemen
+* Allerhande smartdevices instellen
+
+We helpen je zowel met Windows als Mac, of Android en Apple. Ook voor gewoon wat uitleg kan je beroep op ons doen. En dat al vanaf een half uur.
+
+Ben je niet zeker wat we voor je kunnen betekenen? Neem dan zeker even contact op met Beego, en je kan gerust naar mij vragen zodat ik bij je langs kom.
+
+[Contact opnemen of een afspraak maken](https://beego.be/afspraak/)
