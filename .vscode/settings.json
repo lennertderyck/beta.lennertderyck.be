@@ -2,5 +2,6 @@
     "files.exclude": {
         "**/_site": false
     },
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 3000
 }

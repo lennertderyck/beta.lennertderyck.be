@@ -89,8 +89,16 @@ section:not(.section-ignore) {
 
 
 footer {
-    background-color: $accent1;
-
+    
+    > .wrapper {
+        background-color: $accent1;
+    }
+    
+    svg[data-label="logoSimple"] {
+        fill: $accent3;
+        // fill: $accent2;
+    }
+    
     *, h4 {
         color: $accent3;
     }

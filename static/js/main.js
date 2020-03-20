@@ -1,21 +1,4 @@
-(() => {
-    const app = {
-        initialize() {
-            console.log('\n' + `%c[service] main.js ${arguments.callee.name}() running! \n` + ' ', 'color: #00d400; font-weight: bold');
-            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
-        },
-
-        cached() {
-            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
-        },
-
-        readyState() {
-
-        },
-    }
-
-    app.initialize();
-})();
+let toastIndex = 0;
 
 function replaceElement(element, content) {
     element = document.querySelectorAll(`[data-replace="${element}"]`);
@@ -38,8 +21,6 @@ function errorText(element, content) {
         el.innerHTML = content;
     })
 }
-
-let toastIndex = 0;
 
 function createToast(title, message) {
     console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
@@ -92,6 +73,27 @@ function createToast(title, message) {
     $(`[data-toast="toastIndex${toastIndex}"]`).toast('show');
 }
 
+(() => {
+    const app = {
+        initialize() {
+            console.log('\n' + `%c[service] main.js ${arguments.callee.name}() running! \n` + ' ', 'color: #00d400; font-weight: bold');
+            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
+            // createToast('title', 'message');
+        },
+
+        cached() {
+            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
+        },
+
+        readyState() {
+
+        },
+    }
+
+    app.initialize();
+})();
+
+/*
 const cookieImg = document.querySelector('[data-label="cookie"]');
 
 console.log(readCookie('cookieConsent'));
@@ -127,7 +129,7 @@ if(readCookie('cookieConsent') != 'true') {
         // console.log(`mouse pos x: ${xPos}, y: ${yPos}`);
     }
 }
-
+/*
 /**
  * CONTENT TO MARKDOWN
  */
