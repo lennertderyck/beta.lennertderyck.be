@@ -18,7 +18,7 @@ Tot een aantal maanden geleden hield ik me vooral bezig met vormgeving voor druk
 
 Nu heb ik de stap gezet naar webdesign en -development.
 
-> Info over [workshops](#workshops) en [bijlessen](#bijlessen)
+> Info over [workshops](#workshops), [bijlessen](#bijlessen) of [Beego](#beego)
 
 ### Diensten
 
