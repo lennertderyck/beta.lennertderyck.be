@@ -202,7 +202,7 @@ Een studentenkaart en e-mailadres van Arteveldehogeschool volstaan.
 
 Een studentenkaart en e-mailadres van je hogeschool of unief volstaan.
 
-##### **Niet-studenten**
+**Niet-studenten**
 
 Niet studenten betalen voor alle lessen 4 euro per uur.
 
