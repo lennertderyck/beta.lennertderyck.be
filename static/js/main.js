@@ -170,7 +170,7 @@ function createToast(title, message) {
         },
         
         redirectToStorage(key) {
-            window.alert('Je word doorgestuurd');
+            // window.alert('Je word doorgestuurd');
             window.location.replace(`https://ledery.stackstorage.com/s/${key}`);
         }
     }
