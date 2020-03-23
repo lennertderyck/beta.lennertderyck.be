@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Bestanden
-permalink: "/bestanden"
+permalink: "/bestanden-beta"
 ft-image: ''
 short-desc: ''
 titlebar: true
 add-to-menu: false
 fullWidth: false
 widgets: true
-published: false
+published: true
 
 ---
 ### Vereisten

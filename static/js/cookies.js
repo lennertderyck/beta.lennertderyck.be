@@ -1,8 +1,5 @@
-function logState() {
-    console.log("cookies.js script running");
-}
+console.log('\n' + `%c[service] cookies.js running! \n` + ' ', 'color: #00d400; font-weight: bold')
 
-window.onload = logState()
 
 ////////////////////////////////////////////////////////////////
 
