@@ -11,17 +11,15 @@ layout   : default
                     {{ page.customTitle }}
                 {% endif %}
             </h1>
-            <p class="page-subtitle text-modern mb-0 mb-md-5">
+            <p class="page-subtitle text-modern mb-5">
                 {% if page.type == 'project' %}
                     {{ page.tags | first }}
                 {% else %}
                     {{ page.subTitle }}
                 {% endif %}
             </p>
-            <nav id="pageIndex">
-                <ul>
-                    
-                </ul>
+            <nav id="pageIndex" class="d-none d-lg-block">
+                <ul></ul>
             </nav>
         </div>
         {% unless page.fullWidth == true %} 

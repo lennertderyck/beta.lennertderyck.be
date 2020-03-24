@@ -1,3 +1,33 @@
+#pageIndex {
+    position: sticky;
+    top: 40px; 
+    
+    ul {
+        padding-left: 12px;
+        border-left: 1.7px dashed $accent3;
+        list-style: none;
+        
+        li {
+            
+            color: $accent3;
+            position: relative;
+            
+            &::after {
+                content: ' ';
+                position: absolute;
+                left: -18px;
+                top: 2.5px;
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                border: 1.7px solid $accent3;
+                border-radius: 100%;
+            }
+        }
+    }
+    
+}
+
 [data-label="pageWidgets"] {
     margin-top: 110px;
     margin-bottom: 110px;
