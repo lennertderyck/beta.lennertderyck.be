@@ -37,3 +37,7 @@ Je kan dan altijd naar beta.lennertderyck.be/files om deze te bekijken.
     </div>
     <button class="btn" type="submit">Opslaan</button>
 </form>
+
+<script> 
+    clientFilesKeys.initialize();
+</script>

@@ -86,97 +86,117 @@ function createToast(title, message) {
     $(`[data-toast="toastIndex${toastIndex}"]`).toast('show');
 }
 
-(() => {
-    const clientFilesKeys = {
-        initialize() {
-            console.log('\n' + `%c[service] main.js ${arguments.callee.name}() running! \n` + ' ', 'color: #00d400; font-weight: bold');
-            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
-            
-            this.formConfig();
-            this.db = window.localStorage;
-            
-            if (this.db.getItem('fileKey') == null) {
-                this.checkUrlStorageKeys();
-            } else {
-                const key = JSON.parse(this.db.getItem('fileKey')).key;
-                this.redirectToStorage(key);
-            }
-        },
-
-        cached() {
-            console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
-        },
+const clientFilesKeys = {
+    initialize() {
+        console.log('\n' + `%c[service] main.js ${arguments.callee.name}() running! \n` + ' ', 'color: #00d400; font-weight: bold');
+        console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
         
-        formConfig() {
-            this.form = el('#clientFilesKey') 
-            this.form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                
-                let formData = new FormData(this.form);
-                const formDataArray = await this.getInputValues(formData);
-                await this.saveLocalStorage(formDataArray.key, formDataArray.email);
-                await this.initialize();
-            })
-        },
+        this.formConfig();
+        this.db = window.localStorage;
         
-        async getInputValues(input) {
-            return await {
-              key: input.get('key'),
-              email: input.get('email'),
-            }
-        },
-        
-        checkUrlStorageKeys() {
-            if (this.getClientFilesKey('key') !== undefined && this.getClientFilesKey('use') !== undefined) {
-                this.saveLocalStorage(this.getClientFilesKey('key'),this.getClientFilesKey('use'))
-                el('#clientFilesKey [name="key"]').value = this.getClientFilesKey('key');
-                el('#clientFilesKey [name="email"]').value = this.getClientFilesKey('use');
-            } else if (this.getClientFilesKey('key') !== undefined && this.getClientFilesKey('use') == undefined) {
-                el('#clientFilesKey [name="key"]').value = this.getClientFilesKey('key');
-                // el('#clientFilesKey [name="email"]').value = this.getClientFilesKey('use');
-            }
-        },
-        
-        getClientFilesKey(key) {
-            let url = window.location.href;
-            if (key == undefined) {
-                console.log('%c\tgetClientFilesKey() parameter not given', 'color: #f30;');
-                return 'getClientFilesKey() parameter not given'
-            } else {
-                url = url.split('?')[1].split('&');
-                let valuesArray = [];
-                url.map(x => {
-                    valuesArray.push(
-                        {
-                            key: x.split('=')[0],
-                            value: x.split('=')[1],
-                        }
-                    )
-                });
-                const filterForKeys = (input) => {return input.key == key};
-                const returnValue = valuesArray.filter(filterForKeys)[0];                
-                return returnValue !== undefined ? returnValue.value : console.log('%c\tgetClientFilesKey() parameter key in parameter not found', 'color: #f30;');
-            }
-        },
-        
-        saveLocalStorage(key, email) {            
-            const keyInfo = {
-                key: key,
-                use: email
-            }
-            
-            this.db.setItem('fileKey', JSON.stringify(keyInfo))
-            console.log(JSON.parse(this.db.getItem('fileKey')))
-        },
-        
-        redirectToStorage(key) {
-            // window.alert('Je word doorgestuurd');
-            window.location.replace(`https://ledery.stackstorage.com/s/${key}`);
+        if (this.db.getItem('fileKey') == null) {
+            this.checkUrlStorageKeys();
+        } else {
+            const key = JSON.parse(this.db.getItem('fileKey')).key;
+            this.redirectToStorage(key);
         }
-    }
+    },
 
-    clientFilesKeys.initialize();
-})();
+    cached() {
+        console.log(`%c[service] ${arguments.callee.name}()`, 'font-weight: bold');
+    },
+    
+    formConfig() {
+        this.form = el('#clientFilesKey') 
+        this.form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            let formData = new FormData(this.form);
+            const formDataArray = await this.getInputValues(formData);
+            await this.saveLocalStorage(formDataArray.key, formDataArray.email);
+            await this.initialize();
+        })
+    },
+    
+    async getInputValues(input) {
+        return await {
+            key: input.get('key'),
+            email: input.get('email'),
+        }
+    },
+    
+    checkUrlStorageKeys() {
+        if (this.getClientFilesKey('key') !== undefined && this.getClientFilesKey('use') !== undefined) {
+            this.saveLocalStorage(this.getClientFilesKey('key'),this.getClientFilesKey('use'))
+            el('#clientFilesKey [name="key"]').value = this.getClientFilesKey('key');
+            el('#clientFilesKey [name="email"]').value = this.getClientFilesKey('use');
+        } else if (this.getClientFilesKey('key') !== undefined && this.getClientFilesKey('use') == undefined) {
+            el('#clientFilesKey [name="key"]').value = this.getClientFilesKey('key');
+            // el('#clientFilesKey [name="email"]').value = this.getClientFilesKey('use');
+        }
+    },
+    
+    getClientFilesKey(key) {
+        let url = window.location.href;
+        if (key == undefined) {
+            console.log('%c\tgetClientFilesKey() parameter not given', 'color: #f30;');
+            return 'getClientFilesKey() parameter not given'
+        } else {
+            url = url.split('?')[1].split('&');
+            let valuesArray = [];
+            url.map(x => {
+                valuesArray.push(
+                    {
+                        key: x.split('=')[0],
+                        value: x.split('=')[1],
+                    }
+                )
+            });
+            const filterForKeys = (input) => {return input.key == key};
+            const returnValue = valuesArray.filter(filterForKeys)[0];                
+            return returnValue !== undefined ? returnValue.value : console.log('%c\tgetClientFilesKey() parameter key in parameter not found', 'color: #f30;');
+        }
+    },
+    
+    saveLocalStorage(key, email) {            
+        const keyInfo = {
+            key: key,
+            use: email
+        }
+        
+        this.db.setItem('fileKey', JSON.stringify(keyInfo))
+        console.log(JSON.parse(this.db.getItem('fileKey')))
+    },
+    
+    redirectToStorage(key) {
+        // window.alert('Je word doorgestuurd');
+        window.location.replace(`https://ledery.stackstorage.com/s/${key}`);
+    }
+}
+
+const contentBodyIndexing = {
+    initialize() {
+        this.headings = document.querySelectorAll('#contentBody h3');
+        
+        this.addToDom();
+    },
+    
+    addToDom() {
+        const $indexList = document.querySelector('#pageIndex ul');
+        
+        this.headings.forEach(i => {
+            const li = document.createElement('li');
+            li.classList.add('page-index-item', 'mb-3', 'small', 'text-modern');
+            li.innerHTML = `
+                <a href="#${i.id}">${i.textContent}</a>
+            `;
+            $indexList.appendChild(li);
+        })
+        $indexList
+    }
+}
+
+contentBodyIndexing.initialize();
 
 /*
 const cookieImg = document.querySelector('[data-label="cookie"]');

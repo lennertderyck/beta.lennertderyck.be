@@ -52,10 +52,17 @@ $menu-main-w: 700px;
     }
     
     [data-label="socialIcons"] {
-        a > img {
-            object-fit: fill;
-            height: 22px;
-            width: 22px;
+        margin-bottom: -16px;
+        
+        a {
+            display: inline-block;
+            margin-bottom: 16px;
+            
+            > img {
+                object-fit: fill;
+                height: 22px;
+                width: 22px;
+            }
         }
     }
     
@@ -91,6 +98,11 @@ body {
         
         [data-label="burgerMenu"] {
             // transform: translateX(-720px) rotate(90deg);
+            
+            .burger-label {
+                display: block;
+                margin-left: 15px;
+            }
         }
         
         /* [data-label="portfolioCards"] {
@@ -118,6 +130,14 @@ body {
 @media (min-width: 768px) {
     #menuMain {
         width: $menu-main-w;
+    }
+    
+    [data-label="socialIcons"] {
+        margin-bottom: 0px;
+        
+        a {
+            margin-bottom: 0px;
+        }
     }
 }
 

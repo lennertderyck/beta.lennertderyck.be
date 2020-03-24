@@ -3,7 +3,7 @@ layout   : default
 ---
 <div class="container mt-5">
     <div class="row">
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
             <h1 class="page-title fontw-400">
                 {% if page.showCustomTitle == false or page.showCustomTitle.blank or page.type == 'project' %}
                     {{ page.title }}
@@ -11,13 +11,18 @@ layout   : default
                     {{ page.customTitle }}
                 {% endif %}
             </h1>
-            <p class="page-subtitle text-modern mb-5 mb-lg-0">
+            <p class="page-subtitle text-modern mb-0 mb-md-5">
                 {% if page.type == 'project' %}
                     {{ page.tags | first }}
                 {% else %}
                     {{ page.subTitle }}
                 {% endif %}
             </p>
+            <nav id="pageIndex">
+                <ul>
+                    
+                </ul>
+            </nav>
         </div>
         {% unless page.fullWidth == true %} 
             <div class="col-12 col-lg-8" id="contentBody">

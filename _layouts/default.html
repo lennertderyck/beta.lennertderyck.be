@@ -40,12 +40,12 @@
     <!-- local assets -->
     <link rel="stylesheet" href="{{ "/static/css/main.css" | url }}">
 </head>
-<body data-sesam-target="burgerMenu" class="sesam sesam-hidden">
+<body data-sesam-target="burgerMenu" class="sesam sesam-hidden" data-page-name="{{ page.title | downcase }}">
     <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
     <div id="page" class="animated fadeIn slow">
         {% include header.html %}
         <main>
-            <div id="pageContent" class="">
+            <div id="pageContent" class="" data-spy="scroll" data-target="#pageIndex">
                 {{ content }}
             </div>
         </main>

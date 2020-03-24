@@ -1,9 +1,18 @@
+[data-page-name="home"] {
+    #page {
+        background-image: url('https://res.cloudinary.com/lennertderyck/image/upload/v1585003625/logo_ldr_hero_co1jus.svg');
+        background-repeat: no-repeat;
+        // background-position: calc(100% + 400px) 70px;
+        background-position: calc(100% + 390px) 70px;
+    }
+}
+
 [data-label="homeHero"] {
     min-height: 50vh;
     background-image: url();
     
     h2 {
-        font-size: 36px;
+        font-size: 34px;
         color: $accentMain;
     }
     
@@ -77,19 +86,43 @@
     
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    [data-label="homeHero"] {     
+        h2 {
+            font-size: 36px;
+        }
+    }
+}
 
 @media (min-width: 768px) {
+    [data-page-name="home"] {
+        #page {
+        background-position: calc(100% + 250px) 70px;
+        }
+    }
+    
     [data-label="portfolioCards"] > .card {
         min-width: calc(100vw/2 - 35px*2);
 
         &:hover {
             transform: scale(1.08);
         }
-    }
+    }    
 }
 
 @media (min-width: 992px) {
+    [data-page-name="home"] {
+        #page {
+        background-position: calc(100% + 150px) 70px;
+        }
+    }
+    
+    [data-label="homeHero"] {     
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    
     [data-label="portfolioCards"] > .card {
         min-width: 245px;
     }
