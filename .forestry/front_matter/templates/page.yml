@@ -50,7 +50,6 @@ fields:
   name: fullWidth
   label: Full width
 pages:
-- pages/bestanden-1.md
 - pages/custom-editable/contact.html
 - pages/over.md
 - pages/privacy.md
