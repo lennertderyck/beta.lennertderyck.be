@@ -594,3 +594,7 @@ Dan heb je deze code ...
             error => {console.log(error)}, // als toegang tot locatie geweigerd wordt, {code: 1, message: "User denied Geolocation"}
         );
     }
+
+### Library Moment.js
+
+[Docs](https://momentjs.com/)
