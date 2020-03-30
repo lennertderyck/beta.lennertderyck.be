@@ -71,9 +71,12 @@ fullWidth: false
   Voeg items toe aan array, of verwijder items
 
     var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
-    fruits.splice(2, 1, "Lemon", "Kiwi");
+    fruits.splice(2, 1, "Lemon", "Kiwi"); // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
 
 **Concat**
 
 Combineer verschillende arrays
+
+    const array1 = ['a', 'b', 'c'];
+    const array2 = ['d', 'e', 'f'];
+    let arrayResult = array1.concat(array2); // Array arrayResult contains ['a', 'b', 'c', 'd', 'e', 'f']
