@@ -12,7 +12,7 @@ add-to-menu: false
 fullWidth: false
 
 ---
-> Gebruik op eigen verantwoordel
+> Gebruik op eigen verantwoordelijkheid, verander namen van functies en variabelen!
 
 ### GitHub
 
