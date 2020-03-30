@@ -38,11 +38,9 @@ fullWidth: false
 * Om al je commits te pushen druk je vanonder op het push icoon  
   ![](https://res.cloudinary.com/lennertderyck/image/upload/v1585577398/Schermafbeelding_2020-03-30_om_16.09.32_tvzv8k.png)
 
-### Array, map & set
+### Array
 
-Geïndexeerde & gesleutelde collecties
-
-##### Array's – aanmaken
+##### Aanmaken
 
 3 manieren
 
@@ -50,7 +48,7 @@ Geïndexeerde & gesleutelde collecties
     const arr2 = Array(element0, element1 ..., elementN);
     const arr3 = [element0, element1 ..., elementN];
 
-##### Array – methodes
+##### Methodes
 
 **Push**
 
@@ -176,9 +174,9 @@ De filter methode creeert een nieuwe array van elementen die een test doorstaan 
     const filteredWords = words.filter(word => word.length > 6);
     console.log(result); //Output: ["exuberant", "destruction", "present"]
 
-##### Array – multidimensionaal
+##### Multidimensionale array's
 
-Een array kan meerdere arrays bevatten
+Een array kan meerdere array's bevatten
 
     const cars = [
       ['Volvo', 22, 18],
@@ -187,7 +185,7 @@ Een array kan meerdere arrays bevatten
       ['Land Rover', 17, 15]
     ];
 
-##### Array – itereren
+##### Itereren
 
 **For loop**
 
