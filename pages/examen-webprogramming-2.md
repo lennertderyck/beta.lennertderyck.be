@@ -584,3 +584,13 @@ Dan heb je deze code ...
         const name = formData.get('first-name') // get parameter moet value zijn van het name attribuut in je form
         console.log(name);
     })
+
+##### GeoLocation API 
+
+    if (navigator.geolocation) { // eerst checken of browser dit ondersteund
+        console.log('geolocatie werkt');
+        navigator.geolocation.getCurrentPosition(
+            position => {console.log(position)}, // {coords: GeolocationCoordinates, timestamp: 1585602336182}, GeolocationCoordinates bevat de effectieve coordinates
+            error => {console.log(error)}, // als toegang tot locatie geweigerd wordt, {code: 1, message: "User denied Geolocation"}
+        );
+    }
