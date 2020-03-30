@@ -591,7 +591,7 @@ Dan heb je deze code ...
         console.log('geolocatie werkt');
         navigator.geolocation.getCurrentPosition(
             position => {console.log(position)}, // {coords: GeolocationCoordinates, timestamp: 1585602336182}, GeolocationCoordinates bevat de effectieve coordinates
-            error => {console.log(error)}, // als toegang tot locatie geweigerd wordt, {code: 1, message: "User denied Geolocation"}
+            error => {console.log(error)}, // als toegang tot locatie geweigerd wordt, {code: 1, message: "User denied Geolocation"}, ge kunt de error binnen de console log ook vervangen door eender welk bericht of een functie uitvoeren
         );
     }
 
