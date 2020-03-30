@@ -459,3 +459,27 @@ Hier wordt _JSON.stringify()_ en _JSON.parse()_ voor gebruikt
         job: 'willy'
       };
     */
+
+### Import & Export
+
+JavaScript modules
+
+##### Importeren
+
+Een functie, variabele, class, ... Plaats er _export_ voor
+
+    export const alpaca = 'Alpacas zijn cute';
+    
+    export function spit() {
+    	console.log('Alpacas spugen niet, dommerik')
+    }
+
+##### Exporteren
+
+Plaats **bovenaan het andere bestand** volgende regel
+
+    import {alpaca, spit} from './app.js';
+    // app.js moet vervangen worden naar het correcte relatieve pad van het bestand waaruit je importeert.
+    
+    console.log(alpaca);
+    spit();
