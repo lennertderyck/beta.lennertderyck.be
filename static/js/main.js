@@ -176,23 +176,60 @@ const clientFilesKeys = {
 
 const contentBodyIndexing = {
     initialize() {
-        this.headings = document.querySelectorAll('#contentBody h3');
-        
+        this.headings = document.querySelectorAll('#contentBody h3, #contentBody h5');
         this.addToDom();
     },
     
     addToDom() {
+        let $tempStr = '';
         const $indexList = document.querySelector('#pageIndex ul');
         
-        this.headings.forEach(i => {
-            const li = document.createElement('li');
-            li.classList.add('page-index-item', 'mb-3', 'small', 'text-modern');
-            li.innerHTML = `
-                <a href="#${i.id}">${i.textContent}</a>
-            `;
-            $indexList.appendChild(li);
+        this.headings.forEach((i, index) => {
+            let nextEl = '', prevEl = '', sesamInitClass = '';
+            const h3 = i.tagName == 'H3'
+            prevEl = this.headings[index-1]
+            nextEl = this.headings[index+1];
+            
+            if (index == 0) sesamInitClass = 'sesam sesam-show';
+            
+            if (h3 == true) {
+                $tempStr += `
+                    <li class="page-index-item mb-3 small text-modern page-index-lvl1" data-sesam-trigger="${i.id}">
+                        <a href="#${i.id}">${i.textContent}</a>
+                    </li>
+                `
+            } else if (h3 == false) {
+                if (prevEl.tagName == 'H3') {
+                $tempStr += `
+                    <div data-sesam-target="${prevEl.id}" data-sesam-parent="pageIndexGroup" class="${sesamInitClass}">
+                        <li class="page-index-item small text-modern page-index-lvl2">
+                            <a href="#${i.id}">${i.textContent}</a>
+                        </li>
+                `
+                }
+                if (nextEl.tagName == 'H3') {
+                $tempStr += `
+                        <li class="page-index-item small text-modern page-index-lvl2">
+                            <a href="#${i.id}">${i.textContent}</a>
+                        </li>
+                    </div>
+                `
+                }
+                if (prevEl.tagName != 'H3' && nextEl.tagName != 'H3') {
+                $tempStr += `
+                        <li class="page-index-item small text-modern page-index-lvl2">
+                            <a href="#${i.id}">${i.textContent}</a>
+                        </li>
+                `
+                }
+            }            
         })
-        $indexList
+        $indexList.innerHTML = $tempStr;  
+        sesamCollapse.initialize();
+        sesam({
+            target: this.headings[0].id,
+            action: 'show'
+        })     
     }
 }
 

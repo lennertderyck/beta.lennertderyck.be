@@ -8,6 +8,10 @@
         list-style: none;
         
         li {
+            margin-bottom: 16px;
+        }
+        
+        li.page-index-lvl1 {
             
             color: $accent3;
             position: relative;
@@ -24,8 +28,29 @@
                 border-radius: 100%;
             }
         }
+        
+        [data-sesam-target] {
+            li.page-index-lvl2::after {
+                display: none;
+            }
+        }
     }
     
+    [data-sesam-target] {
+        li {
+            padding-left: 10px;
+            color: #bbbbbb;
+            margin-bottom: 8px;
+            
+            &:last-child {
+                margin-bottom: 16px;  
+            }
+        }
+        
+        &.sesam-hidden {
+            display: none;
+        }
+    }
 }
 
 [data-label="pageWidgets"] {
