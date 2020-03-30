@@ -73,3 +73,7 @@ fullWidth: false
     var fruits = ["Banana", "Orange", "Apple", "Mango"];
     // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
     fruits.splice(2, 1, "Lemon", "Kiwi");
+
+**Concat**
+
+Combineer verschillende arrays
