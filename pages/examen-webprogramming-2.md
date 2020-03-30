@@ -168,6 +168,14 @@ kan ook op andere manieren gebruikt worden
     });
     console.log(newArray); // Output: [2, 8, 18]
 
+**Filter**
+
+De filter methode creeert een nieuwe array van elementen die een test doorstaan via de callback function.
+
+    const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+    const filteredWords = words.filter(word => word.length > 6);
+    console.log(result); //Output: ["exuberant", "destruction", "present"]
+
 ##### Array – multidimensionaal
 
 Een array kan meerdere arrays bevatten
