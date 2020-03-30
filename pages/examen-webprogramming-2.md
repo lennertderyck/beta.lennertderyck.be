@@ -12,6 +12,8 @@ add-to-menu: false
 fullWidth: false
 
 ---
+> Gebruik op eigen verantwoordel
+
 ### GitHub
 
 ##### Instellen repo (VS Code)
@@ -483,3 +485,67 @@ Plaats **bovenaan het andere bestand** volgende regel
     
     console.log(alpaca);
     spit();
+
+### Classes
+
+Object Orientated Programming
+
+##### Aanmaken
+
+Class aanmaken
+
+    class Car {
+        constructor(doors, engine, color, width, height) {
+            this.doors = doors;
+            this.engine = engine;
+            this.color = color;
+            this.passengers = ['Frank']
+        }
+        
+        carStats() {
+            return `This car has ${this.doors} doors, a ${this.engine}, a beautiful ${this.color} color and ${this.passengers.length} passengers`
+        }
+        
+        passsenger(name) {
+            this.passengers.push(name);
+        }
+        
+        stop() {
+            return `This ${this.color} car stopped`
+        }
+    }
+
+##### Class gebruiken
+
+    const skodaFabia = new Car(4, 'v6', 'grijs'); // don't judge, ik ken niks van auto's
+    console.log(skodaFabia); // Output: {doors: 4, engine: "V6", color: "grey"}
+    
+    skodaFabia.passsenger('Aang')
+    console.log(skodaFabia.carStats()); Output: This car has 4 doors, a V6, and a beautiful grey color
+
+##### Extend
+
+Maak een nieuwe class maar gebruik functies en data uit een andere class
+
+    class Ride extends Car {
+        start(speed) {
+            console.log(`The ${this.color} car is driving at ${speed} km/h`)
+        }
+        
+        park() {
+            this.passengers = [];
+            console.log('Don\'t even bother woman');
+            console.log(`${super.stop()} and is parked`)
+        }
+    }
+
+Het gebruik van functies gebeurt op dezelfde manier ...
+
+    const brolMetWielen = new Ride(4, 'v8', 'black');
+    
+    brolMetWielen.start(140); // Output: The black car is driving at 140 km/h
+    brolMetWielen.park(); 
+    /* Output: 
+      Don't even bother woman
+      This black car stopped and is parked
+    */
