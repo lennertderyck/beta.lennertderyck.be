@@ -32,11 +32,11 @@ fullWidth: false
 ##### Commit & push
 
 * Klik op het Git-icoon in de linker zijbalk  
-  ![](/v1585578714/Schermafbeelding_2020-03-30_om_15.58.11_nv6wpv.png)
+  ![](https://res.cloudinary.com/lennertderyck/image/upload/v1585578714/Schermafbeelding_2020-03-30_om_15.58.11_nv6wpv.png)
 * Je zal al je wijzigingen zien
 * Geef in de balk bovenaan je commit message in en druk op het vinkje daarboven op te committen
 * Om al je commits te pushen druk je vanonder op het push icoon  
-  ![](/v1585577398/Schermafbeelding_2020-03-30_om_16.09.32_tvzv8k.png)
+  ![](https://res.cloudinary.com/lennertderyck/image/upload/v1585577398/Schermafbeelding_2020-03-30_om_16.09.32_tvzv8k.png)
 
   ### Geïndexeerde & gesleutelde collecties
 
