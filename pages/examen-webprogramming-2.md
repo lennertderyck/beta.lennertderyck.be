@@ -572,6 +572,8 @@ Stel je hebt volgend simpel formulier ...
       <button type="submit">submit</button> // zorg zeker dat je form een submit knop heeft
     </form>
 
+Dan heb je deze code ...
+
     const form = document.querySelector('form#weWillSellAllYourData') // gebruik css-selectoren
     
     form.addEventListener('submit', (e) => {
