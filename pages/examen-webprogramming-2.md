@@ -146,7 +146,7 @@ deze volgorde kan ook aangepast worden ...
 
 'a' in de sort functie stelt de eerste waarde voor waarmee de 'b' waarde mee vergeleken wordt.
 
-> Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal.
+> Bij getallen zal in dit geval dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal.
 
 **Map**
 
