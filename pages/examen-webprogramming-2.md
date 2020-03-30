@@ -150,6 +150,24 @@ deze volgorde kan ook aangepast worden ...
 
 _Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal._
 
+**Map**
+
+Vergelijkbaar met de 'forEach' functie, maar werkt enkel bij array's
+
+    const numbers = [1, 4, 9];
+    const roots = numbers.map((num) => {
+      return num*2;
+    });
+    console.log(roots); // Output: [2, 8, 18]
+
+kan ook op andere manieren gebruikt worden
+
+    const newArray = []
+    numbers.map((num) => {
+      newArray.push(num*2);
+    });
+    console.log(newArray); // Output: [2, 8, 18]
+
 ##### Array – multidimensionaal
 
 Een array kan meerdere arrays bevatten
