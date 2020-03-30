@@ -331,6 +331,50 @@ Wis alle items in set
 
 ### Consuming data
 
+##### Async / await
+
+De beste manier!
+
+    async function fetchAPI(url) {
+        try {
+            let response = await fetch(url ,{modus: 'GET'})
+            let data = await response.json();
+            return data
+        }
+        catch {
+            throw new Error('nieje mut')
+        }
+    }
+    
+    async function displayData() {
+        const apiData = await fetchAPI('https://aws.random.cat/meow');
+        console.log(apiData);
+    }
+    
+    displayData();
+
+##### Fetch
+
+Ook een goeie manier
+
+    function getSomeData(url) {
+        fetch(url)
+        .then(response => response.json())
+        .then (data => {
+            doSomeThingWithData(data);
+        });
+    }
+    
+    
+    function doSomeThingWithData(data) {
+        console.log(data);
+        const img = document.createElement('img');
+        img.src = data.file;
+        document.body.appendChild(img);
+    }
+    
+    getSomeData('https://aws.random.cat/meow');
+
 ##### XMLHttp Request
 
 Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
@@ -354,25 +398,3 @@ Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
     }
     
     fetchJSON(url) // 'url' moet vervangen worden door de url van de api
-
-##### Async / await
-
-De beste manier!
-
-    const fetchAPI = async (url) => { // zorg dat je functie async is
-        try {
-            let response = await fetch(url ,{modus: 'GET'})
-            let data = await response.json();
-            return data
-        }
-        catch {
-            throw new Error('nieje mut')
-        }
-    }
-    
-    const displayData = async () => {
-        const apiData = await fetchAPI('https://aws.random.cat/meow');
-        console.log(apiData);
-    }
-    
-    displayData();
