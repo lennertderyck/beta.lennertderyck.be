@@ -310,3 +310,21 @@ Verwijderd item aan de hand van opgegeven value, dus niet de positie van het ite
 Wis alle items in set
 
     mySet.clear();
+
+##### Itereren
+
+**For each**
+
+    mySet.forEach((value) => {
+      console.log(value);
+    });
+
+**For**
+
+    for (let item of mySet) { 
+        console.log(item);
+    }
+
+##### Verschil array en set
+
+[Zie syllabus](https://www.pgm.gent/webpgm-2/js_intermediate/collections_keyed.html#verschil-tussen-arrays-en-sets)
