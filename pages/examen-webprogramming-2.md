@@ -12,7 +12,9 @@ add-to-menu: false
 fullWidth: false
 
 ---
-> Gebruik op eigen verantwoordelijkheid, verander namen van functies en variabelen!
+> Gebruik op eigen verantwoordelijkheid, verander namen van functies en variabelen! Graag gedaan xxx
+>
+> Aanpassen mogelijk [hier](https://github.com/lennertderyck/beta.lennertderyck.be/edit/master/pages/examen-webprogramming-2.md)
 
 ### GitHub
 
