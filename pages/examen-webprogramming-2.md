@@ -220,7 +220,7 @@ Bij '.set()', is de eerste value (key) waarmee je een Map-item mee aanroept, het
 
 **Size**
 
-Krijg aantal item terug in key
+Krijg aantal items terug in map
 
     console.log(myMap.size);     // 3
 
@@ -267,3 +267,46 @@ Wis alle items uit map
 ##### Wanneer map gebruiken?
 
 [Zie syllabus]()
+
+### Set object
+
+Nieuwe set en elementen toevoegen
+
+    let mySet = new Set();
+    
+    mySet.add(1);
+    mySet.add(5);
+    mySet.add(10);
+    mySet.add(10);          // will be deleted because its aleardy exist
+    mySet.add(undefined);   
+    mySet.add(NaN);
+    mySet.add('some text');
+    mySet.add({a: 1, b: 2});
+    mySet.add([1, 2, 3]);
+
+##### Eigenschappen & methodes
+
+**Size**
+
+Krijg aantal items terug in set
+
+    console.log(mySet.size);     // 8
+
+**Has**
+
+Checkt of item met value bestaande is
+
+    console.log(mySet.has(10))     // true
+    console.log(mySet.has(1000))   // false
+
+**Delete**
+
+Verwijderd item aan de hand van opgegeven value, dus niet de positie van het item
+
+    mySet.delete(5);
+
+**Clear**
+
+Wis alle items in set
+
+    mySet.clear();
