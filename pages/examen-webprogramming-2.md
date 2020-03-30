@@ -398,3 +398,64 @@ Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
     }
     
     fetchJSON(url) // 'url' moet vervangen worden door de url van de api
+
+### Local & Session Storage
+
+Local en session storage gedragen zich hetzelfde, met het verschil dat alles in de session storage verwijderd wordt bij compleet afsluiten van de browser.
+
+_window.localStorage_ kan vervangen worden door _window.sessionStorage_.
+
+Alles dat in de localStorage/sessionStorage opgeslagen wordt, wordt omgezet naar een string.
+
+##### Data toevoegen
+
+    window.localStorage.setItem(key, value);
+
+    window.localStorage.setItem('name', 'VJ Tony');
+    window.localStorage.setItem('age', '35');
+    window.localStorage.setItem('job', 'Willy');
+
+##### Data ophalen
+
+    window.localStorage.getItem(key);
+
+    const name = window.localStorage.setItem('name', 'VJ Tony');
+    console.log(name); // Output: VJ Tony
+
+##### Data verwijderen
+
+    window.localStorage.removeItem(key);
+
+    window.localStorage.removeItem('name');
+    console.log(window.localStorage.removeItem('name')); // Output: null
+
+##### JSON opslaan
+
+JSON moet voorbereid worden voordat het opgeslagen wordt om te kunnen uitlezen later.
+
+Hier wordt _JSON.stringify()_ en _JSON.parse()_ voor gebruikt
+
+**JSON voorbereiden & opslaan**
+
+    let echtVlaamsErfgoed = {
+        name: 'VJ Tony',
+        age: 35,
+        job: 'willy'
+    };
+    
+    echtVlaamsErfgoed = JSON.stringify(echtVlaamsErfgoed);
+    window.localStorage.setItem('halloBesteLuisteraars', echtVlaamsErfgoed)
+
+**Data ophalen en omzetten naar JSON**
+
+    let echtVlaamsErfgoed = window.localStorage.setItem('halloBesteLuisteraars')
+    echtVlaamsErfgoed = JSON.parse(echtVlaamsErfgoed);
+    
+    console.log(echtVlaamsErfgoed)
+    /* Output: 
+      let echtVlaamsErfgoed = {
+        name: 'VJ Tony',
+        age: 35,
+        job: 'willy'
+      };
+    */
