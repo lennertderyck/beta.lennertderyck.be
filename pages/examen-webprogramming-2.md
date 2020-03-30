@@ -38,8 +38,6 @@ fullWidth: false
 * Om al je commits te pushen druk je vanonder op het push icoon  
   ![](/v1585577398/Schermafbeelding_2020-03-30_om_16.09.32_tvzv8k.png)
 
-  ![](/v1581282845/CITYSCAPE_DEEL_3_mk6rbw.jpg)
-
   ### Geïndexeerde & gesleutelde collecties
 
   ##### Array's – aanmaken
