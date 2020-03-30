@@ -202,7 +202,7 @@ Een array kan meerdere array's bevatten
       console.log(currentColor);
     });
 
-### Map
+### Map object
 
 Array on steroids
 
