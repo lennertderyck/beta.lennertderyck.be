@@ -555,3 +555,14 @@ Het gebruik van functies gebeurt op dezelfde manier ...
 ##### Static, getters & setters
 
 [Zie syllabus](https://www.pgm.gent/webpgm-2/js_intermediate/objects-oop.html#getters-setters)
+
+### FormData API
+
+    const form = 
+    
+    form.addEventListener('submit', async (e) => {
+          e.preventDefault(); // voorkom dat form data wilt versturen
+          
+          let formData = new FormData(this.form);
+          formData.get('title') // vervang 'title' met de name (name="Address") die je aan een veld hebt gegeven
+       })
