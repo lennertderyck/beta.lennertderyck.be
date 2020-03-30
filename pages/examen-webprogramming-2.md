@@ -135,20 +135,20 @@ Sorteert waarden in bepaalde volgorde, standaard alfabetisch
     months.sort();
     console.log(months); // Output: ["Dec", "Feb", "Jan", "March"]
 
-of bij getallen volgens hun eerste cijfer
+of bij getallen volgens hun eerste cijfer ...
 
     const numbers = [1, 30, 4, 21, 100000];
     numbers.sort();
     console.log(numbers); // Output: [1, 100000, 21, 30, 4]
 
-deze volgorde kan ook aangepast worden
+deze volgorde kan ook aangepast worden ...
 
     console.log(numbers.sort((a, b) => a - b)) // Output: [1, 4, 21, 30, 100000]
     console.log(numbers.sort((a, b) => b - a)) // Output: [100000, 30, 21, 4, 1]
 
-_Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal._
-
 'a' in de sort functie stelt de eerste waarde voor waarmee de 'b' waarde mee vergeleken wordt.
+
+_Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal._
 
 ##### Array – multidimensionaal
 
