@@ -353,6 +353,6 @@ Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
       });
     }
     
-    fetchJSON(url)
+    fetchJSON(url) // returnt letterlijk alle data
 
 ##### Fetch
