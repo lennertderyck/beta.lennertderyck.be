@@ -146,7 +146,7 @@ deze volgorde kan ook aangepast worden ...
 
 'a' in de sort functie stelt de eerste waarde voor waarmee de 'b' waarde mee vergeleken wordt.
 
-_Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal._
+> Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal.
 
 **Map**
 
@@ -405,7 +405,7 @@ Local en session storage gedragen zich hetzelfde, met het verschil dat alles in 
 
 _window.localStorage_ kan vervangen worden door _window.sessionStorage_.
 
-Alles dat in de localStorage/sessionStorage opgeslagen wordt, wordt omgezet naar een string.
+> Alles dat in de localStorage/sessionStorage opgeslagen wordt, wordt omgezet naar een string.
 
 ##### Data toevoegen
 
