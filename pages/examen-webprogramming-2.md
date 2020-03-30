@@ -38,45 +38,45 @@ fullWidth: false
 * Om al je commits te pushen druk je vanonder op het push icoon  
   ![](https://res.cloudinary.com/lennertderyck/image/upload/v1585577398/Schermafbeelding_2020-03-30_om_16.09.32_tvzv8k.png)
 
-  ### Geïndexeerde & gesleutelde collecties
+### Geïndexeerde & gesleutelde collecties
 
-  ##### Array's – aanmaken
+##### Array's – aanmaken
 
-  [Cursus](https://www.pgm.gent/webpgm-2/js_intermediate/collections_indexed.html#aanmaak-van-een-array) – [Mozilla](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[Cursus](https://www.pgm.gent/webpgm-2/js_intermediate/collections_indexed.html#aanmaak-van-een-array) – [Mozilla](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-  3 manieren
+3 manieren
 
-      const arr1 = new Array(element0, element1 ..., elementN);
-      const arr2 = Array(element0, element1 ..., elementN);
-      const arr3 = [element0, element1 ..., elementN];
+const arr1 = new Array(element0, element1 ..., elementN);
+const arr2 = Array(element0, element1 ..., elementN);
+const arr3 = [element0, element1 ..., elementN];
 
-  ##### Array – methodes
+##### Array – methodes
 
-  **Push**
+**Push**
 
-  Voegt nieuw value(s) toe aan einde van array
+Voegt nieuw value(s) toe aan einde van array
 
-      let fruit = ['Apple', 'Banana', 'Grape'];
-      fruit.push('Pear'); // Array fruit is now ['Apple', 'Banana', 'Grape', 'Pear']
+let fruit = ['Apple', 'Banana', 'Grape'];
+fruit.push('Pear'); // Array fruit is now ['Apple', 'Banana', 'Grape', 'Pear']
 
-  **Unshift**
+**Unshift**
 
-  Voegt nieuw value(s) toe aan begin van array
+Voegt nieuw value(s) toe aan begin van array
 
-      let weather = ['Wind', 'Rain', 'Fire'];
-      weather.unshift('Snow', 'Hail'); // Array fruit is now ['Snow', 'Hail', 'Wind', 'Rain', 'Fire']
+let weather = ['Wind', 'Rain', 'Fire'];
+weather.unshift('Snow', 'Hail'); // Array fruit is now ['Snow', 'Hail', 'Wind', 'Rain', 'Fire']
 
-  **Splice**
+**Splice**
 
-  Voeg items toe aan array, of verwijder items
+Voeg items toe aan array, of verwijder items
 
-    var fruits = ["Banana", "Orange", "Apple", "Mango"];
-    fruits.splice(2, 1, "Lemon", "Kiwi"); // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 1, "Lemon", "Kiwi"); // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
 
 **Concat**
 
 Combineer verschillende arrays
 
-    const array1 = ['a', 'b', 'c'];
-    const array2 = ['d', 'e', 'f'];
-    let arrayResult = array1.concat(array2); // Array arrayResult contains ['a', 'b', 'c', 'd', 'e', 'f']
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+let arrayResult = array1.concat(array2); // Array arrayResult contains ['a', 'b', 'c', 'd', 'e', 'f']
