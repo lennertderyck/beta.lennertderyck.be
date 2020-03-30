@@ -353,6 +353,26 @@ Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
       });
     }
     
-    fetchJSON(url) // returnt letterlijk alle data
+    fetchJSON(url) // 'url' moet vervangen worden door de url van de api
 
-##### Fetch
+##### Async / await
+
+De beste manier!
+
+    const fetchAPI = async (url) => { // zorg dat je functie async is
+        try {
+            let response = await fetch(url ,{modus: 'GET'})
+            let data = await response.json();
+            return data
+        }
+        catch {
+            throw new Error('nieje mut')
+        }
+    }
+    
+    const displayData = async () => {
+        const apiData = await fetchAPI('https://aws.random.cat/meow');
+        console.log(apiData);
+    }
+    
+    displayData();
