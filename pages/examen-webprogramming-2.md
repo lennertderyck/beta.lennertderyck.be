@@ -201,3 +201,69 @@ Een array kan meerdere array's bevatten
     color.forEach((currentColor) => {
       console.log(currentColor);
     });
+
+### Map
+
+Array on steroids
+
+##### Nieuwe map & elementen toevoegen
+
+Bij '.set()', is de eerste value (key) waarmee je een Map-item mee aanroept, het tweede is de effectieve content (value);
+
+    let myMap = new Map()
+    
+    myMap.set('key1', 'value1');
+    myMap.set('key2', 'value2');
+    myMap.set('key3', 'value3');
+
+##### Eigenschappen & methodes
+
+**Size**
+
+Krijg aantal item terug in key
+
+    console.log(myMap.size);     // 3
+
+**Get**
+
+Krijg value uit item terug
+
+    console.log(myMap.get('key1'))   // value1
+    console.log(myMap.get('key7'))   // undefined
+
+**Has**
+
+Bestaat opgegeven item met key ... ?
+
+    console.log(myMap.has('key1'))  // true
+    console.log(myMap.has('key10')) // false
+
+**Delete**
+
+Verwijder een item aan de hand van de key
+
+    myMap.delete('key1')
+
+**Clear**
+
+Wis alle items uit map
+
+    myMap.clear()
+
+##### Itereren van een map
+
+**For each**
+
+    myMap.forEach((value, key) => {
+      console.log(key + ' -> ' + value);
+    });
+
+**For**
+
+    for (var [key, value] of myMap) {
+           console.log(key + ' -> ' + value);
+    }
+
+##### Wanneer map gebruiken?
+
+[Zie syllabus]()
