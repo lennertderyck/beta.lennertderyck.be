@@ -328,3 +328,31 @@ Wis alle items in set
 ##### Verschil array en set
 
 [Zie syllabus](https://www.pgm.gent/webpgm-2/js_intermediate/collections_keyed.html#verschil-tussen-arrays-en-sets)
+
+### Consuming data
+
+##### XMLHttp Request
+
+Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
+
+    function fetchJSON(url) {
+      return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = 'json'; // afhankelijk van datatype
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState === 4) {
+            if (xhr.status < 400) {
+              resolve(xhr.response); // returnt data
+            } else {
+              reject(new Error(xhr.statusText)); // returnt fouttekst van api
+            }
+          }
+        };
+        xhr.send();
+      });
+    }
+    
+    fetchJSON(url)
+
+##### Fetch
