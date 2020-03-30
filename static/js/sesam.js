@@ -13,7 +13,7 @@ const sesamCollapse = {
 
         this.sesamTrigger.length !== 0 ? console.log(`\sesam triggers available`) : console.log(`\tno collapse triggers`);
         this.sesamTrigger.forEach((trigger) => {
-            trigger.addEventListener("click", (() => {this.collapseDo(trigger.dataset.sesamTrigger)}));
+            if (trigger.classList.contains('sesam') == false) trigger.addEventListener("click", (() => {this.collapseDo(trigger.dataset.sesamTrigger)}));
             
             if (trigger.classList.contains('sesam-hidden') == false && trigger.classList.contains('sesam-show') == false) trigger.classList.add('sesam-hidden');
             if (trigger.classList.contains('sesam') == false) trigger.classList.add('sesam');
