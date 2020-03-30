@@ -42,8 +42,6 @@ fullWidth: false
 
 ##### Array's – aanmaken
 
-[Cursus](https://www.pgm.gent/webpgm-2/js_intermediate/collections_indexed.html#aanmaak-van-een-array) – [Mozilla](https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
 3 manieren
 
     const arr1 = new Array(element0, element1 ..., elementN);
