@@ -65,3 +65,11 @@ fullWidth: false
 
       let weather = ['Wind', 'Rain', 'Fire'];
       weather.unshift('Snow', 'Hail'); // Array fruit is now ['Snow', 'Hail', 'Wind', 'Rain', 'Fire']
+
+  **Splice**
+
+Voeg items toe aan array, of verwijder items
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
+    fruits.splice(2, 1, "Lemon", "Kiwi");
