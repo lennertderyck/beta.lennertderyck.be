@@ -549,3 +549,7 @@ Het gebruik van functies gebeurt op dezelfde manier ...
       Don't even bother woman
       This black car stopped and is parked
     */
+
+##### Static, getters & setters
+
+[Zie syllabus](https://www.pgm.gent/webpgm-2/js_intermediate/objects-oop.html#getters-setters)
