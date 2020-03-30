@@ -46,9 +46,9 @@ fullWidth: false
 
 3 manieren
 
-const arr1 = new Array(element0, element1 ..., elementN);
-const arr2 = Array(element0, element1 ..., elementN);
-const arr3 = [element0, element1 ..., elementN];
+    const arr1 = new Array(element0, element1 ..., elementN);
+    const arr2 = Array(element0, element1 ..., elementN);
+    const arr3 = [element0, element1 ..., elementN];
 
 ##### Array – methodes
 
@@ -56,27 +56,124 @@ const arr3 = [element0, element1 ..., elementN];
 
 Voegt nieuw value(s) toe aan einde van array
 
-let fruit = ['Apple', 'Banana', 'Grape'];
-fruit.push('Pear'); // Array fruit is now ['Apple', 'Banana', 'Grape', 'Pear']
+    let fruit = ['Apple', 'Banana', 'Grape'];
+    fruit.push('Pear'); // Array fruit is now ['Apple', 'Banana', 'Grape', 'Pear']
 
 **Unshift**
 
 Voegt nieuw value(s) toe aan begin van array
 
-let weather = ['Wind', 'Rain', 'Fire'];
-weather.unshift('Snow', 'Hail'); // Array fruit is now ['Snow', 'Hail', 'Wind', 'Rain', 'Fire']
+    let weather = ['Wind', 'Rain', 'Fire'];
+    weather.unshift('Snow', 'Hail'); // Array fruit is now ['Snow', 'Hail', 'Wind', 'Rain', 'Fire']
 
 **Splice**
 
 Voeg items toe aan array, of verwijder items
 
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(2, 1, "Lemon", "Kiwi"); // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2, 1, "Lemon", "Kiwi"); // Vanaf positie 2, verwijder eerst 1 item, voeg daarna nieuwe value's toe
 
 **Concat**
 
 Combineer verschillende arrays
 
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
-let arrayResult = array1.concat(array2); // Array arrayResult contains ['a', 'b', 'c', 'd', 'e', 'f']
+    const array1 = ['a', 'b', 'c'];
+    const array2 = ['d', 'e', 'f'];
+    let arrayResult = array1.concat(array2); // Array arrayResult contains ['a', 'b', 'c', 'd', 'e', 'f']
+
+**Pop**
+
+Verwijder laatste element van array
+
+    const fruit = ['Apple', 'Banana', 'Grape'];
+    const removedElement = fruit.pop(); // Contains "Grape"
+    console.log(fruit); // Output: ['Apple', 'Banana']
+
+**Shift**
+
+Verwijder eerste element van array
+
+    const fruit = ['Apple', 'Banana', 'Grape'];
+    const removedElement = fruit.shift(); // Contains "Apple"
+    console.log(fruit); // Output: ['Banana', 'Grape']
+
+**Slice**
+
+Maak een nieuwe array vanuit een bestaande array
+
+    const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+    const selectedAnimals = animals.slice(2, 4); // Alle dieren vanaf positie 2 tot en met positie 4 worden geselecteerd 
+    console.log(animals.length); // Output: 5
+    console.log(selectedAnimals); // Output: ['camel', 'duck']
+
+**Join**
+
+Items in array verbinden met elkaar en omzetten naar een string
+
+    const arr = ['macOs', 'Windows', 'Linux'];
+    const arrAsStr = arr.join();
+    console.log(arrAsStr); // Output "macOs,Windows,Linux"
+
+Het verbindingsteken kan aangepast worden
+
+    const arr = ['macOs', 'Windows', 'Linux'];
+    const arrAsStr = arr.join(' | ');
+    console.log(arrAsStr); // Output "macOs | Windows | Linux"
+
+**Reverse**
+
+Draait de volgorde van een array om
+
+    const arr = ['one', 'two', 'three'];
+    console.log(arr.reverse()); // Output: ['three', 'two', 'one']
+
+**Sort**
+
+Sorteert waarden in bepaalde volgorde, standaard alfabetisch
+
+    const months = ['March', 'Jan', 'Feb', 'Dec'];
+    months.sort();
+    console.log(months); // Output: ["Dec", "Feb", "Jan", "March"]
+
+of bij getallen volgens hun eerste cijfer
+
+    const numbers = [1, 30, 4, 21, 100000];
+    numbers.sort();
+    console.log(numbers); // Output: [1, 100000, 21, 30, 4]
+
+deze volgorde kan ook aangepast worden
+
+    console.log(numbers.sort((a, b) => a - b)) // Output: [1, 4, 21, 30, 100000]
+    console.log(numbers.sort((a, b) => b - a)) // Output: [100000, 30, 21, 4, 1]
+
+_Bij getallen zal dan niet naar het eerste cijfer gekeken worden, maar naar de effectieve waarde van het getal._
+
+'a' in de sort functie stelt de eerste waarde voor waarmee de 'b' waarde mee vergeleken wordt.
+
+##### Array – multidimensionaal
+
+Een array kan meerdere arrays bevatten
+
+    const cars = [
+      ['Volvo', 22, 18],
+      ['BMW', 15, 13]
+      ['Saab', 5, 2]
+      ['Land Rover', 17, 15]
+    ];
+
+##### Array – itereren
+
+**For loop**
+
+    const colors = ['red', 'green', 'blue'];
+    for (let i = 0; i < colors.length; i++) {
+      const currentColor = colors[i];
+      console.log(currentColor);
+    }
+
+**For each**
+
+    const colors = ['red', 'green', 'blue'];
+    color.forEach((currentColor) => {
+      console.log(currentColor);
+    });
