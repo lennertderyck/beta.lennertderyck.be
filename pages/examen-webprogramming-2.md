@@ -419,16 +419,12 @@ Alles dat in de localStorage/sessionStorage opgeslagen wordt, wordt omgezet naar
 
     window.localStorage.getItem(key);
 
- 
-
     const name = window.localStorage.setItem('name', 'VJ Tony');
     console.log(name); // Output: VJ Tony
 
 ##### Data verwijderen
 
-    window.localStorage.removeItem(key);
-
- 
+    window.localStorage.removeItem(key); 
 
     window.localStorage.removeItem('name');
     console.log(window.localStorage.removeItem('name')); // Output: null
