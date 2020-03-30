@@ -556,13 +556,29 @@ Het gebruik van functies gebeurt op dezelfde manier ...
 
 [Zie syllabus](https://www.pgm.gent/webpgm-2/js_intermediate/objects-oop.html#getters-setters)
 
-### FormData API
+### Web API's
 
-    const form = 
+##### FormData API
+
+Stel je hebt volgend simpel formulier ...
+
+    <form id="weWillSellAllYourData">
+      <label for="firstName">First name</label>
+      <input type="text" name="first-name" id="firstName">
+      <label for="firstName">Last name</label>
+      <input type="text" name="last-name" id="lastName">
+      <label for="firstName">Adress</label>
+      <input type="text" name="address" id="address">
+      <button type="submit">submit</button> // zorg zeker dat je form een submit knop heeft
+    </form>
+
+    const form = document.querySelector('form#weWillSellAllYourData') // gebruik css-selectoren
     
-    form.addEventListener('submit', async (e) => {
-          e.preventDefault(); // voorkom dat form data wilt versturen
-          
-          let formData = new FormData(this.form);
-          formData.get('title') // vervang 'title' met de name (name="Address") die je aan een veld hebt gegeven
-       })
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); // voorkom dat form data wilt versturen
+    
+        let formData = new FormData(form); // formData parameter moet de variable van je form zijn
+        
+        const name = formData.get('first-name') // get parameter moet value zijn van het name attribuut in je form
+        console.log(name);
+    })
