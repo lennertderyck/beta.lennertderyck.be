@@ -1,8 +1,8 @@
 ---
 layout: page
 pageWidgets: []
-title: Examen Webprogramming 2
-customTitle: Examen Webprogramming 2
+title: Exam webpgm2
+customTitle: Examen Programming 2
 subTitle: Leerstof overzicht
 permalink: webpgm2
 short-desc: ''
