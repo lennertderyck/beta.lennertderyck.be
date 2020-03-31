@@ -379,6 +379,21 @@ Ook een goeie manier
     
     getSomeData('https://aws.random.cat/meow');
 
+##### Post / put
+
+    fetch(url, {
+        method: 'post',
+        headers: new Headers({
+          'Authorization': `Bearer ${AIRTABlE_KEY}`,
+          'Content-Type': 'application/json'
+        }),
+        body: null // alles wat gemoeet posten hier,
+      })
+      .then(response => response.json())
+      .then (data => {
+        // do something
+      })
+
 ##### XMLHttp Request
 
 Een oudere methode, je gebruikt indien mogelijk beter fetch of async/await
@@ -414,7 +429,7 @@ _window.localStorage_ kan vervangen worden door _window.sessionStorage_.
 ##### Data toevoegen
 
     window.localStorage.setItem(key, value);
-
+    
     window.localStorage.setItem('name', 'VJ Tony');
     window.localStorage.setItem('age', '35');
     window.localStorage.setItem('job', 'Willy');
@@ -422,14 +437,14 @@ _window.localStorage_ kan vervangen worden door _window.sessionStorage_.
 ##### Data ophalen
 
     window.localStorage.getItem(key);
-
+    
     const name = window.localStorage.setItem('name', 'VJ Tony');
     console.log(name); // Output: VJ Tony
 
 ##### Data verwijderen
 
     window.localStorage.removeItem(key); 
-
+    
     window.localStorage.removeItem('name');
     console.log(window.localStorage.removeItem('name')); // Output: null
 
@@ -585,7 +600,7 @@ Dan heb je deze code ...
         console.log(name);
     })
 
-##### GeoLocation API 
+##### GeoLocation API
 
     if (navigator.geolocation) { // eerst checken of browser dit ondersteund
         console.log('geolocatie werkt');
