@@ -5,7 +5,7 @@ ft-image: ''
 title: Contact [beta]
 customTitle: Samenwerken?
 subTitle: Laat een berichtje achter
-permalink: Contact-beta
+permalink: contact
 add-to-menu: true
 fullWidth: false
 short-desc: ''
