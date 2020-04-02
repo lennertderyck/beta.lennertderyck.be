@@ -1,5 +1,38 @@
 let toastIndex = 0;
 
+const getURLparameter = (url) => {
+    url = url.split('?')[1].split('&');
+    let valuesArray = [];
+    url.map(x => {
+        valuesArray.push(
+            {
+                key: x.split('=')[0],
+                value: x.split('=')[1],
+            }
+        )
+    });
+    const filterForKeys = (input) => {return input.key == key};
+    const returnValue = valuesArray.filter(filterForKeys)[0];                
+    return returnValue !== undefined ? returnValue.value : console.log('%c\tgetClientFilesKey() parameter key in parameter not found', 'color: #f30;');
+}
+
+// url = null, slugPosition = 0, returnSlugContent = false
+const getURLslug = (o) => {
+    if (o.url == undefined) o.url = window.location.pathname;
+    if (o.slugPosition == undefined) o.slugPosition = 1;
+    if (o.returnSlugContent == undefined) o.returnSlugContent = false;
+    
+    let urlArray = o.url.split('/');
+    urlArray.shift();
+    
+    return o.url == '/' ? undefined : urlArray[o.slugPosition-1];
+}
+
+// console.log(getURLslug({
+//     slugPosition: 1,
+// }));
+
+
 const el = (el, multiple = false) => {  
     const checkedElement =  document.querySelector(el)
     if (typeof checkedElement == 'object' && multiple == false) {
@@ -233,7 +266,56 @@ const contentBodyIndexing = {
     }
 }
 
-contentBodyIndexing.initialize();
+if (document.querySelector('#pageIndex ul') !== null) {
+    contentBodyIndexing.initialize();
+}
+
+const introWordSwither = {
+    initialize() {
+        this.wordIndex = 0
+        // Ik ben een OF ik ben gepassioneerd door
+        // this.words = ['graphic designer','creative','scout','web designer','web developer','dromer']
+        this.words = ['maak websites','ben student','schrijf code','droom','geef workshops','design','develop','geef bijles']
+        this.$replaceElement = document.querySelector('[data-label="wordReplacer"] span')
+        
+        this.replaceWord();
+    },
+    
+    replaceWord() {
+        const typewriter = new Typewriter(this.$replaceElement, {
+            loop: true
+        });
+
+        typewriter  
+            .typeString(this.words[0])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[1])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[2])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[3])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[4])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[5])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[6])
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(this.words[7])
+            .pauseFor(2500)
+            .deleteAll()
+            .start();
+    }
+}
+
+introWordSwither.initialize();
 
 /*
 const cookieImg = document.querySelector('[data-label="cookie"]');
