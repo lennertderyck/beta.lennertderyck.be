@@ -2,21 +2,40 @@
 label: Project
 hide_body: false
 fields:
-- type: list
-  name: tags
-  label: tags
+- name: tags
+  type: select
+  default: Web
+  config:
+    required: false
+    options:
+    - Web
+    - Print
+    - Sign
+    - Branding
+    - Online
+    - Fotografie
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
 - type: text
   name: title
-  label: title
+  label: Titel
 - type: text
   name: client
-  label: client
+  label: Klant
 - type: text
   name: project-url
-  label: project-url
-- type: file
-  name: ft-img
-  label: ft-img
+  label: Project link
+  config:
+    min: '10'
+- name: ft-img
+  type: file
+  config:
+    maxSize: 250
+  label: Feature image
 - type: image_gallery
   name: galery
-  label: galery
+  label: Galerij
