@@ -40,4 +40,5 @@ fields:
   name: galery
   label: Galerij
 pages:
+- _projects/the-meal-database.md
 - _projects/tronald-dump.md
