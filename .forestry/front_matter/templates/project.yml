@@ -39,3 +39,5 @@ fields:
 - type: image_gallery
   name: galery
   label: Galerij
+pages:
+- _projects/tronald-dump.md
