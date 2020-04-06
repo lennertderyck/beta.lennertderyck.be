@@ -16,6 +16,8 @@ sections:
   label: Projects
   create: all
   match: "**/*"
+  templates:
+  - project
 - type: heading
   label: Andere
 - type: directory
