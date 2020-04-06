@@ -20,18 +20,7 @@ widgets-bottom: false
     </div>
 </section>
 <section>
-    <div data-label="portfolioCards" class="first-test">
-        {% for project in site.projects %}
-            <a class="card" href="{{ project.url | replace: '.html', '' }}">
-                <img class="card-background" src="{{ project.ft-img | replace: 'https://res.cloudinary.com/lennertderyck/image/upload', 'https://res.cloudinary.com/lennertderyck/image/upload/w_640' }}" alt="">
-                <div class="card-body">
-                    <h4 class="mb-1">{{ project.title }}</h4>
-                    <p class="mb-0 text-modern md">{{ project.tags | first }}</p>
-                </div>
-            </a>
-        {% endfor %}
-    </div>
-    <div class="container">
+    <div class="container d-none">
         <div class="d-flex align-items-center ml-auto w-fit">
             <p class="text-modern mb-0 small mr-3">
                 scroll door<br>mijn projecten
@@ -39,6 +28,28 @@ widgets-bottom: false
             <i data-feather="arrow-right"></i>
         </div>
     </div>
+    <div class="container-xl" data-label="portfolioCards" data-sesam-target="portfolioCards">
+        <div class="flex-grid-wrapper">
+            <div class="grid flex-grid" data-masonry='{ "itemSelector": ".flex-grid-item" }'>
+                {% for project in site.projects %}
+                <a class="card flex-grid-item" href="{{ project.url | replace: '.html', '' }}">
+                    <img class="card-background" src="{{ project.ft-img | replace: 'https://res.cloudinary.com/lennertderyck/image/upload', 'https://res.cloudinary.com/lennertderyck/image/upload/w_640' }}" alt="">
+                    <div class="card-body">
+                        <h4 class="mb-1">{{ project.title }}</h4>
+                        <p class="mb-0 text-modern md">{{ project.tags | first }}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="flex-column align-items-center justify-content-center w-100" data-sesam-trigger="portfolioCards">
+        <p class="text-modern mb-0 small mt-5">
+            bekijk meer projecten
+        </p>
+        <i data-feather="arrow-down"></i>
+    </div>
+    
 </section>
 <section class="container">
     <div class="row">

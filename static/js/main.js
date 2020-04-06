@@ -16,7 +16,6 @@ const getURLparameter = (url) => {
     return returnValue !== undefined ? returnValue.value : console.log('%c\tgetClientFilesKey() parameter key in parameter not found', 'color: #f30;');
 }
 
-// url = null, slugPosition = 0, returnSlugContent = false
 const getURLslug = (o) => {
     if (o.url == undefined) o.url = window.location.pathname;
     if (o.slugPosition == undefined) o.slugPosition = 1;
@@ -27,11 +26,6 @@ const getURLslug = (o) => {
     
     return o.url == '/' ? undefined : urlArray[o.slugPosition-1];
 }
-
-// console.log(getURLslug({
-//     slugPosition: 1,
-// }));
-
 
 const el = (el, multiple = false) => {  
     const checkedElement =  document.querySelector(el)
@@ -275,7 +269,7 @@ const introWordSwither = {
         this.wordIndex = 0
         // Ik ben een OF ik ben gepassioneerd door
         // this.words = ['graphic designer','creative','scout','web designer','web developer','dromer']
-        this.words = ['maak websites','ben student','schrijf code','droom','geef workshops','design','develop','geef bijles']
+        this.words = ['maak websites','ben student','schrijf code','ben een dromer','geef workshops','design','develop','geef bijles']
         this.$replaceElement = document.querySelector('[data-label="wordReplacer"] span')
         
         this.replaceWord();
@@ -315,7 +309,7 @@ const introWordSwither = {
     }
 }
 
-introWordSwither.initialize();
+if (document.querySelector('[data-label="wordReplacer"] span') !== null) introWordSwither.initialize();
 
 /*
 const cookieImg = document.querySelector('[data-label="cookie"]');
