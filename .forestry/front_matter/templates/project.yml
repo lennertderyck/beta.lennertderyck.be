@@ -1,0 +1,22 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: title
+  label: title
+- type: text
+  name: client
+  label: client
+- type: text
+  name: project-url
+  label: project-url
+- type: file
+  name: ft-img
+  label: ft-img
+- type: image_gallery
+  name: galery
+  label: galery
