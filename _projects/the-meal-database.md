@@ -5,6 +5,7 @@ client: Arteveldehogeschool
 project-url: https://git.ahs.lennertderyck.be/1920-webpgm2-recipes-api/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1586216279/Schermafbeelding_2020-04-07_om_01.37.40_yu1trd.png
 galery: []
+date: 2020-04-06 00:00:00 +0000
 
 ---
 Opnieuw een opdracht om te leren omgaan met api's en JSON data.
