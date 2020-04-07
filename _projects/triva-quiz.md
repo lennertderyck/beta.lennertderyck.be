@@ -3,7 +3,7 @@ tags: Web
 title: Triva Quiz
 client: Arteveldehogeschool
 project-url: https://webpgm2-exam.netlify.com/
-ft-img: "/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg
 galery: []
 
 ---
