@@ -11,7 +11,7 @@ galery:
 - "/uploads/1557955835739.png"
 - "/uploads/download (1).png"
 - "/uploads/download.png"
-
+date: 2018-10-06 00:00:00 +0000
 ---
 Een platform voor iedereen die html, css en de basis van javascript wil leren.
 

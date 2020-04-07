@@ -15,7 +15,7 @@ galery:
 - "/uploads/1560461844737.png"
 - "/uploads/1560461831671.png"
 - "/uploads/1560461808253.png"
-
+date: 2018-10-06 00:00:00 +0000
 ---
 Deze opdracht hield in dat we een website moesten maken voor een product dat gefinancierd wordt door crowdfunding.
 

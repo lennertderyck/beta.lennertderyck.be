@@ -31,7 +31,8 @@ widgets-bottom: false
     <div class="container-xl" data-label="portfolioCards" data-sesam-target="portfolioCards">
         <div class="flex-grid-wrapper">
             <div class="grid flex-grid" data-masonry='{ "itemSelector": ".flex-grid-item" }'>
-                {% for project in site.projects %}
+                {% assign sortedProjects = (site.projects | sort: 'date') | reverse %}
+                {% for project in sortedProjects %}
                 <a class="card flex-grid-item" href="{{ project.url | replace: '.html', '' }}">
                     <img class="card-background" src="{{ project.ft-img | replace: 'https://res.cloudinary.com/lennertderyck/image/upload', 'https://res.cloudinary.com/lennertderyck/image/upload/w_640' }}" alt="">
                     <div class="card-body">

@@ -13,6 +13,6 @@ galery:
 - "/uploads/CITYSCAPE_DEEL_1.jpg"
 - "/uploads/Schermafbeelding 2019-11-06 om 22.24.17.png"
 - "/uploads/Schermafbeelding 2019-11-06 om 22.41.02.png"
-
+date: 2018-10-06 00:00:00 +0000
 ---
 "Maak een illustratie bestaande uit basisfiguren"

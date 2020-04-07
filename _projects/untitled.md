@@ -9,7 +9,7 @@ galery:
 - "/uploads/photo-1523715655481-7dea0f4bda16.jpeg"
 - "/uploads/LYON_003_SMALL-1142x639.jpg"
 - "/uploads/lennert-de-ryck-424355-unsplash-e1529574095823-990x554.jpg"
-
+date: 2018-10-06 00:00:00 +0000
 ---
 Eigen foto's van de laatste jaren. Bekijk het project voor meer foto's.
 

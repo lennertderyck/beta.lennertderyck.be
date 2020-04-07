@@ -10,7 +10,7 @@ galery:
 - "/uploads/COVER_COPACOWOLO-03.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_1.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_2.png"
-
+date: 2018-10-06 00:00:00 +0000
 ---
 Deze bandjes werden ontworpen als kampaandenken voor de woudlopertak van de scouts waar ik leiding geef.
 

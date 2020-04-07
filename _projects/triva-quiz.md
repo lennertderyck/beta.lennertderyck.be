@@ -5,7 +5,7 @@ client: Arteveldehogeschool
 project-url: https://webpgm2-exam.netlify.com/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg
 galery: []
-
+date: 2020-04-07 00:00:00 +0000
 ---
 Dit was een examenopdracht waarbij een quizapplicatie ontwikkeld moest worden.
 

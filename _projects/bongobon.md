@@ -10,7 +10,7 @@ ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/IMG_2
 galery:
 - "/uploads/IMG_20170529_151747-compressor.jpg"
 - "/uploads/IMG_20170529_151707-compressor.jpg"
-
+date: 2017-10-06 00:00:00 +0000
 ---
 De opdracht hield in dat we een herwerking maakten van de bekende Bongo verpakkingen. Ik koos voor bestemming Parijs.
 

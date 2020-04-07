@@ -16,7 +16,7 @@ galery:
 - "/uploads/Schermafbeelding 2019-12-25 om 18.15.18.png"
 - "/uploads/Schermafbeelding 2019-12-25 om 18.15.27.png"
 - "/uploads/Artboard – 1.png"
-
+date: 2019-10-06 00:00:00 +0000
 ---
 Ik had zelf vaker en vaker de nood aan een middel om betalingen snel te kunnen uitvoeren. Met de banking apps is het vaak mogelijk qr-codes aan te maken, maar hier kan slecht één persoon gebruik van maken.
 

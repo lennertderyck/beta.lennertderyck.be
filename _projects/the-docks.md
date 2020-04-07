@@ -11,7 +11,7 @@ galery:
 - "/uploads/Schermafbeelding-2018-06-20-om-22.36.26-1024x524.png"
 - "/uploads/Schermafbeelding-2018-06-20-om-22.41.28-e1529574020237.png"
 - "/uploads/Schermafbeelding-2018-06-20-om-22.40.14-e1529574032344.png"
-
+date: 2018-10-06 00:00:00 +0000
 ---
 Dit was oorspronkelijk een opdracht voor school die ik verder heb uitgewerkt. Het project stelt een de website van een concertzaal voor met als doelpubliek jongeren tussen 18 en 24 jaar en vooral studenten.
 
