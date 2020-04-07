@@ -3,7 +3,7 @@ tags: Web
 title: Tronald dump
 client: Arteveldehogeschool
 project-url: https://git.lennertderyck.be/tweets-of-the-dumbest-living-thing/
-ft-img: "/v1586215865/7Q8jYBD_irlqp9.png"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1586215865/7Q8jYBD_irlqp9.png
 galery: []
 
 ---
