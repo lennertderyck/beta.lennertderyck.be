@@ -19,7 +19,7 @@ widgets-bottom: false
         <a href="{{ '/over' | url }}" class="text-modern">Ontdek meer</a>
     </div>
 </section>
-<section>
+<section id="projects">
     <div class="container d-none">
         <div class="d-flex align-items-center ml-auto w-fit">
             <p class="text-modern mb-0 small mr-3">
@@ -29,36 +29,39 @@ widgets-bottom: false
         </div>
     </div>
     <div class="container-xl" data-label="portfolioCards" data-sesam-target="portfolioCards">
-        <div class="flex-grid-wrapper">
-            <div class="grid flex-grid" data-masonry='{ "itemSelector": ".flex-grid-item" }'>
-                {% assign sortedProjects = (site.projects | sort: 'date') | reverse %}
-                {% for project in sortedProjects %}
-                <a class="card flex-grid-item" href="{{ project.url | replace: '.html', '' }}">
-                    <img class="card-background" src="{{ project.ft-img | replace: 'https://res.cloudinary.com/lennertderyck/image/upload', 'https://res.cloudinary.com/lennertderyck/image/upload/w_640' }}" alt="">
-                    <div class="card-body">
-                        <h4 class="mb-1">{{ project.title }}</h4>
-                        <p class="mb-0 text-modern md">{{ project.tags | first }}</p>
-                    </div>
-                </a>
-                {% endfor %}
-            </div>
+        <div class="salvatore" data-columns>
+            {% assign sortedProjects = (site.projects | sort: 'date') | reverse %}
+            {% for project in sortedProjects %}
+            <a class="card item" href="{{ project.url | replace: '.html', '' }}">
+                <img class="card-background" src="{{ project.ft-img | replace: 'https://res.cloudinary.com/lennertderyck/image/upload', 'https://res.cloudinary.com/lennertderyck/image/upload/w_640' }}" alt="">
+                <div class="card-body">
+                    <h4 class="mb-1">{{ project.title }}</h4>
+                    <p class="mb-0 text-modern md">{{ project.tags | first }}</p>
+                </div>
+            </a>
+            {% endfor %}
         </div>
     </div>
-    <div class="flex-column align-items-center justify-content-center w-100" data-sesam-trigger="portfolioCards">
-        <p class="text-modern mb-0 small mt-5">
-            bekijk meer projecten
-        </p>
-        <i data-feather="arrow-down"></i>
+    <div class="flex-column align-items-center justify-content-center w-100" data-label="portfolioNavigator">
+        <a href="#projects">
+            <h4 class="mb-2 mt-5">
+                bekijk mijn projecten
+            </h4>
+        </a>
+        <a class="text-center" href="#more">
+            <p class="text-modern mb-0 small">of klik en ga verder</p>
+            <i data-feather="arrow-down"></i>
+        </a>
     </div>
     
 </section>
-<section class="container">
+<section id="more" class="container">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            {% include widget-text.html title="Wat ik doe" subTitle="Diensten" content="Tegenwoordig hou ik me vooral bezig met webdesign, maar ook drukwerk blijft een passie!" btnTitle="Ontdek wat ik doe" btnUrl="#" %}
+            {% include widget-text.html title="Wat ik doe" subTitle="Diensten" content="Tegenwoordig hou ik me vooral bezig met webdesign, maar ook drukwerk blijft een passie!" btnTitle="Ontdek wat ik doe" btnUrl="/wat-ik-doe" %}
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            {% include widget-text.html title="Over mij" subTitle="Bio" content="Een jong grafisch designer die zich een weg baant door de grafische wereld." btnTitle="Kom meer te weten" btnUrl="#" %}
+            {% include widget-text.html title="Over mij" subTitle="Bio" content="Een student die zich een weg baant door de grafische wereld." btnTitle="Kom meer te weten" btnUrl="/over" %}
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
             {% include widget-text.html title="Praktisch" subTitle="Meer info" content="Je zou graag met mij in zee gaan? Fantastisch! Dan vind je hier alle info die je nodig hebt." btnTitle="Meer lezen" btnUrl="#" %}
