@@ -5,7 +5,7 @@ client: Scouts Haegepoorters Destelbergen
 project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Middel_1_jwuoax.svg
 galery:
-- "/uploads/tombola_tickets_givers.png"
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282806/tombola_tickets_givers_edarp6.png
 date: 2017-10-06T00:00:00.000+00:00
 
 ---
