@@ -1,16 +1,15 @@
 ---
-tags:
-- Wvd
-- Sign
+tags: Print
 title: Kampaandenken Wolokamp '18
 client: Scouts Haegepoorters Destelbergen
 project-url: ''
-ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18-03_jnxua9.svg"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18-03_jnxua9.svg
 galery:
 - "/uploads/COVER_COPACOWOLO-03.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_1.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_2.png"
-date: 2018-10-06 00:00:00 +0000
+date: 2018-10-06T00:00:00.000+00:00
+
 ---
 Deze bandjes werden ontworpen als kampaandenken voor de woudlopertak van de scouts waar ik leiding geef.
 
