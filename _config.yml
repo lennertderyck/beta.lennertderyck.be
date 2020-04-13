@@ -51,7 +51,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "page"
+      layout: "project"
       widgets-bottom: false
       type: project    
   - scope:

@@ -1,0 +1,54 @@
+[data-label="projectDetails"], #projectDetails {
+    // position: fixed;
+    // top: 0px;
+    // left: 0px;
+    // right: 0px;
+    // bottom: 0px;
+    // display: block;
+    // align-items: center;
+    // padding: 30px;
+    
+    // max-height: 100vh;
+    // overflow-y: scroll;
+    
+    // @extend .lvl-8;
+    
+    .project {
+        border-radius: 13px;
+        box-shadow: 0 0px 0px rgba(0,0,0,0.06),
+                    0 8px 8px rgba(0,0,0,0.06),
+                    0 16px 16px rgba(0, 0, 0, 0.06);
+        // max-height: 100%;
+        // padding: 30px;
+        
+        &-header {
+            position: relative;
+            border-radius: 13px 13px 0px 0px;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+            }
+            
+            &-content {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                background: linear-gradient(51deg, rgba(0, 0, 0, 0.726) 0%, rgba(0,0,0,0) 100%);
+                background: linear-gradient(34deg, rgba(0, 0, 0, 0.658) 0%, rgba(0,0,0,0) 60%);
+                color: white;
+            }
+        }
+        
+        &-details {
+            padding: 40px;
+        }
+    }
+    
+}

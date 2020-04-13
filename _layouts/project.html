@@ -1,9 +1,46 @@
-<!-- 
-    base page for project,
-    
-    project will be retrieved by a await async fetch
-    -> return response.text();
-    
-    also add href relocation to project model when page want to visit
-    -> in javascript file! (or not?)
- -->
+---
+layout   : default
+---
+<div class="container mb-4">
+    <div class="project-header">
+        <img src="{{ page.ft-img }}" alt="">
+        <div class="project-header-content">
+            <div class="container py-4">
+                <h2>{{ page.title }}</h2>
+                <p class="text-modern md">Webdesign</p>
+                <a href="{{ page.project-url }}" target="_blank" class="btn btn-simple-white">project bekijken</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="project-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <p>{{ page.about }}</p>
+                <p>
+                    <span class="text-modern md text-color-3">
+                        klant
+                    </span><br>
+                    {{ page.client }}
+                </p>
+                <p>
+                    <span class="text-modern md text-color-3">
+                        Jaar
+                    </span><br>
+                    {{ page.date | date: "%Y" }}
+                </p>
+                <a href="{{ page.project-url }}" target="_blank" class="btn">Project bekijken</a>
+                
+            </div>
+            <div class="col-8" id="contentBody">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="project-galery">
+    {% for img in page.galery %}
+    <img class="w-100" src="{{ img }}">
+    {% endfor %}
+</div>

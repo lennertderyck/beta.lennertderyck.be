@@ -41,7 +41,7 @@
     <!-- local assets -->
     <link rel="stylesheet" href="{{ "/static/css/main.css" | url }}">
 </head>
-<body data-sesam-target="burgerMenu" class="sesam sesam-hidden" data-page-name="{{ page.title | downcase }}">
+<body data-sesam-target="burgerMenu" class="sesam sesam-hidden" data-layout="{{ page.layout }}" data-page-name="{{ page.title | downcase }}">
     <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
     <div id="page" class="animated fadeIn slow">
         {% include header.html %}
@@ -97,6 +97,7 @@
 
         /* Enable for bootstrap toasts 👇 */
         $('[data-toggle="toast"]').toast();
+        
     </script>
 </body>
 </html>
