@@ -1,17 +1,17 @@
 ---
-tags:
-- Web
+tags: ''
 title: Web workshop
 client: Persoonlijk
 project-url: https://github.lennertderyck.be/web-workshop/
-ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282808/photo-1510493648510-d11f5bf55f33_oegtk4.jpg"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282808/photo-1510493648510-d11f5bf55f33_oegtk4.jpg
 galery:
-- "/uploads/1557955744171.png"
-- "/uploads/1557955829302.png"
-- "/uploads/1557955835739.png"
-- "/uploads/download (1).png"
-- "/uploads/download.png"
-date: 2018-10-06 00:00:00 +0000
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282851/1557955829302_x6ltm4.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282851/1557955744171_vmgtco.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282850/1557955835739_oivypx.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282817/download_1_rpan39.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282815/download_xvmks2.png
+date: 2018-10-06T00:00:00.000+00:00
+
 ---
 Een platform voor iedereen die html, css en de basis van javascript wil leren.
 
