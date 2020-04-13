@@ -1,14 +1,14 @@
 ---
-tags:
-- Web
+tags: Web
 title: Personal startpage
 client: Persoonlijk
 project-url: https://personal-startpage.lennertderyck.be/
-ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282809/pf_gh_personal_startpage_dark_sxpl8q.png"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282809/pf_gh_personal_startpage_dark_sxpl8q.png
 galery:
 - "/uploads/Schermafbeelding-2019-05-23-om-20.26.18-compressor.png"
 - "/uploads/pf_gh_personal_startpage_dark.png"
-date: 2018-10-06 00:00:00 +0000
+date: 2018-10-06T00:00:00.000+00:00
+
 ---
 Een een persoonlijke webpagina die getoond wordt wanneer een nieuw tabblad wordt geopend.
 
