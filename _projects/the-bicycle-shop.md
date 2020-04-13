@@ -1,5 +1,5 @@
 ---
-tags: ''
+tags: Branding
 title: The Bicycle Shop
 client: Persoonlijk
 project-url: https://lennertderyck.be
