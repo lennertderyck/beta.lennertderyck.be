@@ -4,7 +4,7 @@ pageWidgets: []
 title: Start een project
 customTitle: Start een project
 subTitle: praktisch
-permalink: project/start
+permalink: samenwerken
 short-desc: ''
 titlebar: false
 ft-image: ''
