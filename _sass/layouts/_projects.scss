@@ -48,6 +48,12 @@
     .project-details {
         margin-top: 3.1rem;
         // padding: 40px;
+        
+        .project-galery > img {
+            border-radius: 13px;
+            max-height: 80vh;
+            object-fit: cover;
+        }
     }
 }
 

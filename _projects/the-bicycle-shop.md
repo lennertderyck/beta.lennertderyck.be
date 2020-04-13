@@ -2,7 +2,7 @@
 tags: ''
 title: The Bicycle Shop
 client: Persoonlijk
-project-url: https://lennertderyck.be
+project-url: 
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MOCKUP_TBS_RAAM_typgua.png
 galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MOCKUP_TBS_RAAM_typgua.png
