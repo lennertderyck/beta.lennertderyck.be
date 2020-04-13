@@ -1,15 +1,13 @@
 ---
-tags:
-- School
-- Sign
-- Branding
+tags: Sign
 title: Hotel Iconografie
 client: Edugo Campus Glorieux
 project-url: ''
-ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg
 galery:
 - "/uploads/PROJECT_FOCUSED-1024x768.jpg"
-date: 2017-10-06 00:00:00 +0000
+date: 2017-10-06T00:00:00.000+00:00
+
 ---
 De opdracht was het ontwerpen van een reeks iconen rond een zelfgekozen thema. Ik koos voor een hotel.   
   
