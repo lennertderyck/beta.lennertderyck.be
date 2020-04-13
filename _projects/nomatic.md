@@ -1,13 +1,9 @@
 ---
-tags:
-- School
-- Branding
-- Online
-- Web
+tags: Web
 title: Nomatic Travel Bag
 client: Arteveldehogeschool
 project-url: https://gdmgent-1819-nmd2.github.io/1819-crowdfunding-gdm-1718-lenndery/
-ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg
 galery:
 - "/uploads/download-1.png"
 - "/uploads/1560461864440.png"
@@ -15,7 +11,8 @@ galery:
 - "/uploads/1560461844737.png"
 - "/uploads/1560461831671.png"
 - "/uploads/1560461808253.png"
-date: 2018-10-06 00:00:00 +0000
+date: 2018-10-06T00:00:00.000+00:00
+
 ---
 Deze opdracht hield in dat we een website moesten maken voor een product dat gefinancierd wordt door crowdfunding.
 
