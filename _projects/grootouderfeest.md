@@ -1,15 +1,13 @@
 ---
-tags:
-- Wvd
-- Print
-- Online
+tags: Print
 title: Grootouderfeest
 client: Edugo Internaat
 project-url: ''
-ft-img: "https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/poffertjes_0_q2bypt.jpg"
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/poffertjes_0_q2bypt.jpg
 galery:
 - "/uploads/uitnodiging_grootouderfeest-1024x510.png"
 - "/uploads/BUTTON_TALENT-01.png"
-date: 2017-10-06 00:00:00 +0000
+date: 2017-10-06T00:00:00.000+00:00
+
 ---
 Deze banner werd ontworpen voor het grootouderfeest van het Edugo Internaat. Deze diende als uitnodiging. De bruine golf op de achtergrond heeft als bron van inspiratie koffie.
