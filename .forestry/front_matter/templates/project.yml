@@ -40,7 +40,7 @@ fields:
   name: project-url
   label: Project link
   config:
-    min: '10'
+    min: 
 - name: ft-img
   type: file
   config:
