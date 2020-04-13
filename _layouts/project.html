@@ -7,7 +7,7 @@ layout   : default
         <div class="project-header-content">
             <div class="container py-4">
                 <h2>{{ page.title }}</h2>
-                <p class="text-modern md">Webdesign</p>
+                <p class="text-modern md">{{ page.tags }}</p>
                 <a href="{{ page.project-url }}" target="_blank" class="btn btn-simple-white">project bekijken</a>
             </div>
         </div>
@@ -17,7 +17,9 @@ layout   : default
     <div class="container">
         <div class="row">
             <div class="col-4">
+                {% if page.about %}
                 <p>{{ page.about }}</p>
+                {% endif %}
                 <p>
                     <span class="text-modern md text-color-3">
                         klant
