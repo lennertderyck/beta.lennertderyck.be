@@ -24,6 +24,7 @@ fields:
     - Branding
     - Online
     - Fotografie
+    - Illustratief
     source:
       type: simple
       section: 
