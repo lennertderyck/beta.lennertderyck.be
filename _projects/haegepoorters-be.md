@@ -2,7 +2,7 @@
 tags: Web
 title: Haegepoorters.be
 client: Haegepoorters Destelbergen
-project-url: https://github.com/lennertderyck/haegepoorters.be
+project-url: https://haegepoorters.be
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282814/pnu7n9jraiym6inadwwm_hdehlu.jpg
 galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282819/download_1_-1_c0qnrb.png
