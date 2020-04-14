@@ -5,6 +5,9 @@ client: Scouts Haegepoorters Destelbergen
 project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18-03_jnxua9.svg
 galery:
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282844/COVER_COPACOWOLO-03_npix2i.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282845/BANDJES_WOLOKAMP_18_VERSIE_1_fzaljd.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18_VERSIE_2_pjzb0n.png
 - "/uploads/COVER_COPACOWOLO-03.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_1.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_2.png"
