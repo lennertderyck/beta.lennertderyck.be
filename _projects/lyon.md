@@ -1,5 +1,5 @@
 ---
-tags: ''
+tags: Fotografie
 title: Lyon
 client: Persoonlijk
 project-url: https://unsplash.com/collections/2259410/lyon
