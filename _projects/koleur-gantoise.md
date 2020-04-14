@@ -5,10 +5,10 @@ client: Persoonlijk
 project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282841/DSC2761-compressor_p3kjdy.jpg
 galery:
-- "/uploads/mockup_koleur_gantoise-e1529574278156.png"
-- "/uploads/koleur_gantoise_verwerking3-1024x724.png"
-- "/uploads/koleur_gantoise_verwerking2-1024x724.png"
-- "/uploads/koleur_gantoise_verwerking-1024x724.png"
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282811/koleur_gantoise_verwerking3-1024x724_z8adte.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282813/koleur_gantoise_verwerking2-1024x724_rtoer2.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282814/koleur_gantoise_verwerking-1024x724_l7opys.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282814/mockup_koleur_gantoise-e1529574278156_pmf55p.png
 date: 2017-10-06T00:00:00.000+00:00
 
 ---
