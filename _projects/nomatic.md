@@ -5,12 +5,11 @@ client: Arteveldehogeschool
 project-url: https://gdmgent-1819-nmd2.github.io/1819-crowdfunding-gdm-1718-lenndery/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg
 galery:
-- "/uploads/download-1.png"
-- "/uploads/1560461864440.png"
-- "/uploads/1560461853920.png"
-- "/uploads/1560461844737.png"
-- "/uploads/1560461831671.png"
-- "/uploads/1560461808253.png"
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282849/1560461864440_uuivar.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282849/1560461831671_pzxtvh.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282850/1560461853920_pgxtly.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282850/1560461844737_ynx6pt.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282850/1560461808253_ocdj7c.png
 date: 2018-10-06T00:00:00.000+00:00
 
 ---
