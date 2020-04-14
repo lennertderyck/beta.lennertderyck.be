@@ -2,17 +2,32 @@
 ---
 @charset "UTF-8";
 
+// reusable
+@import "variables";
+@import "properties";
+
+// structure & blocks
 @import "flex-card-grid";
 @import "columns";
-@import "base";
+@import "components";
+
+// plugins
+@import "glide/glide.variables";
+@import "glide/glide.core";
+@import "glide/glide.theme";
+
+// layouts
 @import "layouts/pages";
 @import "layouts/projects";
-@import "properties";
+
+// pages
+@import "pages/home";
+@import "pages/social";
+
 @import "typography";
 @import "fonts";
 @import "sesam";
-@import "components";
-@import "pages/home";
-@import "pages/social";
 @import "menu";
 @import "forms";
+
+@import "base";

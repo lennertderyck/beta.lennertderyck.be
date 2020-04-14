@@ -39,6 +39,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     
     <!-- local assets -->
+    <script src="{{ "/static/js/vibrant.min.js" | url }}"></script>
     <link rel="stylesheet" href="{{ "/static/css/main.css" | url }}">
 </head>
 <body data-sesam-target="burgerMenu" class="sesam sesam-hidden" data-layout="{{ page.layout }}" data-page-name="{{ page.title | downcase }}">
@@ -81,6 +82,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         
     <!-- scripts -->
+    <script src="{{ "/static/js/glide.min.js" | url }}"></script>
     <script src="{{ "/static/js/salvattore.min.js" | url }}"></script>
     <script src="{{ "/static/js/cookies.js" | url }}"></script>
     <script src="{{ "/static/js/sesam.js" | url }}"></script>
@@ -98,6 +100,7 @@
         /* Enable for bootstrap toasts 👇 */
         $('[data-toggle="toast"]').toast();
         
+        if (document.body.dataset.layout == 'project') new Glide('.glide').mount();
     </script>
 </body>
 </html>

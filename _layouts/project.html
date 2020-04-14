@@ -8,9 +8,33 @@ layout   : default
             <div class="container py-4">
                 <h2>{{ page.title }}</h2>
                 <p class="text-modern md">{{ page.tags }}</p>
-                {% if page.project-url contains "http" %}
+                <!-- {% if page.project-url contains "http" %}
                 <a href="{{ page.project-url }}" target="_blank" class="btn btn-simple-white">project bekijken</a>
-                {% endif %}
+                {% endif %} -->
+                
+                <div class="d-flex" data-label="projectNavigation">
+                    <!-- <div class="project-navigation-prev mr-4">
+                        {% if page.previous.url %}
+                            <a href="{{ page.previous.url | remove:'.html'}}" class="btn btn-simple-white">{{ page.previous.title }}</a>
+                        {% endif %}
+                        
+                        {% if page.previous == nil %}
+                            {% assign proj_last = site.projects | last %}
+                            <a href="{{ proj_last.url | remove:'.html'}}" class="btn btn-simple-white" style="opacity: 0.6;">{{ proj_last.title }}</a>
+                        {% endif %}
+                    </div> -->
+                    
+                    <div class="project-navigation-next">
+                        {% if page.next.url %}
+                            <a href="{{ page.next.url | remove:'.html'}}" class="btn btn-simple-white">volgende <span class="d-none d-md-block ml-1"> － {{ page.next.title }}</span></a>
+                        {% endif %}
+                        
+                        {% if page.next == nil %}
+                            {% assign proj_first = site.projects | first %}
+                            <a href="{{ proj_first.url | remove:'.html'}}" class="btn btn-simple-white">volgende <span class="d-none d-md-block ml-1"> － {{ proj_first.title }}</span></a>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -42,12 +66,39 @@ layout   : default
             <div class="col-12 col-md-8 mt-5 mt-md-0" id="contentBody">
                 {{ content }}
                 
-                <div class="project-galery mt-5">
-                    {% for img in page.galery %}
-                    <img class="w-100" src="{{ img }}">
-                    {% endfor %}
+                <div class="project-galery mt-5">                 
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                {% for img in page.galery %}
+                                <li class="glide__slide">
+                                    <img class="w-100 mb-4" src="{{ img }}">
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            {% for img in page.galery %}
+                            <button class="glide__bullet" data-glide-dir="={{ forloop.index }}"></button>
+                            {% endfor %}
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<script>
+    const img = document.querySelector('.glide .glide__slide:first-child > img')
+    var vibrant = new Vibrant(img);
+    var swatches = vibrant.swatches()
+    for (var swatch in swatches)
+        if (swatches.hasOwnProperty(swatch) && swatches[swatch])
+            console.log(swatch, swatches[swatch].getHex())
+</script>

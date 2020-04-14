@@ -51,8 +51,23 @@
         
         .project-galery > img {
             border-radius: 13px;
-            max-height: 80vh;
-            object-fit: cover;
+            max-height: 40vh;
+            object-fit: contain;
+            background-color: $accent1;
+            
+            user-select: none;
+            // user-drag: none;
+            -webkit-user-drag: none;
+            pointer-events: none;
+        }
+        
+        .glide {
+            .glide__slide > img {
+                height: 350px;
+                object-fit: contain;
+                border-radius: 13px;
+                background-color: $accent1;
+            }
         }
     }
 }
