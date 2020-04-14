@@ -75,9 +75,14 @@ a, a:hover {
             font-size: 16px;
         }
     }
+    
+    ul {
+        list-style-position: outside;
+        padding-left: 21px;
+    }
 }
 
-#contentBody p a:not(.btn), .link {
+#contentBody a:not(.btn), .link {
     position: relative;
     &::after {
         content: ' ';

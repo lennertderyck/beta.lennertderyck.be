@@ -72,7 +72,7 @@ layout   : default
                             <ul class="glide__slides">
                                 {% for img in page.galery %}
                                 <li class="glide__slide">
-                                    <img class="w-100 mb-4" src="{{ img }}">
+                                    <img class="w-100 mb-4" src="{{ img }}" crossorigin="anonymous">
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -94,11 +94,12 @@ layout   : default
 </div>
 
 
-<script>
-    const img = document.querySelector('.glide .glide__slide:first-child > img')
+<!-- <script>
+    
+    const img = document.querySelector('.glide .glide__slide:first-child > img');
     var vibrant = new Vibrant(img);
     var swatches = vibrant.swatches()
     for (var swatch in swatches)
         if (swatches.hasOwnProperty(swatch) && swatches[swatch])
             console.log(swatch, swatches[swatch].getHex())
-</script>
+</script> -->

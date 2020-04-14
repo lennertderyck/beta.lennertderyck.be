@@ -216,7 +216,7 @@ const contentBodyIndexing = {
             const h3 = i.tagName == 'H3'
             prevEl = this.headings[index-1]
             nextEl = this.headings[index+1];
-            
+                        
             if (index == 0) sesamInitClass = 'sesam sesam-show';
             
             if (h3 == true) {
@@ -234,7 +234,7 @@ const contentBodyIndexing = {
                         </li>
                 `
                 }
-                if (nextEl.tagName == 'H3') {
+                if (nextEl != undefined && nextEl.tagName == 'H3') {
                 $tempStr += `
                         <li class="page-index-item small text-modern page-index-lvl2">
                             <a href="#${i.id}">${i.textContent}</a>
@@ -242,7 +242,7 @@ const contentBodyIndexing = {
                     </div>
                 `
                 }
-                if (prevEl.tagName != 'H3' && nextEl.tagName != 'H3') {
+                if (prevEl != undefined && nextEl != undefined && prevEl.tagName != 'H3' && nextEl.tagName != 'H3') {
                 $tempStr += `
                         <li class="page-index-item small text-modern page-index-lvl2">
                             <a href="#${i.id}">${i.textContent}</a>
