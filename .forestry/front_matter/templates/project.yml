@@ -12,6 +12,7 @@ fields:
     time_format: 
     display_utc: true
   default: now
+  hidden: true
 - name: tags
   type: select
   default: Web
