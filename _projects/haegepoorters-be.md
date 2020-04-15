@@ -9,7 +9,7 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Schermafbeelding_2019-10-13_om_21.35.12_zwnoh3.png
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282847/1570995361954_erddbf.png
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282852/1570995233733_mo0b7j.png
-date: 2019-10-06T00:00:00.000+00:00
+date: 2019-10-06 00:00:00 +0000
 
 ---
 De scouts waar ik zelf ook leiding geef, was dringend toe aan een nieuwe site. De oude dateerde nog van rond 2011 en dat merkte je. Zowel op vlak van design als snelheid was de site verouderd.
