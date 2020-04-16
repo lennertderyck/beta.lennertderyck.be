@@ -5,7 +5,7 @@ client: Edugo Campus Glorieux
 project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg
 galery:
-- "/uploads/PROJECT_FOCUSED-1024x768.jpg"
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg
 date: 2017-10-06T00:00:00.000+00:00
 
 ---
