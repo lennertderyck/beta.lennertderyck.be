@@ -27,6 +27,16 @@ const getURLslug = (o) => {
     return o.url == '/' ? undefined : urlArray[o.slugPosition-1];
 }
 
+const onUrl = (url, action) => {
+    if (window.location.pathname.includes(url) == true) {
+        action;
+    }
+}
+
+onUrl('over', () => (
+    console.log('onUrl function works')
+));
+
 const el = (el, multiple = false) => {  
     const checkedElement =  document.querySelector(el)
     if (typeof checkedElement == 'object' && multiple == false) {
@@ -199,6 +209,10 @@ const clientFilesKeys = {
         // window.alert('Je word doorgestuurd');
         window.location.replace(`https://ledery.stackstorage.com/s/${key}`);
     }
+}
+
+if (window.location.pathname == '/files') {
+    clientFilesKeys.initialize();
 }
 
 const contentBodyIndexing = {
