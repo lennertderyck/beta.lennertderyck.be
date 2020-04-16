@@ -154,7 +154,6 @@
     right: 0px;
     bottom: 0px;
     background-color: #00000069;
-    z-index: 9;
     transition: background-color .4s ease;
     
     .wrapper {
@@ -170,7 +169,7 @@
             
             img {
                 max-width: 80vw;
-                max-height: 90vh;
+                max-height: 85vh;
                 border-radius: 13px;
             }
             
