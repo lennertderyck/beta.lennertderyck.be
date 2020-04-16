@@ -325,6 +325,35 @@ const introWordSwither = {
 
 if (document.querySelector('[data-label="wordReplacer"] span') !== null) introWordSwither.initialize();
 
+const projectGallery = {
+    initialize() {
+        document.querySelector('#pageContent .glide').addEventListener('click', (e) => {
+            if (e.target.offsetParent.classList.contains('glide__slides')) this.renderLightbox(e.target.src)
+        })
+        
+        document.querySelector('[data-label="lightbox"]').addEventListener('click', () => {
+            sesam({
+                target: 'lightbox',
+                action: 'hide'
+            })
+        })
+        
+        this.lightbox = document.querySelector('[data-label="lightbox"]');
+        this.lightboxImg = document.querySelector('[data-label="lightbox"] .img-wrapper img');
+    },
+    
+    renderLightbox(src) {
+        this.lightbox.classList.add('fadeIn');
+        this.lightboxImg.src = src;
+        sesam({
+            target: 'lightbox',
+            action: 'show'
+        })
+    },
+}
+
+projectGallery.initialize();
+
 /*
 const cookieImg = document.querySelector('[data-label="cookie"]');
 

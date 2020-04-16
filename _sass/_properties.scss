@@ -37,6 +37,11 @@
 .text-color-5 {color: $accent5 !important;}
 .text-color-6 {color: $accent6 !important;}
 .text-color-main {color: $accentMain !important;}
+.text-color-white {color: white;}
+
+.clickable {
+  cursor: pointer;
+}
 
 @media (min-width: 576px) {}
 
