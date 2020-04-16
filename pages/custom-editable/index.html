@@ -30,7 +30,7 @@ widgets-bottom: false
     </div>
     <div class="container-xl" data-label="portfolioCards" data-sesam-target="portfolioCards">
         <div class="salvatore" data-columns>
-            {% assign sortedProjects = (site.projects | sort: 'date') | reverse %}
+            {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
             {% for project in sortedProjects %}
             <a class="card item" href="{{ project.url | replace: '.html', '' }}">
                 <img class="card-background" src="{{ project.ft-img | replace: 'https://res.cloudinary.com/lennertderyck/image/upload', 'https://res.cloudinary.com/lennertderyck/image/upload/w_640' }}" alt="">

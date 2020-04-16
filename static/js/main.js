@@ -352,7 +352,7 @@ const projectGallery = {
     },
 }
 
-projectGallery.initialize();
+// projectGallery.initialize();
 
 /*
 const cookieImg = document.querySelector('[data-label="cookie"]');
