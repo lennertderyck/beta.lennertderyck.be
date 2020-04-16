@@ -5,9 +5,9 @@ client: Persoonlijk
 project-url: https://pay.lennertderyck.be/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282823/Schermafbeelding_2019-12-25_om_17.55.21_zqlz74.png
 galery:
-- "/uploads/Schermafbeelding 2019-12-25 om 18.15.18.png"
-- "/uploads/Schermafbeelding 2019-12-25 om 18.15.27.png"
-- "/uploads/Artboard – 1.png"
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282822/Schermafbeelding_2019-12-25_om_18.15.18_filvqr.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282823/Schermafbeelding_2019-12-25_om_18.15.27_ww4fty.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/Artboard_1_ht9bmi.png
 date: 2019-10-06T00:00:00.000+00:00
 
 ---
