@@ -71,6 +71,8 @@
             }
             
             .glide__slide {
+                cursor: sw-resize;
+                
                 &.glide__slide--active > img {
                     transform: scale(1.04);
                     transition: all .4s ease;
@@ -153,7 +155,8 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: #00000069;
+    display: none;
+    background-color: transparent;
     transition: background-color .4s ease;
     
     .wrapper {
@@ -182,8 +185,6 @@
     }
     
     &.sesam-hidden {
-        display: none;
-        background-color: transparent;
         // animation-name: zoomOut;
     }
     

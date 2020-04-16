@@ -352,4 +352,4 @@ const projectGallery = {
     },
 }
 
-projectGallery.initialize();
+// projectGallery.initialize();
