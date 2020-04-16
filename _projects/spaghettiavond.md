@@ -5,8 +5,8 @@ client: Scouts Haegepoorters Destelbergen
 project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png
 galery:
-- "/uploads/banner_spaghettiavond_2017-1024x390.png"
-- "/uploads/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276.png"
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282819/banner_spaghettiavond_2017-1024x390_jaalyw.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png
 date: 2018-10-06T00:00:00.000+00:00
 
 ---
