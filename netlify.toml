@@ -1,4 +1,4 @@
 [[plugins]]
   package = "netlify-plugin-search-index"
-    [plugins.inputs] = 
+    [plugins.inputs]
       publishDirJSONFileName = "searchindex"
