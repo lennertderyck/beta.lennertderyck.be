@@ -27,16 +27,6 @@ const getURLslug = (o) => {
     return o.url == '/' ? undefined : urlArray[o.slugPosition-1];
 }
 
-const onUrl = (url, action) => {
-    if (window.location.pathname.includes(url) == true) {
-        action;
-    }
-}
-
-onUrl('over', () => (
-    console.log('onUrl function works')
-));
-
 const el = (el, multiple = false) => {  
     const checkedElement =  document.querySelector(el)
     if (typeof checkedElement == 'object' && multiple == false) {
@@ -327,8 +317,11 @@ if (document.querySelector('[data-label="wordReplacer"] span') !== null) introWo
 
 const projectGallery = {
     initialize() {
-        document.querySelector('#pageContent .glide').addEventListener('click', (e) => {
-            if (e.target.offsetParent.classList.contains('glide__slides')) this.renderLightbox(e.target.src)
+        document.querySelector('#pageContent .project-galery').addEventListener('click', (e) => {
+            if (e.target.offsetParent.classList.contains('glide__slides')) {
+                this.imgSrc = e.target.src
+                this.renderLightbox()
+            }
         })
         
         document.querySelector('[data-label="lightbox"]').addEventListener('click', () => {
@@ -342,9 +335,9 @@ const projectGallery = {
         this.lightboxImg = document.querySelector('[data-label="lightbox"] .img-wrapper img');
     },
     
-    renderLightbox(src) {
+    renderLightbox() {
         this.lightbox.classList.add('fadeIn');
-        this.lightboxImg.src = src;
+        this.lightboxImg.src = this.imgSrc;
         sesam({
             target: 'lightbox',
             action: 'show'
@@ -352,4 +345,4 @@ const projectGallery = {
     },
 }
 
-// projectGallery.initialize();
+projectGallery.initialize();

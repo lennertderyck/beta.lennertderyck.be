@@ -71,7 +71,9 @@
             }
             
             .glide__slide {
-                cursor: sw-resize;
+                // cursor: url("./maximize-2.svg");
+                cursor: nesw-resize;
+                
                 
                 &.glide__slide--active > img {
                     transform: scale(1.04);
