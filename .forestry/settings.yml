@@ -25,6 +25,8 @@ sections:
   label: Redirects
   create: all
   match: "**/*"
+  templates:
+  - redirect
 upload_dir: ''
 public_path: https://res.cloudinary.com/lennertderyck/image/upload
 front_matter_path: ''
