@@ -1,0 +1,19 @@
+---
+label: Redirect
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: boolean
+  name: active
+  label: active
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: title
+  label: title
+- type: text
+  name: redirect_to
+  label: redirect_to
