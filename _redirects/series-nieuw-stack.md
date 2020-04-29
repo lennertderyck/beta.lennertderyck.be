@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: redirect
 active: false
 permalink: series-2
 title: Series nieuw Stack
