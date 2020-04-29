@@ -5,20 +5,22 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: redirect
+  hidden: true
 - type: boolean
   name: active
   label: active
   hidden: true
 - type: text
+  name: title
+  label: Titel
+- type: text
   name: permalink
   label: Permalink
   description: lennertderyck.be/
 - type: text
-  name: title
-  label: title
-- type: text
   name: redirect_to
-  label: redirect_to
+  label: Bestemming
 pages:
 - _redirects/series-nieuw-stack.md
 - _redirects/series-stack.md
