@@ -21,6 +21,7 @@ fields:
 - type: text
   name: redirect_to
   label: Bestemming
+  default: https://
 pages:
 - _redirects/series-nieuw-stack.md
 - _redirects/series-stack.md
