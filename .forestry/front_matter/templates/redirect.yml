@@ -21,3 +21,4 @@ fields:
   label: redirect_to
 pages:
 - _redirects/series-nieuw-stack.md
+- _redirects/series-stack.md
