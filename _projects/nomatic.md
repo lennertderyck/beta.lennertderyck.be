@@ -2,7 +2,7 @@
 tags: Web
 title: Nomatic Travel Bag
 client: Arteveldehogeschool
-project-url: https://gdmgent-1819-nmd2.github.io/1819-crowdfunding-gdm-1718-lenndery/
+project-url: https://git.ahs.lennertderyck.be/1819-nmd1-crowdfunding/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg
 galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282849/1560461864440_uuivar.png
