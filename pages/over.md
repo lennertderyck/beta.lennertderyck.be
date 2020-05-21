@@ -26,6 +26,6 @@ Tegenwoordig focus ik mij op webdesign en -development, maar mijn passie voor dr
 
 <h4>Mijn uitrusting</h4>
 
-<div class="row"> <div class="col-12 col-md-6 mb-4"> <h5>Apple MacBook Pro 2016</h5> 13-inch <br> 265GB SSD <br> Een hoopje  </div> <div class="col-12 col-md-6 mb-4"> <h5>Canon EOS D1300</h5> Met 18-55mm IS II lens<br> UV-filter<br> Velbon statief </div> </div> <div class="row"> <div class="col-12 col-md-6 mb-4"> <h5>Adobe Create Cloud</h5> Acrobat Pro<br> Photoshop CC 2018<br> Lightroom Classic CC 2018<br> Illustrator CC 2018<br> InDesign CC 2018 </div> <div class="col-12 col-md-6"> <h5>Stack Cloud-platform</h5> Voor het makkelijk delen van bestanden en maken van backups </div> </div>
+<div class="row"> <div class="col-12 col-md-6 mb-4"> <h5>Apple MacBook Pro 2016</h5> 13-inch <br> 265GB SSD <br> Een hoopje   </div> <div class="col-12 col-md-6 mb-4"> <h5>Canon EOS D1300</h5> Met 18-55mm IS II lens<br> UV-filter<br> Velbon statief </div> </div> <div class="row"> <div class="col-12 col-md-6 mb-4"> <h5>Adobe Create Cloud</h5> Acrobat Pro<br> Photoshop CC 2018<br> Lightroom Classic CC 2018<br> Illustrator CC 2018<br> InDesign CC 2018 </div> <div class="col-12 col-md-6"> <h5>Stack Cloud-platform</h5> Voor het makkelijk delen van bestanden en maken van backups </div> </div>
 
 <h4 class="fontw-300 lspacing-1 d-none">#THINKBEYONDTHEBOX</h4>
