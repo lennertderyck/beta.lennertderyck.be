@@ -43,7 +43,7 @@ Tegenwoordig focus ik mij op webdesign en -development, maar mijn passie voor dr
 
 Verder ben ik ook goed vertrouwd met Adobe Create Cloud en heb ik een ruime ervaring met Illustrator, InDesign, PhotoShop en XD. Daarnaast heb ik wat basiskennis van Animate en After Effects.
 
-<h4>Mijn uitrusting</h4>
+### Mijn uitrusting
 
 <div class="row"> <div class="col-12 col-md-6 mb-4"> <h5>Apple MacBook Pro 2016</h5> 13-inch <br> 265GB SSD <br> Een hoopje dongles  </div> <div class="col-12 col-md-6 mb-4"> <h5>Canon EOS D1300</h5> Met 18-55mm IS II lens<br> UV-filter<br> Velbon statief </div> </div> <div class="row"> <div class="col-12 col-md-6 mb-4"> <h5>Adobe Create Cloud</h5> Acrobat Pro<br> Photoshop CC 2018<br> Lightroom Classic CC 2018<br> Illustrator CC 2018<br> InDesign CC 2018 </div> <div class="col-12 col-md-6"> <h5>Stack Cloud-platform</h5> Voor het makkelijk delen van bestanden en maken van backups </div> </div>
 
