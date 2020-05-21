@@ -37,11 +37,13 @@ Tegenwoordig focus ik mij op webdesign en -development, maar mijn passie voor dr
 * Eleventy (11ty) & Jekyll, ook in combinatie met Forestry.io
 * Liquid
 * Markdown
-* Bootstrap & Animate.css
+* Bootstrap, Animate.css en meer
 
 ##### Adobe
 
 Verder ben ik ook goed vertrouwd met Adobe Create Cloud en heb ik een ruime ervaring met Illustrator, InDesign, PhotoShop en XD. Daarnaast heb ik wat basiskennis van Animate en After Effects.
+
+En natuurlijk maak ik regelmatig gebruik van hun lettertype-bibiliotheek.
 
 ### Mijn uitrusting
 
