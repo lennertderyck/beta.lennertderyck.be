@@ -53,6 +53,7 @@ fields:
   label: Galerij
 pages:
 - _projects/parkeergarages-gent.md
+- _projects/photo-sorter.md
 - _projects/the-meal-database.md
 - _projects/triva-quiz.md
 - _projects/tronald-dump.md
