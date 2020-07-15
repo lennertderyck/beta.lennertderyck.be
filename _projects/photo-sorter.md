@@ -4,8 +4,15 @@ tags: Web
 title: Photo Sorter
 client: Persoonlijk
 project-url: https://github.com/lennertderyck/photo-sorter
-ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1594575716/Schermafbeelding_2020-07-12_om_19.40.42_kopie_e7ouvb.png
-galery: []
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png
+galery:
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845800/Schermafbeelding_2020-07-15_om_22.40.45_hdk882.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845795/Schermafbeelding_2020-07-15_om_22.40.32_obm7bg.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845791/Schermafbeelding_2020-07-15_om_22.40.24_hmw2xw.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845786/Schermafbeelding_2020-07-15_om_22.39.14_r1omtx.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845777/Schermafbeelding_2020-07-15_om_22.42.43_b7inky.png
+- https://res.cloudinary.com/lennertderyck/image/upload/v1594845774/Schermafbeelding_2020-07-15_om_22.38.50_k6nl8d.png
 
 ---
 Tijdens een scoutsactiviteit zoals een weekend of een kamp worden er veel foto's genomen, maar deze moeten allemaal uitgezocht worden om de slechte er uit te halen. Voor enkele foto's is dit geen probleem, maar wanneer je bijna 2000 foto's moet doorzoeken is dit een karwij die wel wat tijd in beslag neemt.
