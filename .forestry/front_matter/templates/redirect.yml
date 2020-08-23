@@ -23,5 +23,6 @@ fields:
   label: Bestemming
   default: https://
 pages:
+- _redirects/photo-sorter-github.md
 - _redirects/series-nieuw-stack.md
 - _redirects/series-stack.md
