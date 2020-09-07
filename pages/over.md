@@ -41,7 +41,7 @@ Tegenwoordig focus ik mij op webdesign en -development, maar mijn passie voor dr
 
 ##### Adobe
 
-Verder ben ik ook goed vertrouwd met Adobe Create Cloud en heb ik een ruime ervaring met Illustrator, InDesign, PhotoShop en XD. Daarnaast heb ik wat basiskennis van Animate en After Effects.
+Verder ben ik ook goed vertrouwd met Adobe Creative Cloud en heb ik een ruime ervaring met Illustrator, InDesign, PhotoShop en XD. Daarnaast heb ik wat basiskennis van Animate en After Effects.
 
 En natuurlijk maak ik regelmatig gebruik van hun lettertype-bibiliotheek.
 
