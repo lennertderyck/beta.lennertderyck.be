@@ -29,6 +29,7 @@ Tegenwoordig focus ik mij op webdesign en -development, maar mijn passie voor dr
 ##### Talen, frameworks & libraries
 
 * Node.js
+* NPM (gebruiken en [maken](https://www.npmjs.com/\~lennertderyck) van packages)
 * Git & GitHub
 * HTML
 * CSS & SCSS / SASS
