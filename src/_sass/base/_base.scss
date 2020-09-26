@@ -1,0 +1,76 @@
+*, *:hover, *:active {transition: all .4s ease;}
+
+body {
+    font-family: $fontMain;
+    scroll-snap-type: y mandatory;
+    
+    &.filter--inverted {
+        background-color: black;
+    }
+}
+
+body, main, #app {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+
+main {
+    padding-bottom: var(--navbar-height);
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .section--sticky {
+        scroll-snap-align: start;
+    }
+    
+    .section--full {
+        height: 100vh;
+    }
+    
+    .section--border {
+        // border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+}
+
+a {
+    color: black;
+    color: unset;
+    text-decoration-color: currentColor;
+    
+    &:hover {
+        color: unset;
+        opacity: .6;
+    }
+}
+
+.color--white a, a.color--white {
+    color: black;
+    
+    &:hover {
+        color: black;
+    }
+}
+
+[data-label="scrollProgress"] {
+    --progress: 0%;
+    --h: 100px;
+    
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 2px;
+    height: var(--h);
+    background-color: #98989e4d;
+    transform: translateY(-50%);
+    z-index: 800;
+    
+    .progress__percentage {
+        width: 100%;
+        height: var(--progress);
+        background-color: $colorGold;
+    }
+}

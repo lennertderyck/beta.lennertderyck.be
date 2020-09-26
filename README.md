@@ -1,3 +1,6 @@
-My new site, based on Jekyll and using Forestry.io to keep it updated.
+# 11ty-boilerplate
+Eleventy boilerplate
 
-Visit <a href="https://beta.lennertderyck.be" target="_blank" rel="noopener">beta.lennertderyck.be</a>
+- Run ```npm install```
+- Run ```npm run dev```
+- If ```.git``` exists, remove it

@@ -1,0 +1,90 @@
+[data-label="navBar"].nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    
+    .nav__bar {
+        padding: 1.6rem;
+        margin: 0 auto;
+        background-color: black;
+        
+        * {
+            color: white;
+        }
+    }
+    
+    .toggle__label {
+        font-size: 90%;
+    }
+    
+    &.sesam-show {
+        nav {
+            .wrapper {
+                max-height: 100vh;
+            }
+        }
+    }
+}
+
+[data-label="navMain"] {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    background-image: url('../images/LOGO_OUTLINE.svg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 30vw center;
+    background-attachment: fixed;
+    z-index: 999;
+    padding-top: 5rem;
+    padding-bottom: var(--navbar-height);
+    transform: translateY(100vh);
+    
+    * {
+        color: white;
+    }
+}
+
+[data-label="navExits"] {
+    .nav__exit {
+        --delay: .3s;
+        display: none;
+        // animation: fadeInUp 1s forwards;
+        // animation-delay: var(--delay);
+    }
+    
+    &:hover .nav__exit:not(:hover) {
+        opacity: .5;
+    }
+    
+    .nav__exit:hover {
+        text-decoration: none;
+        opacity: 1;
+    }
+}
+
+[data-label="navWrapper"].sesam-hidden {
+    .nav__exit {
+        display: none;
+    }
+}
+
+[data-label="navWrapper"].sesam-show {
+    [data-label="navMain"] {
+        transform: translateY(0vh);
+    }
+    
+    [data-label="navBar"].nav .nav__bar{
+        background-color: white;
+        * {color: black;}
+    }   
+    
+    [data-label="navExits"] .nav__exit {
+        display: block;
+    }
+}

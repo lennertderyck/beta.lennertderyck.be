@@ -1,0 +1,112 @@
+[data-label="heroIntro"] {
+    height: 100vh;
+    
+    .cursor--animated {
+        display: inline-block;
+        height: 50px;
+        width: 3px;
+        opacity: 1;
+        background-color: black;
+        animation: cursor .6s infinite alternate-reverse;
+        transition: none;
+    }
+}
+
+[data-label="portfolioCarousel"] {  
+    .glide {
+        height: fit-content;
+    } 
+    
+    .project {
+        --backgr: red;
+        
+        position: relative; 
+        width: auto;
+        padding: 3rem;
+        // background-color: var(--backgr);
+        
+        &:hover {
+            transform: translate(-10px, -10px);
+            
+            .project__preview {
+                transform: translate(-10px, -10px);
+            }
+        }
+        
+        &__wrapper {  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+                     
+            .project__summ {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                padding: 3rem 2rem 3rem 11rem;
+                z-index: 1;
+                background-color: #F0F1F2;
+                
+                * {color: black;}
+                
+                .project__title {
+                    font-family: $fontSub;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    // font-style: italic;
+                }
+                
+                .project__description {
+                    color: grey;
+                }
+            }
+            
+            .project__preview {
+                position: absolute;
+                left: 0px;
+                max-width: 180px;
+                height: 60%;
+                z-index: 1;
+                box-shadow: 10px 10px 30px #0000001a;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    
+    .glide__arrows {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        // bottom: 50vh;
+        
+        .glide__arrow {
+            display: block;
+            font-size: 1.4rem;
+            background-color: black;
+            border-radius: 0px;
+            border: none;
+            
+            svg.feather {
+                stroke: white;
+            }
+        }
+    }
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}
