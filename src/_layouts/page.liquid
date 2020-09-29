@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
-<div class="container">
-    {{ content }}
+<div class="bg--outline navbar--compensate">
+    <div class="section section--padding">
+        <div class="container container--sm">
+            <h6 class="color--grey">{{ subTitle }}</h6>
+            <h1 class="font-weight--600">{{ title }}</h1>
+        </div>   
+    </div>
+    <div class="section">
+        <div class="container container--sm" data-label="contentBody">
+            {{ content }}
+        </div>
+    </div> 
 </div>

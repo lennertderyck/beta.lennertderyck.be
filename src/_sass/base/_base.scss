@@ -5,7 +5,7 @@ body {
     scroll-snap-type: y mandatory;
     
     &.filter--inverted {
-        background-color: black;
+        background-color: $colorDark;
     }
 }
 
@@ -16,10 +16,32 @@ body, main, #app {
 }
 
 main {
-    padding-bottom: var(--navbar-height);
+    &.navbar--compensate, .navbar--compensate{
+        padding-bottom: var(--navbar-height);
+    }
+    
+    p {line-height: 1.8rem;}
     
     img {
         max-width: 100%;
+        object-fit: cover;
+    }
+    
+    .section {
+        position: relative;
+    }
+    
+    .section--bg {
+        position: absolute;
+        left: 50vw;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: 100vh;
+    }
+    
+    .section--padding {
+        padding: 7rem 0;
     }
     
     .section--sticky {
@@ -34,10 +56,27 @@ main {
         // border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
     }
+    
+    .section--dark {
+        background-color: $colorDark;
+        
+        * {color: white;}
+        
+        p {
+            color: lightgray;
+            font-weight: 300;
+        }
+    }
+    
+    .section--light {
+        background: $colorGrey200;
+        
+        * {color: $colorDark};
+    }
 }
 
 a {
-    color: black;
+    color: $colorDark;
     color: unset;
     text-decoration-color: currentColor;
     
@@ -47,11 +86,19 @@ a {
     }
 }
 
-.color--white a, a.color--white {
-    color: black;
+.color--white a {
+    color: $colorDark;
     
     &:hover {
-        color: black;
+        color: $colorDark;
+    }
+}
+
+a.color--white {
+    color: white;
+    
+    &:hover {
+        color: white;
     }
 }
 
@@ -73,4 +120,53 @@ a {
         height: var(--progress);
         background-color: $colorGold;
     }
+}
+
+[data-label="contentBody"] {
+    *:not(h1, h2, h3, h4, h5, h6) {font-family: $fontSub;}
+   
+    h1, h2, h3 {
+       font-weight: 600;
+       margin-top: 5rem;
+
+        &:first-child {
+            margin-top: 0rem;
+        }
+    }
+    
+    h4, h5 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        
+        &:first-child {
+            margin-top: 0rem;
+        }
+    }
+   
+    p, span  {
+        color: grey;
+        font-weight: 300;
+    }
+    
+    strong {
+        color: grey;
+    }
+    
+    :not(pre) > code[class*="language-"], pre[class*="language-"] {
+        background: $colorDark;
+        background: #d3d3d340;
+        border: none;
+        border-radius: 0px;
+    }
+    
+    blockquote {
+        margin: 2rem 0;
+        padding: .8rem 1rem;
+        border-left: 2px solid #af9351;
+        background-color: #af935124;
+        
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }    
 }

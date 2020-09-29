@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/rvs5fwh.css"> <!-- Stratos -->
     
     <!-- other assets -->
+    <!-- <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.2/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/cutleryjs@3.0.1/dist/css/index.css">
@@ -50,11 +51,11 @@
 <body data-page="home">
     <div class="body--wrapper filter--inverted">
         <div data-label="navWrapper" data-sesam-target="navMain">
-            <div data-label="navBar" class="nav container">
+            <div data-label="navBar" class="nav container animate__animated animate__slideInUp animate__faster">
                 <div class="nav__bar">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="nav__crumbles">
-                            <span class="crumble__main">Home</span> — <span class="crumble__sub">Intro</span>
+                            <span class="crumble__main">home</span> — <span class="crumble__sub">Intro</span>
                         </div>
                         <!-- <div class="nav__logo h-100 w-auto">
                             <img src="static/images/LOGO_LDR_ZWART.svg" alt="" height="30px">
@@ -89,9 +90,12 @@
                                     <li><a href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-12 col-lg-8" data-label="navExits">
-                                <h6 class="mb-5">Where do you want to go</h6>
-                                <div class="row">
+                            <div class="col-sm-12 col-lg-8">
+                                <div class="d-flex align-items-start justify-content-between mb-5">
+                                    <h6 class="mb-0">Where do you want to go</h6>
+                                    <a href="/" class="btn color--gold btn--outline color--white mt-n3">Go home</a>
+                                </div>
+                                <div class="row mb-4" data-label="navExits">
                                     <a href="#" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
                                         <h3 class="font-weight-normal font--sub">What I do</h3>
                                         <p class="opaque--50">How can I help you or your organisation?</p>
@@ -104,9 +108,24 @@
                                         <h3 class="font-weight-normal font--sub">About me</h3>
                                         <p class="opaque--50">A student front-end-development based in Ghent</p>
                                     </a>
-                                    <a href="#" class="col-6 mb-4 nav__exit" style="--delay: 1.1s;">
+                                    <a href="/contact" class="col-6 mb-4 nav__exit" style="--delay: 1.1s;">
                                         <h3 class="font-weight-normal font--sub">Contact</h3>
                                         <p class="opaque--50">Made up your mind? Let me know!</p>
+                                    </a>
+                                </div>
+                                
+                                
+                                <div class="d-flex align-items-center justify-content-between mb-5">
+                                    <h6 class="mb-0">This may be interesting too</h6>
+                                </div>
+                                <div class="row" data-label="navExits">
+                                    <a href="/docs" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                        <h5 class="font-weight-normal font--sub">Sesam docs</h5>
+                                        <p class="opaque--50">More on Sesam collapse</p>
+                                    </a>
+                                    <a href="/docs" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                        <h5 class="font-weight-normal font--sub">Cutlery.js</h5>
+                                        <p class="opaque--50">Documentation for Cue</p>
                                     </a>
                                 </div>
                             </div>
@@ -119,14 +138,24 @@
             <div class="progress__percentage"></div>
         </div>
         <div id="app">
-            <main>
-                <div class="container">
-    <h3>An other page</h3>
+            <main class="">
+                <div class="bg--outline navbar--compensate">
+    <div class="section section--padding">
+        <div class="container container--sm">
+            <h6 class="color--grey"></h6>
+            <h1 class="font-weight--600">home</h1>
+        </div>   
+    </div>
+    <div class="section">
+        <div class="container container--sm" data-label="contentBody">
+            <h3>An other page</h3>
 <p>This page was written in Markdown</p>
 <p><a href="../">Go back home</a></p>
 <hr>
 <p><img src="/static/images/rexwi5zdll531.jpg" alt="Images"></p>
 
+        </div>
+    </div> 
 </div>
             </main>
         </div>

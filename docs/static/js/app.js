@@ -1,29 +1,30 @@
-import {node, sesamCollapse} from '../js/modules/index.js';
-import { getAverageRGB, menuHeightCompensate } from './modules/ui.js';
-import * as FastAverageColor from 'https://unpkg.com/fast-average-color/dist/index.min.js'
+import {node, sesamCollapse, setScrollProgress, getAverageRGB, menuHeightCompensate, returnNode} from '../js/modules/index.js';
+// import * as FastAverageColor from 'https://unpkg.com/fast-average-color/dist/index.min.js'
 
 const app = {
     async init() {
         sesamCollapse.initialize();
         menuHeightCompensate();
+        setScrollProgress(0);
     }
 }
 
-app.init();
-
-const $main = node('main');
-const $progress = node('[data-label="scrollProgress"]');
-
-const setScrollProgress = (percentage) => {
-    const h = $main.scrollHeight;
-    const s = $main.scrollTop;
-    const o = $main.offsetHeight;
-    const progress = percentage || Math.round(s/(h - o)*100);
-    $progress.style.setProperty('--progress', `${progress}%`);
+const event = (nodeSelector, type) => {
+    const $el = returnNode(nodeSelector);
+    const callback = (funct) => $el[type] = funct;
+    return {callback}
 }
 
-setScrollProgress(0);
-
-$main.addEventListener("scroll", () => {
-    setScrollProgress();
+event('body', 'onclick').callback(() => {
+    console.log('this works!')
 });
+
+app.init();
+
+
+Array.prototype.selectOr = function() {
+    console.log(this)
+};
+
+[1, 2, 3].selectOr();
+

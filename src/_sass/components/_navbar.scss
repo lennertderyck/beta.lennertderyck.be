@@ -3,12 +3,13 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
+    padding: 0px;
     z-index: 1000;
     
     .nav__bar {
         padding: 1.6rem;
         margin: 0 auto;
-        background-color: black;
+        background-color: $colorDark;
         
         * {
             color: white;
@@ -34,19 +35,23 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    background-color: black;
+    padding-top: 5rem;
+    padding-bottom: var(--navbar-height);
+    background-color: $colorDark;
     background-image: url('../images/LOGO_OUTLINE.svg');
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: 30vw center;
     background-attachment: fixed;
-    z-index: 999;
-    padding-top: 5rem;
-    padding-bottom: var(--navbar-height);
     transform: translateY(100vh);
+    z-index: 999;
     
     * {
         color: white;
+    }
+    
+    .wrapper {
+        opacity: 0;
     }
 }
 
@@ -75,16 +80,33 @@
 }
 
 [data-label="navWrapper"].sesam-show {
+    
     [data-label="navMain"] {
         transform: translateY(0vh);
+        
+        .wrapper {
+            opacity: 1;
+        }
     }
     
     [data-label="navBar"].nav .nav__bar{
         background-color: white;
-        * {color: black;}
+        * {color: $colorDark;}
     }   
     
     [data-label="navExits"] .nav__exit {
         display: block;
     }
 }
+
+@media (min-width: 576px) {
+    [data-label="navBar"] {
+        padding: inherit;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

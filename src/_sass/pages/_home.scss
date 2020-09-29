@@ -1,12 +1,19 @@
 [data-label="heroIntro"] {
+    // max-width: 0%;
     height: 100vh;
+    overflow: hidden;
+        
+    .wrapper {
+        overflow: visible;
+        width: 100vw;
+    }
     
     .cursor--animated {
         display: inline-block;
         height: 50px;
         width: 3px;
         opacity: 1;
-        background-color: black;
+        background-color: $colorDark;
         animation: cursor .6s infinite alternate-reverse;
         transition: none;
     }
@@ -15,6 +22,10 @@
 [data-label="portfolioCarousel"] {  
     .glide {
         height: fit-content;
+        
+        &__slide {
+            // transform: translateX(-3rem);
+        }
     } 
     
     .project {
@@ -22,14 +33,14 @@
         
         position: relative; 
         width: auto;
-        padding: 3rem;
+        margin: 3rem;
         // background-color: var(--backgr);
         
         &:hover {
             transform: translate(-10px, -10px);
             
             .project__preview {
-                transform: translate(-10px, -10px);
+                transform: translate(-10px, calc(-50% - 10px));
             }
         }
         
@@ -49,7 +60,7 @@
                 z-index: 1;
                 background-color: #F0F1F2;
                 
-                * {color: black;}
+                * {color: $colorDark;}
                 
                 .project__title {
                     font-family: $fontSub;
@@ -65,11 +76,13 @@
             
             .project__preview {
                 position: absolute;
-                left: 0px;
+                left: -3rem;
+                top: 50%;
                 max-width: 180px;
-                height: 60%;
+                height: calc(100% - 6rem);
                 z-index: 1;
                 box-shadow: 10px 10px 30px #0000001a;
+                transform: translate(-10px, -50%);
                 
                 img {
                     width: 100%;
@@ -90,7 +103,7 @@
         .glide__arrow {
             display: block;
             font-size: 1.4rem;
-            background-color: black;
+            background-color: $colorDark;
             border-radius: 0px;
             border: none;
             
@@ -108,5 +121,15 @@
     
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes introSlideIn {
+    0% {
+        max-width: 0%;
+    }
+    
+    100% {
+        max-width: 100%;
     }
 }

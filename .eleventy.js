@@ -1,9 +1,10 @@
 const fs = require("fs");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = (eleventyConfig) => { 
-    
     eleventyConfig.setQuietMode(true);
     eleventyConfig.addWatchTarget("./src/");
+    eleventyConfig.addPlugin(syntaxHighlight);
     
     // Copy `img/` to `_site/img`
     eleventyConfig.addPassthroughCopy({ 

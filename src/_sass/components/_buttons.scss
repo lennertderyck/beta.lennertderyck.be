@@ -1,10 +1,70 @@
 .btn {
-    padding: 0rem .6rem;
+    padding: 0 0.6rem;
+    
+    &--box {
+        display: block;
+        width: fit-content;
+        padding: 0.6rem 1rem;
+        // padding: 1.8rem 2.4rem 1.8rem 2.4rem;
+        background-color: lightgrey;
+        @include text-modern;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 120px;
+        color: rgb(83, 83, 83);
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    &--outline {
+        display: block;
+        width: fit-content;
+        padding: 0.6rem 1rem;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        @include text-modern;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 120px;
+        color: rgb(83, 83, 83);
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    &--simple {
+        display: block;
+        width: fit-content;
+        padding: 0.6rem 0;
+        @include text-modern;
+        text-transform: unset;
+        letter-spacing: 0px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: rgb(83, 83, 83);
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    &--lg {
+        padding: 1.2rem 2.4rem;
+        text-transform: unset;
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+        font-weight: 300;
+    }
 }
 
 .btn-group {
     .btn {
-        border-right: 2px solid black;
+        border-right: 2px solid $colorDark;
         
         &:last-child {
             border-right: none;

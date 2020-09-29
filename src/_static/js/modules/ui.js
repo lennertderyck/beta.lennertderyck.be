@@ -84,10 +84,27 @@ const menuHeightCompensate = () => {
     document.body.style.setProperty('--navbar-height', `${h}px`);
 }
 
+const $main = node('main');
+const $progress = node('[data-label="scrollProgress"]');
+
+const setScrollProgress = (percentage) => {
+    const h = $main.scrollHeight;
+    const s = $main.scrollTop;
+    const o = $main.offsetHeight;
+    const progress = percentage || Math.round(s/(h - o)*100);
+    $progress.style.setProperty('--progress', `${progress}%`);
+}
+
+$main.addEventListener("scroll", () => {
+    setScrollProgress();
+});
+
+
 export {
     lazyLoading,
     getAverageRGB,
-    menuHeightCompensate
+    menuHeightCompensate,
+    setScrollProgress
 }
 
 
