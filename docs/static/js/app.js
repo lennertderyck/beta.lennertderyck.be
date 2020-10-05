@@ -1,4 +1,4 @@
-import {node, sesamCollapse, setScrollProgress, getAverageRGB, menuHeightCompensate, returnNode} from '../js/modules/index.js';
+import {node, sesamCollapse, eventCallback, updateClipboard, setScrollProgress, getAverageRGB, menuHeightCompensate, returnNode} from '../js/modules/index.js';
 // import * as FastAverageColor from 'https://unpkg.com/fast-average-color/dist/index.min.js'
 
 const app = {
@@ -9,22 +9,16 @@ const app = {
     }
 }
 
-const event = (nodeSelector, type) => {
-    const $el = returnNode(nodeSelector);
-    const callback = (funct) => $el[type] = funct;
-    return {callback}
-}
-
-event('body', 'onclick').callback(() => {
-    console.log('this works!')
-});
-
 app.init();
 
+document.addEventListener('click', () => {
+    eventCallback('pre', (target) => {
+        const text = target.innerText;
+        updateClipboard(text);
+    },false)
+})
 
-Array.prototype.selectOr = function() {
-    console.log(this)
-};
-
-[1, 2, 3].selectOr();
+// node('body').event('click')(() => {
+//     console.log('click!');
+// });
 

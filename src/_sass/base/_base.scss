@@ -20,11 +20,20 @@ main {
         padding-bottom: var(--navbar-height);
     }
     
-    p {line-height: 1.8rem;}
+    p {
+        line-height: 1.8rem;
+        
+        a {
+            text-decoration: underline;
+        }
+    }
     
     img {
         max-width: 100%;
         object-fit: cover;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-drag: none;
     }
     
     .section {
@@ -137,6 +146,7 @@ a.color--white {
     h4, h5 {
         margin-top: 2rem;
         margin-bottom: 1rem;
+        line-height: 2rem;
         
         &:first-child {
             margin-top: 0rem;

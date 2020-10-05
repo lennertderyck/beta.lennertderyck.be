@@ -3,11 +3,16 @@
 .text-modern, h6 {@include text-modern;}
 h6 {color: #846a2f !important;}
 
+.font--main {font-family: $fontMain;}
 .font--sub {font-family: $fontSub;}
 
 .font-weight--600 {font-weight: 600;}
 
 .bg--black {background-color: black;}
+.bg--grey100 {background-color: $colorGrey100;}
+.bg--grey200 {background-color: $colorGrey200;}
+.bg--grey300 {background-color: $colorGrey300;}
+.bg--grey400 {background-color: $colorGrey400;}
 .bg--outline {
     background-image: url('../images/LOGO_OUTLINE_TOP.svg');
     background-repeat: no-repeat;
@@ -26,6 +31,7 @@ h6 {color: #846a2f !important;}
 .color--grey {color: grey !important;}
 .color--grey200 {color: $colorGrey200 !important;}
 .color--grey300 {color: $colorGrey300 !important;}
+.color--grey400 {color: $colorGrey400 !important;}
 
 .unlistify {
     list-style: none;
@@ -47,6 +53,23 @@ h6 {color: #846a2f !important;}
     margin-bottom: 7rem;
 }
 
-.container--sm {
-    max-width: 850px;
+.container--sm {max-width: 850px;}
+.container--str {
+    @include containerStretch;
 }
+
+.container--str-full {
+    @include containerStretch;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .container--str {
+        margin: 0 calc(50% - 35vw);
+    }
+}
+
+@media (min-width: 1200px) {}

@@ -36,8 +36,7 @@
     <!-- webfonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.typekit.net/rvs5fwh.css"> <!-- Sofia -->
-    <link rel="stylesheet" href="https://use.typekit.net/rvs5fwh.css"> <!-- Stratos -->
-    
+        
     <!-- other assets -->
     <!-- <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.2/css/line.css">
@@ -51,11 +50,33 @@
 <body data-page="Sesam collapse">
     <div class="body--wrapper filter--inverted">
         <div data-label="navWrapper" data-sesam-target="navMain">
-            <div data-label="navBar" class="nav container animate__animated animate__slideInUp animate__faster">
+            <div data-label="navBar" class="nav container animate__slideInUp animate__faster" style="animation-delay: .7s;">
                 <div class="nav__bar">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="nav__crumbles">
-                            <span class="crumble__main">Sesam collapse</span> — <span class="crumble__sub">Intro</span>
+                            <div class="crumbs">
+    
+    
+    
+        <span class="crumble__main">Sesam collapse</span>
+    
+     
+    
+    
+    <!-- 
+        
+            <span><a href="/docs/" class="txt-color-2">Docs</a></span> - 
+        
+    
+        
+            <span><a href="/docs/sesam/" class="txt-color-2">Sesam</a></span> - 
+        
+    
+        
+            <span class="d-none"><i data-feather="arrow-right"></i> <span>Sesam collapse</span></span>
+        
+     -->
+</div>
                         </div>
                         <!-- <div class="nav__logo h-100 w-auto">
                             <img src="static/images/LOGO_LDR_ZWART.svg" alt="" height="30px">
@@ -84,10 +105,10 @@
                                 
                                 <h6 class="mb-4">Follow me</h6>
                                 <ul class="unlistify">
-                                    <li><a href="https://github.com/lennertderyck">GitHub</a></li>
-                                    <li><a href="https://open.spotify.com/user/twoledery">Spotify</a></li>
-                                    <li><a href="https://instagram.com/lennertderyck">Instagram</a></li>
-                                    <li><a href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
+                                    <li><a target="_blank" href="https://github.com/lennertderyck">GitHub</a></li>
+                                    <li><a target="_blank" href="https://open.spotify.com/user/twoledery">Spotify</a></li>
+                                    <li><a target="_blank" href="https://instagram.com/lennertderyck">Instagram</a></li>
+                                    <li><a target="_blank" href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-12 col-lg-8">
@@ -96,7 +117,7 @@
                                     <a href="/" class="btn color--gold btn--outline color--white mt-n3">Go home</a>
                                 </div>
                                 <div class="row mb-4" data-label="navExits">
-                                    <a href="#" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                    <a href="/services" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
                                         <h3 class="font-weight-normal font--sub">What I do</h3>
                                         <p class="opaque--50">How can I help you or your organisation?</p>
                                     </a>
@@ -104,7 +125,7 @@
                                         <h3 class="font-weight-normal font--sub">Projects</h3>
                                         <p class="opaque--50">Get to know my style or find some inspiration</p>
                                     </a>
-                                    <a href="#" class="col-6 mb-4 nav__exit" style="--delay: .8s;">
+                                    <a href="/about" class="col-6 mb-4 nav__exit" style="--delay: .8s;">
                                         <h3 class="font-weight-normal font--sub">About me</h3>
                                         <p class="opaque--50">A student front-end-development based in Ghent</p>
                                     </a>
@@ -123,9 +144,9 @@
                                         <h5 class="font-weight-normal font--sub">Sesam docs</h5>
                                         <p class="opaque--50">More on Sesam collapse</p>
                                     </a>
-                                    <a href="/docs" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
-                                        <h5 class="font-weight-normal font--sub">Cutlery.js</h5>
-                                        <p class="opaque--50">Documentation for Cue</p>
+                                    <a href="/docs/sesam" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                        <h5 class="font-weight-normal font--sub">Cutlery.js docs</h5>
+                                        <p class="opaque--50">Documentation for Cutlery.js</p>
                                     </a>
                                 </div>
                             </div>
@@ -134,19 +155,19 @@
                 </div>
             </div>
         </div>
-        <div data-label="scrollProgress" class="progress" style="--progress: 100%;">
+        <div data-label="scrollProgress" class="progress d-none d-md-flex" style="--progress: 100%;">
             <div class="progress__percentage"></div>
         </div>
         <div id="app">
             <main class="">
                 <div class="bg--outline navbar--compensate">
     <div class="section section--padding">
-        <div class="container container--sm">
+        <div class="container container--sm animate__animated animate__fadeInUp animate__fast">
             <h6 class="color--grey">docs</h6>
             <h1 class="font-weight--600">Sesam collapse</h1>
         </div>   
     </div>
-    <div class="section">
+    <div class="section animate__animated animate__fadeInUp animate__fast" style="animation-delay: .3s;">
         <div class="container container--sm" data-label="contentBody">
             <h3>About</h3>
 <p>I've written Sesam because I needed a simple system to collapse items and more. The only thing Sesam does is remove or add a class so there are a lot of possibilities with it.</p>
@@ -167,6 +188,8 @@
 <pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span>sesamCollapse<span class="token punctuation">,</span> sesam<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'https://unpkg.com/sesam-collapse'</span><span class="token punctuation">;</span></code></pre>
 <p><strong>2. Initialize script</strong></p>
 <pre class="language-js"><code class="language-js">sesamCollapse<span class="token punctuation">.</span><span class="token function">initialize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4>With node.js</h4>
+<p>Sesam is a script that uses DOM nodes. Since the DOM is not accessible in node.js, using Sesam would give some errors. But you can use Sesam with bundlers like Parcel or Webpack. Personally I think Parcel is the best option for simple webapplications because it doesn't require much configuration. I also have a <a href="https://github.com/lennertderyck/parcel-boilerplate">Parcel-boilerplate on GitHub</a>.</p>
 <blockquote>
 <p><strong>Note</strong><br>
 You can initialize the script as soon the document is loaded. Otherwise you would get an error saying the node couldn't be found.</p>
@@ -202,7 +225,7 @@ You can do this by defining a group and to which parent a node has to &quot;list
 <blockquote>
 <p>The backdrop element gets created automatically on intialization of Sesam</p>
 </blockquote>
-<p><strong>1. Choose which Sesam target that gets a backdrop</strong>
+<p><strong>1. Choose which Sesam target that gets a backdrop</strong><br>
 Just add the attribute below to the <strong>target</strong> element.</p>
 <pre class="language-html"><code class="language-html">data-sesam-backdrop="true"</code></pre>
 <p><strong>2. Add (s)css</strong></p>
@@ -212,13 +235,17 @@ Just add the attribute below to the <strong>target</strong> element.</p>
 </blockquote>
 <h4>Scrollblock</h4>
 <p>If you want that the user isn't able to scroll trough the rest of the page just add this to your target-element.</p>
+<p><strong>1. Choose which Sesam target that gets a scrollblock</strong><br></p>
 <pre class="language-html"><code class="language-html">data-sesam-scrollblock="true"</code></pre>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">data-sesam-target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>placeNameHere<span class="token punctuation">"</span></span> <span class="token attr-name">data-sesam-scrollblock</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Some content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>2. Add (s)css</strong></p>
+<pre class="language-scss"><code class="language-scss"><span class="token selector">body.sesam-scrollBlock </span><span class="token punctuation">{</span><br>    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h3>Api</h3>
 <h4>v6.x.x and above</h4>
-<pre class="language-js"><code class="language-js"><span class="token comment">// collapse can be true/false/show/hide</span><br><span class="token comment">/**<br> * @param {string|boolean} target has to be the attributes name<br> * @param {string|boolean} collapse<br> * true: just switch classes,<br> * false: don't switch classes,<br> * show: set classes to show,<br> * hide: set classes to hide<br> */</span><br><span class="token function">sesam</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> collapse<span class="token punctuation">,</span> <span class="token punctuation">{</span><br>    backdrop<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <br>    scrollBlock<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// blokkeert het scrollen door de pagina wanneer deze modal getoont wordt</span><br>    <span class="token function-variable function">callback</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>trigger<span class="token punctuation">,</span> targets<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// execute callback, the trigger and targets are returned and can be used</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>Version 6 is not out yet, but this is how it will work then.</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// collapse can be true/false/show/hide</span><br><span class="token comment">/**<br> * @param {string|boolean} target has to be the attributes name<br> * @param {string|boolean} collapse<br> * true: just switch classes,<br> * false: don't switch classes,<br> * show: set classes to show,<br> * hide: set classes to hide<br> */</span><br><span class="token function">sesam</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span> collapse<span class="token punctuation">,</span> <span class="token punctuation">{</span><br>    backdrop<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <br>    scrollBlock<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>    <span class="token function-variable function">callback</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>trigger<span class="token punctuation">,</span> targets<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
 <h4>v5.x.x and below</h4>
-<pre class="language-js"><code class="language-js"><span class="token function">sesam</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    target<span class="token operator">:</span> <span class="token string">'example'</span><span class="token punctuation">,</span> <span class="token comment">// doet dit: document.querySelector(`[data-sesam-target='${example}']`)</span><br>    collapse<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// gaat gewoon kijken wat de huidige state is van een target en die veranderen</span><br>    action<span class="token operator">:</span> <span class="token string">'show'</span><span class="token punctuation">,</span> <span class="token comment">// of 'hide', niet gebruiken in combinatie met collapse argument</span><br>    execute<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span> <span class="token comment">// voer extra javascript uit</span><br>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'this works!'</span><span class="token punctuation">)</span><br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    modal<span class="token operator">:</span> <span class="token punctuation">{</span><br>        backdrop<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// voegt sesam-hidden/sesam-show classe toe aan het backdrop element, </span><br>                        <span class="token comment">// backdrop element wordt automatisch gemaakt bij het initialiseren</span><br>        scrollBlock<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// blokkeert het scrollen door de pagina wanneer deze modal getoont wordt</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<pre class="language-js"><code class="language-js"><span class="token function">sesam</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    target<span class="token operator">:</span> <span class="token string">'example'</span><span class="token punctuation">,</span><br>    collapse<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>    action<span class="token operator">:</span> <span class="token string">'show'</span><span class="token punctuation">,</span><br>    execute<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'this works!'</span><span class="token punctuation">)</span><br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    modal<span class="token operator">:</span> <span class="token punctuation">{</span><br>        backdrop<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>        scrollBlock<span class="token operator">:</span> <span class="token boolean">true</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <h3>Api as Javascript class</h3>
 <p>Coming soon.</p>
 
@@ -231,7 +258,7 @@ Just add the attribute below to the <strong>target</strong> element.</p>
     <!-- <div class="layer layer--negative"></div> -->
     
     <!-- scripts -->
-    <script type="module" src="/static/js/app.js"></script>
+    <script type="module" src="/static/js/core.js"></script>
     
     <script>
         const glideOptions = {
@@ -251,7 +278,8 @@ Just add the attribute below to the <strong>target</strong> element.</p>
                 }
             }
         }
-        new Glide('.glide', glideOptions).mount();
+        const $glide = document.querySelector('.glide');
+        if ($glide) new Glide('.glide', glideOptions).mount();
         /* Initialize feather icons */
         /* more info on https://feathericons.com/ and https://github.com/feathericons/feather#feather */
         feather.replace()

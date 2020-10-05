@@ -16,6 +16,12 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addLayoutAlias('default', 'default.liquid');
     eleventyConfig.addLayoutAlias('page', 'page.liquid');
     
+    // shortcodes
+    eleventyConfig.addShortcode("svg", async (path) => {
+        const svg = fs.readFileSync(path, 'utf-8')
+        return svg;
+      });
+    
     return {
         pathPrefix: '',
         dir: {

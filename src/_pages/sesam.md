@@ -2,7 +2,7 @@
 layout: page
 title: Sesam collapse
 subTitle: docs
-permalink: docs/index.html
+permalink: docs/sesam/index.html
 ---
 
 ### About
@@ -44,6 +44,9 @@ import {sesamCollapse, sesam} from 'https://unpkg.com/sesam-collapse';
 ```js
 sesamCollapse.initialize();
 ```
+
+#### With node.js
+Sesam is a script that uses DOM nodes. Since the DOM is not accessible in node.js, using Sesam would give some errors. But you can use Sesam with bundlers like Parcel or Webpack. Personally I think Parcel is the best option for simple webapplications because it doesn't require much configuration. I also have a [Parcel-boilerplate on GitHub](https://github.com/lennertderyck/parcel-boilerplate).
 
 > **Note**<br>
 > You can initialize the script as soon the document is loaded. Otherwise you would get an error saying the node couldn't be found.
@@ -104,7 +107,7 @@ When you use Sesam for creating modals, you can add a backdrop behind the modal 
 
 > The backdrop element gets created automatically on intialization of Sesam
 
-**1. Choose which Sesam target that gets a backdrop**
+**1. Choose which Sesam target that gets a backdrop**<br>
 Just add the attribute below to the **target** element.
 ```html
 data-sesam-backdrop="true"
@@ -132,6 +135,7 @@ data-sesam-backdrop="true"
 #### Scrollblock
 If you want that the user isn't able to scroll trough the rest of the page just add this to your target-element.
 
+**1. Choose which Sesam target that gets a scrollblock**<br>
 ```html
 data-sesam-scrollblock="true"
 ```
@@ -142,8 +146,17 @@ data-sesam-scrollblock="true"
 </div>
 ```
 
+**2. Add (s)css**
+```scss
+body.sesam-scrollBlock {
+    overflow: hidden;
+}
+```
+
 ### Api
 #### v6.x.x and above
+Version 6 is not out yet, but this is how it will work then.
+
 ```js
 // collapse can be true/false/show/hide
 /**
@@ -156,24 +169,22 @@ data-sesam-scrollblock="true"
  */
 sesam(target, collapse, {
     backdrop: true, 
-    scrollBlock: true // blokkeert het scrollen door de pagina wanneer deze modal getoont wordt
-    callback: ({trigger, targets}) => {} // execute callback, the trigger and targets are returned and can be used
-})
+    scrollBlock: true,
+    callback: ({trigger, targets}) => {}
 ```
 
 #### v5.x.x and below
 ```js
 sesam({
-    target: 'example', // doet dit: document.querySelector(`[data-sesam-target='${example}']`)
-    collapse: true, // gaat gewoon kijken wat de huidige state is van een target en die veranderen
-    action: 'show', // of 'hide', niet gebruiken in combinatie met collapse argument
-    execute: (() => { // voer extra javascript uit
+    target: 'example',
+    collapse: true,
+    action: 'show',
+    execute: (() => {
         console.log('this works!')
     })(),
     modal: {
-        backdrop: true, // voegt sesam-hidden/sesam-show classe toe aan het backdrop element, 
-                        // backdrop element wordt automatisch gemaakt bij het initialiseren
-        scrollBlock: true // blokkeert het scrollen door de pagina wanneer deze modal getoont wordt
+        backdrop: true,
+        scrollBlock: true
     }
 })
 ```

@@ -36,8 +36,7 @@
     <!-- webfonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.typekit.net/rvs5fwh.css"> <!-- Sofia -->
-    <link rel="stylesheet" href="https://use.typekit.net/rvs5fwh.css"> <!-- Stratos -->
-    
+        
     <!-- other assets -->
     <!-- <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.2/css/line.css">
@@ -51,11 +50,11 @@
 <body data-page="{{ title }}">
     <div class="body--wrapper filter--inverted">
         <div data-label="navWrapper" data-sesam-target="navMain">
-            <div data-label="navBar" class="nav container animate__animated animate__slideInUp animate__faster">
+            <div data-label="navBar" class="nav container animate__slideInUp animate__faster" style="animation-delay: .7s;">
                 <div class="nav__bar">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="nav__crumbles">
-                            <span class="crumble__main">{{ title }}</span> — <span class="crumble__sub">Intro</span>
+                            {% include breadcrumbs %}
                         </div>
                         <!-- <div class="nav__logo h-100 w-auto">
                             <img src="{{ './static/images/LOGO_LDR_ZWART.svg' | url}}" alt="" height="30px">
@@ -84,10 +83,10 @@
                                 
                                 <h6 class="mb-4">Follow me</h6>
                                 <ul class="unlistify">
-                                    <li><a href="https://github.com/lennertderyck">GitHub</a></li>
-                                    <li><a href="https://open.spotify.com/user/twoledery">Spotify</a></li>
-                                    <li><a href="https://instagram.com/lennertderyck">Instagram</a></li>
-                                    <li><a href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
+                                    <li><a target="_blank" href="https://github.com/lennertderyck">GitHub</a></li>
+                                    <li><a target="_blank" href="https://open.spotify.com/user/twoledery">Spotify</a></li>
+                                    <li><a target="_blank" href="https://instagram.com/lennertderyck">Instagram</a></li>
+                                    <li><a target="_blank" href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-12 col-lg-8">
@@ -96,7 +95,7 @@
                                     <a href="/" class="btn color--gold btn--outline color--white mt-n3">Go home</a>
                                 </div>
                                 <div class="row mb-4" data-label="navExits">
-                                    <a href="#" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                    <a href="{{ '/services' | url }}" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
                                         <h3 class="font-weight-normal font--sub">What I do</h3>
                                         <p class="opaque--50">How can I help you or your organisation?</p>
                                     </a>
@@ -104,7 +103,7 @@
                                         <h3 class="font-weight-normal font--sub">Projects</h3>
                                         <p class="opaque--50">Get to know my style or find some inspiration</p>
                                     </a>
-                                    <a href="#" class="col-6 mb-4 nav__exit" style="--delay: .8s;">
+                                    <a href="{{ '/about' | url }}" class="col-6 mb-4 nav__exit" style="--delay: .8s;">
                                         <h3 class="font-weight-normal font--sub">About me</h3>
                                         <p class="opaque--50">A student front-end-development based in Ghent</p>
                                     </a>
@@ -123,9 +122,9 @@
                                         <h5 class="font-weight-normal font--sub">Sesam docs</h5>
                                         <p class="opaque--50">More on Sesam collapse</p>
                                     </a>
-                                    <a href="{{ '/docs' | url }}" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
-                                        <h5 class="font-weight-normal font--sub">Cutlery.js</h5>
-                                        <p class="opaque--50">Documentation for Cue</p>
+                                    <a href="{{ '/docs/sesam' | url }}" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                        <h5 class="font-weight-normal font--sub">Cutlery.js docs</h5>
+                                        <p class="opaque--50">Documentation for Cutlery.js</p>
                                     </a>
                                 </div>
                             </div>
@@ -134,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div data-label="scrollProgress" class="progress" style="--progress: 100%;">
+        <div data-label="scrollProgress" class="progress d-none d-md-flex" style="--progress: 100%;">
             <div class="progress__percentage"></div>
         </div>
         <div id="app">
@@ -146,7 +145,7 @@
     <!-- <div class="layer layer--negative"></div> -->
     
     <!-- scripts -->
-    <script type="module" src="{{ '/static/js/app.js' | url }}"></script>
+    <script type="module" src="{{ '/static/js/core.js' | url }}"></script>
     
     <script>
         const glideOptions = {
@@ -166,7 +165,8 @@
                 }
             }
         }
-        new Glide('.glide', glideOptions).mount();
+        const $glide = document.querySelector('.glide');
+        if ($glide) new Glide('.glide', glideOptions).mount();
         /* Initialize feather icons */
         /* more info on https://feathericons.com/ and https://github.com/feathericons/feather#feather */
         feather.replace()
