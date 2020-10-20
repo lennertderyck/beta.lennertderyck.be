@@ -1,4 +1,4 @@
-import {node, eventCallback, updateClipboard, getScore, saveScore} from './index.js'
+import {node, eventCallback, updateClipboard, getScore, saveScore, sesam} from './index.js'
 
 document.addEventListener('click', (e) => {
     eventCallback('pre', (target) => {
@@ -15,6 +15,24 @@ document.addEventListener('click', (e) => {
         const $notice = target.closest('.notice');
         $notice.closeNotice();
     })
+})
+
+document.body.addEventListener('dblclick', (e) => {
+    eventCallback('[data-action="trackerNote"] small, [data-action="trackerNote"] .feather', (target) => {
+        console.log(target);
+        e.preventDefault();
+        
+        sesam({
+            target: 'navMain',
+            action: 'hide'
+        })
+        
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 3000);
+        
+        saveScore('trackerNote');
+    }, false)
 })
 
 node('.nav__crumbles').on('contextmenu')((e) => {

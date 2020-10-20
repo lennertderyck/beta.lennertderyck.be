@@ -1,8 +1,19 @@
 [data-label="notices"] {
+    > .container {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+    
     .notice {
         display: flex;
         max-height: 100vh;
         overflow: hidden;
+        
+        &:hover {
+            .notice__action button {
+                padding: 1rem 1.6rem;
+            }
+        }
         
         &__body {
             padding: 1.2rem 1.6rem;
@@ -16,10 +27,6 @@
             }
         }
         
-        // &__title {
-        //     color: #50411e;
-        // }
-        
         &__action {
             display: flex;
             align-items: center;
@@ -27,7 +34,7 @@
             
             button {
                 height: 100%;
-                padding: 1rem 1.6rem;
+                padding: 1rem 1.3rem;
                 appearance: none;
                 background-color: transparent;
                 border: none;

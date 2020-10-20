@@ -6,6 +6,7 @@ const points = {
     'design': 10,
     'konami': 25,
     'devconsole': 35,
+    'trackerNote': 10
 }
 
 let eggs = [];

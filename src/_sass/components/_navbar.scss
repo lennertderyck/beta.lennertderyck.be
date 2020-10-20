@@ -99,6 +99,10 @@
     [data-label="navExits"] .nav__exit {
         display: block;
     }
+    
+    [data-label="notices"] > .container {
+        max-height: 0vh;
+    }
 }
 
 @media (max-width: 576px) {
