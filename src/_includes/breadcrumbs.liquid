@@ -1,0 +1,19 @@
+<div class="crumbs">
+    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+    
+    {% if title == 'Home' or title == 'Home' %}
+        <span class="crumble__main">Home</span>
+    {% else %}
+        <span class="crumble__main">{{ title }}</span>{% if crumbs[2] == ' ' %}<span class="crumble__sub"> - {{ crumbs[2] }}</span>{% endif %}
+    {% endif %}
+     
+    
+    
+    <!-- {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+            <span class="d-none"><i data-feather="arrow-right"></i> <span>{{ title | truncatewords: 4, "" }}</span></span>
+        {% else %}
+            <span><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}" class="txt-color-2">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></span> - 
+        {% endif %}
+    {% endfor %} -->
+</div>

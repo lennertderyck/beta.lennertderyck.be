@@ -1,0 +1,9 @@
+@mixin text-modern {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+
+@mixin containerStretch {
+    margin: 0 calc(50% - 50vw);
+}
