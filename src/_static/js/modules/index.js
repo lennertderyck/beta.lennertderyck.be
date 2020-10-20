@@ -20,7 +20,7 @@ export {
     createNotice
 } from './ui.js';
 
-import {
+export {
     saveScore,
     getScore
 } from './easter.js'

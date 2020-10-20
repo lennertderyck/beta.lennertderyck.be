@@ -1,4 +1,6 @@
+import { getScore, saveScore } from './easter.js';
 import {node, eventCallback} from './index.js'
+import { createNotice } from './ui.js';
 
 document.addEventListener('click', (e) => {
     eventCallback('pre', (target) => {
@@ -19,5 +21,13 @@ document.addEventListener('click', (e) => {
 
 node('.nav__crumbles').on('contextmenu')((e) => {
     e.preventDefault();
-    window.location.href = '/design';
+    setTimeout(() => {
+        window.location.href = '/design';
+    }, 2000);
+    saveScore('design');
+});
+
+Mousetrap.bind('up up down down left right left right b a', () => {
+    document.body.classList.add('easter--rotate');
+    saveScore('konami');
 });
