@@ -1,6 +1,4 @@
-import { getScore, saveScore } from './easter.js';
-import {node, eventCallback} from './index.js'
-import { createNotice } from './ui.js';
+import {node, eventCallback, updateClipboard, getScore, saveScore} from './index.js'
 
 document.addEventListener('click', (e) => {
     eventCallback('pre', (target) => {
@@ -30,4 +28,8 @@ node('.nav__crumbles').on('contextmenu')((e) => {
 Mousetrap.bind('up up down down left right left right b a', () => {
     document.body.classList.add('easter--rotate');
     saveScore('konami');
+});
+
+Mousetrap.bind(['ctrl shift i', 'command+option+i'], () => {
+    saveScore('devconsole');
 });
