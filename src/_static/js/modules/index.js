@@ -16,8 +16,16 @@ export {
 export {
     getAverageRGB,
     setScrollProgress,
-    menuHeightCompensate
+    menuHeightCompensate,
+    createNotice
 } from './ui.js';
+
+import {
+    saveScore,
+    getScore
+} from './easter.js'
+
+import './events.js'
 
 // Node.prototype.event = function (type) {
 //     const hasOn = type.startsWith('on'), isDefined = this[type] !== undefined;

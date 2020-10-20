@@ -1,11 +1,13 @@
-[data-label="navBar"].nav {
+[data-label="bottomBar"] {
     position: fixed;
     bottom: 0px;
     left: 0px;
     right: 0px;
     padding: 0px;
     z-index: 1000;
-    
+}
+
+[data-label="navBar"].nav {    
     .nav__bar {
         padding: 1.6rem;
         margin: 0 auto;
@@ -96,6 +98,12 @@
     
     [data-label="navExits"] .nav__exit {
         display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    [data-label="navBar"] {
+        padding: 0px;
     }
 }
 

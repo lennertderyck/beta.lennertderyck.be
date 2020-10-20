@@ -62,6 +62,15 @@ h6 {color: #846a2f !important;}
     @include containerStretch;
 }
 
+.feather {
+    width: var(--size);
+    height: var(--size);
+    
+    &.feather--small {
+        --size: 15px;
+    }
+}
+
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}

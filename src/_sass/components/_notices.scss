@@ -1,0 +1,54 @@
+[data-label="notices"] {
+    .notice {
+        display: flex;
+        max-height: 100vh;
+        overflow: hidden;
+        
+        &__body {
+            padding: 1.2rem 1.6rem;
+            width: 100%;
+            background-color: $colorGold;
+            
+            * {color:  #50411e;}
+            
+            *:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        // &__title {
+        //     color: #50411e;
+        // }
+        
+        &__action {
+            display: flex;
+            align-items: center;
+            background-color: #967a37;
+            
+            button {
+                height: 100%;
+                padding: 1rem 1.6rem;
+                appearance: none;
+                background-color: transparent;
+                border: none;
+                
+                &, &:focus, &:focus-within, &:active {
+                    outline: none;
+                    box-shadow: none;
+                }
+                
+                .feather {
+                    stroke: #3b3015;
+                }
+            }
+        }
+        
+        &.notice--hidden {
+            max-height: 0vh;
+            
+            * {
+                padding-top: 0px; padding-bottom: 0px;
+            }
+        }
+    }
+}

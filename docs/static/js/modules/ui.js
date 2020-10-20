@@ -1,4 +1,4 @@
-import {node, returnTag, Element} from './index.js'
+import {node, returnTag, Element} from './index.js';
 
 const lazyLoading = () => {
     const $sections = node('.lazy', true);
@@ -99,12 +99,33 @@ $main.addEventListener("scroll", () => {
     setScrollProgress();
 });
 
+const createNotice = (container, {title, content}) => {
+    const n = new Element('div');
+    n.class(['notice'])
+    n.inner(`
+        <div class="notice__body">
+            <h5 class="notice__title text-modern font-weight--600 mb-1">${title}</h5>
+            <p>${content}</p>
+        </div>
+        <div class="notice__action">
+            <button data-action="closeNotice"><i data-feather="x"></i></button>
+        </div>
+    `);
+    n.prepend(container);
+    feather.replace();
+}
+
+Node.prototype.closeNotice = function () {
+    this.classList.add('notice--hidden');
+}
+
 
 export {
     lazyLoading,
     getAverageRGB,
     menuHeightCompensate,
-    setScrollProgress
+    setScrollProgress,
+    createNotice
 }
 
 

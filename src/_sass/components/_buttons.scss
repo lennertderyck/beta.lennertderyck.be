@@ -21,7 +21,8 @@
     &--outline {
         display: block;
         width: fit-content;
-        padding: 0.6rem 1rem;
+        // padding: 0.6rem 1rem;
+        padding: .5rem 1rem .6rem 1rem;
         background-color: transparent;
         border: 1px solid lightgray;
         @include text-modern;

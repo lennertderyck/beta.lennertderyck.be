@@ -23,6 +23,7 @@
 // base
 @import 'base/base';
 @import 'base/typography';
+@import 'base/easter';
 
 // components
 @import 'components/buttons';
@@ -32,6 +33,7 @@
 @import 'components/timeline';
 @import 'components/tools';
 @import 'components/services';
+@import 'components/notices';
 
 // layout
 @import 'layout/footer';
@@ -44,6 +46,7 @@
 // themes
 @import 'themes/admin';
 @import 'themes/theme';
+@import 'themes/page';
 
 // vendors
 @import 'vendors/glide';

@@ -17,10 +17,14 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addLayoutAlias('page', 'page.liquid');
     
     // shortcodes
-    eleventyConfig.addShortcode("svg", async (path) => {
-        const svg = fs.readFileSync(path, 'utf-8')
-        return svg;
-      });
+    eleventyConfig.addShortcode('svg', async (path) => {
+      const svg = fs.readFileSync(path, 'utf-8')
+      return svg;
+    });
+    
+    eleventyConfig.addCollection('projects', (collectionApi) => {
+      return collectionApi.getFilteredByGlob('src/_collections/projects/*.md');
+    });
     
     return {
         pathPrefix: '',

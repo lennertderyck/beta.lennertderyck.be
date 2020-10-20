@@ -31,6 +31,7 @@
     <!-- integrations -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/mousetrap@1.6.5/mousetrap.js"></script>
     
     
     <!-- webfonts -->
@@ -47,14 +48,28 @@
     <link rel="stylesheet" href="/static/css/main.css">
     
 </head>
-<body data-page="home">
+<body data-page="home" data-theme="page">
     <div class="body--wrapper filter--inverted">
         <div data-label="navWrapper" data-sesam-target="navMain">
-            <div data-label="navBar" class="nav container animate__slideInUp animate__faster" style="animation-delay: .7s;">
-                <div class="nav__bar">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="nav__crumbles">
-                            <div class="crumbs">
+            <div data-label="bottomBar">
+                <div data-label="notices">
+                    <div class="container px-0">
+                        <div class="notice">
+                            <div class="notice__body">
+                                <h5 class="notice__title text-modern font-weight--600 mb-1">Cookies</h5>
+                                <p>A message about cookies</p>
+                            </div>
+                            <div class="notice__action">
+                                <button data-action="closeNotice"><i data-feather="x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-label="navBar" class="nav container animate__slideInUp animate__faster" style="animation-delay: .7s;">
+                    <div class="nav__bar">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="nav__crumbles">
+                                <div class="crumbs">
     
     
     
@@ -73,21 +88,24 @@
         
      -->
 </div>
-                        </div>
-                        <!-- <div class="nav__logo h-100 w-auto">
-                            <img src="static/images/LOGO_LDR_ZWART.svg" alt="" height="30px">
-                        </div> -->
-                        <div class="nav__toggle toggle" data-sesam-trigger="navMain">
-                            <div class="toggle__label text-modern font-weight-bold">menu</div>
-                            <div class="toggle__burger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                            </div>
+                            <!-- <div class="nav__logo h-100 w-auto">
+                                <img src="static/images/LOGO_LDR_ZWART.svg" alt="" height="30px">
+                            </div> -->
+                            <div class="nav__toggle toggle" data-sesam-trigger="navMain">
+                                <div class="toggle__label text-modern font-weight-bold">menu</div>
+                                <div class="toggle__burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            
             <div data-label="navMain">
                 <div class="wrapper">
                     <div class="container">
@@ -100,12 +118,20 @@
                                 </ul>
                                 
                                 <h6 class="mb-4">Follow me</h6>
-                                <ul class="unlistify">
+                                <ul class="unlistify mb-5">
                                     <li><a target="_blank" href="https://github.com/lennertderyck">GitHub</a></li>
                                     <li><a target="_blank" href="https://open.spotify.com/user/twoledery">Spotify</a></li>
                                     <li><a target="_blank" href="https://instagram.com/lennertderyck">Instagram</a></li>
                                     <li><a target="_blank" href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
                                 </ul>
+                                
+                                <div class="d-flex align-items-center opaque--50">
+                                    <i data-feather="eye-off" class="feather--small mr-3"></i>
+                                    <small class="d-block">
+                                            100% tracker free,<br> but wild easter eggs may appear 
+                                    </small>
+                                </div>
+                                
                             </div>
                             <div class="col-sm-12 col-lg-8">
                                 <div class="d-flex align-items-start justify-content-between mb-5">
@@ -117,7 +143,7 @@
                                         <h3 class="font-weight-normal font--sub">What I do</h3>
                                         <p class="opaque--50">How can I help you or your organisation?</p>
                                     </a>
-                                    <a href="#" class="col-6 mb-4 nav__exit" style="--delay: .5s;">
+                                    <a href="/work" class="col-6 mb-4 nav__exit" style="--delay: .5s;">
                                         <h3 class="font-weight-normal font--sub">Projects</h3>
                                         <p class="opaque--50">Get to know my style or find some inspiration</p>
                                     </a>
@@ -136,7 +162,7 @@
                                     <h6 class="mb-0">This may be interesting too</h6>
                                 </div>
                                 <div class="row" data-label="navExits">
-                                    <a href="/docs" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                    <a href="/docs/sesam" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
                                         <h5 class="font-weight-normal font--sub">Sesam docs</h5>
                                         <p class="opaque--50">More on Sesam collapse</p>
                                     </a>
@@ -173,6 +199,13 @@
 
         </div>
     </div> 
+</div>
+<div class="section py-5 section--border-t animate__animated animate__fadeInUp animate__fast" style="animation-delay: .4s;">
+    <div class="container text-center py-5">
+        <h6 class="color--grey">Do you like my work?</h6>
+        <h2 class="font--sub font-weight--600">Let's work together!</h2>
+        <a href="/contact" class="btn color--gold btn--outline mx-auto mt-4">Get in touch</a>
+    </div>
 </div>
             </main>
         </div>
