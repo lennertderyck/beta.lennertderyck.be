@@ -54,13 +54,16 @@
             <div data-label="bottomBar">
                 <div data-label="notices">
                     <div class="container px-0">
-                        <div class="notice">
+                        <div class="notice" data-cookie-hook="cookies">
                             <div class="notice__body">
                                 <h5 class="notice__title text-modern font-weight--600 mb-1">Cookies</h5>
-                                <p>A message about cookies</p>
+                                <p>
+                                    Since this site doesn't track you, no cookies are needed. Isn't that just great? – Still hungry?
+                                    <a href="https://foodnetwork.co.uk/recipes/chewy/" target="_blank" rel="noopener">Try this recipe</a>.
+                                </p>
                             </div>
                             <div class="notice__action">
-                                <button data-action="closeNotice"><i data-feather="x"></i></button>
+                                <button data-action="closeNotice" data-cookie-set="cookies"><i data-feather="x"></i></button>
                             </div>
                         </div>
                     </div>

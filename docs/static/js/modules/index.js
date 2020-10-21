@@ -6,6 +6,7 @@ export {
     updateClipboard,
     eventCallback,
     linkRouting,
+    cookies
 } from 'https://unpkg.com/cutleryjs@3.5.4/dist/js/index.js';
 
 export {
@@ -24,6 +25,11 @@ export {
     saveScore,
     getScore
 } from './easter.js'
+
+export {
+    setCookieHook,
+    cookieHook
+} from './cookies.js'
 
 import './events.js'
 

@@ -25,6 +25,10 @@
             *:last-child {
                 margin-bottom: 0;
             }
+            
+            a {
+                text-decoration: underline;
+            }
         }
         
         &__action {
@@ -54,7 +58,7 @@
             max-height: 0vh;
             
             * {
-                padding-top: 0px; padding-bottom: 0px;
+                // padding-top: 0px; padding-bottom: 0px;
             }
         }
     }
