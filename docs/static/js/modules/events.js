@@ -1,4 +1,4 @@
-import {node, eventCallback, updateClipboard, getScore, saveScore, sesam} from './index.js'
+import {node, eventCallback, updateClipboard, getScore, saveScore, sesam, setCookieHook} from './index.js'
 
 document.addEventListener('click', (e) => {
     eventCallback('pre', (target) => {
@@ -15,6 +15,11 @@ document.addEventListener('click', (e) => {
         const $notice = target.closest('.notice');
         $notice.closeNotice();
     })
+    
+    eventCallback('[data-cookie-set]', (target) => {
+        const value = target.dataset.cookieSet;
+        setCookieHook(value);
+    }, false)
 })
 
 document.body.addEventListener('dblclick', (e) => {
