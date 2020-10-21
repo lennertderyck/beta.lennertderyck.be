@@ -13,13 +13,13 @@ body {
     }
 }
 
-body,
-main,
-#app {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y proximity;
-}
+// body,
+// main,
+// #app {
+//     height: 100vh;
+//     overflow-y: scroll;
+//     scroll-snap-type: y proximity;
+// }
 
 main {
     &.navbar--compensate,

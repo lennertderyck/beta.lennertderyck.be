@@ -88,14 +88,22 @@ const $main = node('main');
 const $progress = node('[data-label="scrollProgress"]');
 
 const setScrollProgress = (percentage) => {
-    const h = $main.scrollHeight;
-    const s = $main.scrollTop;
-    const o = $main.offsetHeight;
-    const progress = percentage || Math.round(s/(h - o)*100);
+    // const h = $main.scrollHeight;
+    // const s = $main.scrollTop;
+    // const o = $main.offsetHeight;
+    // const progress = percentage || Math.round(s/(h - o)*100);
+    
+    var h = document.documentElement, 
+    b = document.body,
+    st = 'scrollTop',
+    sh = 'scrollHeight';
+
+    const calculation = Math.round((h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100);
+    const progress = percentage || calculation;
     $progress.style.setProperty('--progress', `${progress}%`);
 }
 
-$main.addEventListener("scroll", () => {
+document.addEventListener("scroll", () => {
     setScrollProgress();
 });
 

@@ -22,6 +22,7 @@
 [data-label="portfolioCarousel"] {  
     .glide {
         height: fit-content;
+        height: -moz-fit-content;
         
         &__slide {
             // transform: translateX(-3rem);

@@ -1,4 +1,7 @@
-.width-fit {width: fit-content;}
+.width-fit {
+    width: fit-content;
+    width: -moz-fit-content;
+}
 
 .text-modern, h6 {@include text-modern;}
 h6 {color: #846a2f !important;}

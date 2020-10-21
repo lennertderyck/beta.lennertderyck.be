@@ -4,6 +4,7 @@
     &--box {
         display: block;
         width: fit-content;
+        width: -moz-fit-content;
         padding: 0.6rem 1rem;
         // padding: 1.8rem 2.4rem 1.8rem 2.4rem;
         background-color: lightgrey;
@@ -21,6 +22,7 @@
     &--outline {
         display: block;
         width: fit-content;
+        width: -moz-fit-content;
         // padding: 0.6rem 1rem;
         padding: .5rem 1rem .6rem 1rem;
         background-color: transparent;
@@ -39,6 +41,7 @@
     &--simple {
         display: block;
         width: fit-content;
+        width: -moz-fit-content;
         padding: 0.6rem 0;
         @include text-modern;
         text-transform: unset;
