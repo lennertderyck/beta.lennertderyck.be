@@ -108,7 +108,7 @@ Use support classes to control the behaviour on different screen sizes. These ar
 ```.flex-grid--{number of items}i```
 
 **Example**
-```
+```scss
 .flex-grid--1i
 ```
 
@@ -116,7 +116,7 @@ Use support classes to control the behaviour on different screen sizes. These ar
 ```.flex-grid--{breakpoint}-{number of items}i```
 
 **Example**
-```
+```scss
 .flex-grid--sm-1i
 ```
 

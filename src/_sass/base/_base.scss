@@ -208,6 +208,8 @@ a.color--white {
         list-style-position: outside;
         list-style-type: '-';
         padding-left: var(--spacing);
+        font-weight: 300;
+        color: gray;
         
         li {padding-left: var(--spacing);}
     }
