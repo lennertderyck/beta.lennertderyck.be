@@ -104,6 +104,8 @@ This controls the amount of spacing between elements.
 #### Support classes
 Use support classes to control the behaviour on different screen sizes. These are optional since Flexgrid is responsive out of box.
 
+For the best results, add these classes to the container element.
+
 ##### Basic syntax
 ```.flex-grid--{number of items}i```
 
