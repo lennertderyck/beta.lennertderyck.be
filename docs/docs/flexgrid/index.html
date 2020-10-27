@@ -174,9 +174,9 @@
                                         <h5 class="font-weight-normal font--sub">Sesam docs</h5>
                                         <p class="opaque--50">More on Sesam collapse</p>
                                     </a>
-                                    <a href="/docs/sesam" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
-                                        <h5 class="font-weight-normal font--sub">Cutlery.js docs</h5>
-                                        <p class="opaque--50">Documentation for Cutlery.js</p>
+                                    <a href="/docs/flexgrid" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                        <h5 class="font-weight-normal font--sub">Flexgrid docs</h5>
+                                        <p class="opaque--50">Part of Cutlery.js</p>
                                     </a>
                                 </div>
                             </div>
@@ -238,6 +238,29 @@
 <h5>Step 3: Add collection items</h5>
 <p>These are the items that have to be arranged.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<h4>CSS variables</h4>
+<h5>Amount of items</h5>
+<p>The amount of items on a row is controlled by the <code>--flex-grid--items</code> variable.</p>
+<p>You can overwrite all behaviour by using it in your own css.</p>
+<pre class="language-scss"><code class="language-scss"><span class="token property">--flex-grid--items</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span></code></pre>
+<h5>Spacing</h5>
+<p>This controls the amount of spacing between elements.</p>
+<pre class="language-scss"><code class="language-scss"><span class="token property">--flex-grid--spacing</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span> <span class="token comment">// default</span></code></pre>
+<h4>Support classes</h4>
+<p>Use support classes to control the behaviour on different screen sizes. These are optional since Flexgrid is responsive out of box.</p>
+<h5>Basic syntax</h5>
+<p><code>.flex-grid--{number of items}i</code></p>
+<p><strong>Example</strong></p>
+<pre><code>.flex-grid--1i
+</code></pre>
+<h5>For screen sizes</h5>
+<p><code>.flex-grid--{breakpoint}-{number of items}i</code></p>
+<p><strong>Example</strong></p>
+<pre><code>.flex-grid--sm-1i
+</code></pre>
+<blockquote>
+<p>The max amount of items that is supported out of the box, is four. But you can add support classes yourself using the <code>--flex-grid--items</code> css variable.</p>
+</blockquote>
 
         </div>
     </div> 

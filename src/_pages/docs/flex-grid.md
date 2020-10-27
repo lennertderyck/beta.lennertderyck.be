@@ -85,3 +85,39 @@ These are the items that have to be arranged.
     </div>
 </div>
 ```
+
+#### CSS variables
+##### Amount of items
+The amount of items on a row is controlled by the ```--flex-grid--items``` variable.
+
+You can overwrite all behaviour by using it in your own css.
+```scss
+--flex-grid--items: 1;
+```
+
+##### Spacing
+This controls the amount of spacing between elements.
+```scss
+--flex-grid--spacing: 20px; // default
+```
+
+#### Support classes
+Use support classes to control the behaviour on different screen sizes. These are optional since Flexgrid is responsive out of box.
+
+##### Basic syntax
+```.flex-grid--{number of items}i```
+
+**Example**
+```
+.flex-grid--1i
+```
+
+##### For screen sizes
+```.flex-grid--{breakpoint}-{number of items}i```
+
+**Example**
+```
+.flex-grid--sm-1i
+```
+
+> The max amount of items that is supported out of the box, is four. But you can add support classes yourself using the ```--flex-grid--items``` css variable.
