@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home – Lennert De Ryck</title>
+    <title>Flexgrid – Lennert De Ryck</title>
     <!-- <title>Front-end-developer | Lennert De Ryck</title> -->
 
     <!-- meta -->
@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="/static/css/main.css">
     
 </head>
-<body data-page="home" data-theme="page">
+<body data-page="Flexgrid" data-theme="page">
     <div class="body--wrapper filter--inverted">
         <div data-label="navWrapper" data-sesam-target="navMain">
             <div data-label="bottomBar">
@@ -77,18 +77,22 @@
     
     
     
-        <span class="crumble__main">home</span>
+        <span class="crumble__main">Flexgrid</span>
     
      
     
     
     <!-- 
         
-            <span><a href="/an-other-page/" class="txt-color-2">An other page</a></span> - 
+            <span><a href="/docs/" class="txt-color-2">Docs</a></span> - 
         
     
         
-            <span class="d-none"><i data-feather="arrow-right"></i> <span>home</span></span>
+            <span><a href="/docs/flexgrid/" class="txt-color-2">Flexgrid</a></span> - 
+        
+    
+        
+            <span class="d-none"><i data-feather="arrow-right"></i> <span>Flexgrid</span></span>
         
      -->
 </div>
@@ -189,17 +193,51 @@
                 <div class="bg--outline navbar--compensate">
     <div class="section section--padding">
         <div class="container container--sm animate__animated animate__fadeInUp animate__fast">
-            <h6 class="color--grey"></h6>
-            <h1 class="font-weight--600">home</h1>
+            <h6 class="color--grey">docs</h6>
+            <h1 class="font-weight--600">Flexgrid</h1>
         </div>   
     </div>
     <div class="section animate__animated animate__fadeInUp animate__fast" style="animation-delay: .3s;">
         <div class="container container--sm" data-label="contentBody">
-            <h3>An other page</h3>
-<p>This page was written in Markdown</p>
-<p><a href="../">Go back home</a></p>
-<hr>
-<p><img src="/static/images/rexwi5zdll531.jpg" alt="Images"></p>
+            <h3>About</h3>
+<p>Flexgrid is a tool, used when you want to display a collection of items in a grid where all items have the same dimensions.</p>
+<h4>Why not Masonry?</h4>
+<p>Masonry and its alternatives are fantastic tools for the right cases. Since they require JavaScript and/or JQuery and some setup, they use more bandwith, loadtime and knowledge of the tools.</p>
+<p>With Flexgrid you only need three elements to get started, a container, a wrapper and the collection items.</p>
+<p>Since it is simple (compressed) css, it takes little bandwidth to load. And to top it al off, it's fully responsive out of the box.</p>
+<h4>Features</h4>
+<ul>
+<li>Fully responsive</li>
+<li>Supports custom css variables</li>
+<li>Extra classes to control behaviour for different screen sizes</li>
+</ul>
+<h3>Setup</h3>
+<p>Flexgrid is part of another package, called <code>Cutlery.js</code><br>(<a href="https://www.npmjs.com/package/cutleryjs">view on NPM</a>)</p>
+<h4>Option 1: using NPM</h4>
+<h5>1. Install package</h5>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i cutlery</code></pre>
+<h5>2. Import Scss/Sass</h5>
+<p><strong>Directly in your scss/sass files</strong></p>
+<pre class="language-scss"><code class="language-scss"><span class="token keyword">@import</span> <span class="token string">'/node_modules/cutleryjs/src/scss/index.scss'</span><span class="token punctuation">;</span></code></pre>
+<p><strong>Or using a bundler like Parcel</strong></p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/node_modules/cutleryjs/src/scss/index.scss<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<blockquote>
+<p>Paths can be different, depending on how your folderstructure is</p>
+</blockquote>
+<h4>Option 2: from a CDN</h4>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/cutleryjs/dist/css/index.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<h3>Use</h3>
+<h5>Step 1: Add a Container</h5>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    ...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<h5>Step 2: Add a Wrapper</h5>
+<p>The wrapper compensates the margin of the outer items.</p>
+<blockquote>
+<p>In feature versions the wrapper element will be replaced by adding <code>flex-gap</code> to the container element</p>
+</blockquote>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        ...<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<h5>Step 3: Add collection items</h5>
+<p>These are the items that have to be arranged.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex-grid__item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
         </div>
     </div> 

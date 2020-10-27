@@ -202,4 +202,13 @@ a.color--white {
             margin-bottom: 0;
         }
     }
+    
+    ul {
+        --spacing: 10px;
+        list-style-position: outside;
+        list-style-type: '-';
+        padding-left: var(--spacing);
+        
+        li {padding-left: var(--spacing);}
+    }
 }

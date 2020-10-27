@@ -89,8 +89,8 @@ You did great! Now click the trigger, watch the classes change and add your css.
 Additional options can be set. This method uses an attribute per option.
 
 #### Collapse other children
-Sometimes, when you click a target and collapse a node, you want the other children to react. Be hidden, change color, ...
-You can do this by defining a group and to which parent a node has to "listen". So when an node is clicked that has a parent defined every other child element with that parent will react.
+Sometimes, when you click a target and collapse a node, you want the other children to react. Being hidden, change color, ...
+You can do this by defining a group and to which parent a node has to "listen". So when an node is clicked that has a parent defined every other child element of that parent will react.
 
 **Define the parent as group**
 ```html
