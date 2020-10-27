@@ -10,6 +10,6 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282854/IMG_20170529_151747-compressor_dzivv3.jpg
 
 ---
-De opdracht hield in dat we een herwerking maakten van de bekende Bongo verpakkingen. Ik koos voor bestemming Parijs.
+We had to make a alternative packaging for the well-known Bongovouchers. I chose Paris.
 
-De verpakking werd gedrukt op SRA3 gesatineerd papier van om en bij de 250gr op een Xerox laserprinter.
+The box was printed on SRA3, satin paper of about 250 grams on a Xerox laser printer.

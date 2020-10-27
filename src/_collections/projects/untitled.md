@@ -10,6 +10,4 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/LYON_003_SMALL-1142x639_zkdg8g.jpg
 
 ---
-Eigen foto's van de laatste jaren. Bekijk het project voor meer foto's.
-
-Je kan de foto's gratis downloaden en voor alle doeleinden gebruiken.
+Photos I made trough the years. You can download all the pictures for free on Unsplash.

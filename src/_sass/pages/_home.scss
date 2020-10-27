@@ -34,6 +34,7 @@
         
         position: relative; 
         width: auto;
+        // height: 100%;
         margin: 3rem 0px;
         // margin-top: 10rem;
         padding: 0 15px;
@@ -146,6 +147,8 @@
             margin: 3rem;
             margin-top: 3rem;
             padding: 0;
+            
+            height: 315px;
             
             &:hover {
                 transform: translate(-10px, -10px);

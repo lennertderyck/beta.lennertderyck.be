@@ -1,4 +1,4 @@
-<!-- <div class="d-flex flex-column justify-content-center" data-label="portfolioCarousel" data-section-mode="normal/inverted">
+<div class="d-flex" data-label="portfolioCarousel" data-section-mode="normal/inverted">
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
@@ -14,43 +14,8 @@
                                 <div class="wrapper">
                                     <h6>{{ project.data.tags | first }}</h6>
                                     <h2 class="project__title">{{ project.data.title }}</h2>
-                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
-                                    <a href="" class="btn btn--box mt-4">view project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            {% endfor -%}
-          </ul>
-        </div>
-        <div class="container">
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left text-black-50" data-glide-dir="<"><i data-feather="arrow-left"></i></i></button>
-                <button class="glide__arrow glide__arrow--right text-black-50" data-glide-dir=">"><i data-feather="arrow-right"></i></i></button>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<div class="d-flex flex-column justify-content-center" data-label="portfolioCarousel" data-section-mode="normal/inverted">
-    <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            {% assign projects = collections.projects -%}
-            {% for project in projects %}
-                <li class="glide__slide">
-                    <div class="project" style="--backgr: #e6aeb4;">
-                        <div class="project__wrapper">
-                            <div class="project__preview">
-                                <img src="{{ project.data.ft-img }}" alt="">
-                            </div>
-                            <div class="project__summ">
-                                <div class="wrapper">
-                                    <h6>{{ project.data.tags | first }}</h6>
-                                    <h2 class="project__title">{{ project.data.title }}</h2>
-                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
-                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                    <p class="project__description">{{ project.templateContent | strip_html | truncate: 130 }}</p>
+                                    <a href="{{ project.data.project-url }}" class="btn btn--box mt-4" target="_blank" rel="noopener">view project</a>
                                 </div>
                             </div>
                         </div>

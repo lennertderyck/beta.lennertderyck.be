@@ -8,6 +8,6 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MOCKUP_TBS_RAAM_typgua.png
 
 ---
-Dit project stelt een fiets-bar voor. Een plaats waar mensen hun fiets kunnen laten maken door andere bezoekers of door de eigen fietsenmakers en ondertussen iets drinken, gezellig bijpraten, werken voor school of werk, ...
+This project is a case study for a fictive bar where the bike is a central element. A place where people combine talking about, and repairing bikes.
 
-Dit project is puur fictief.
+I also created some mockups for the logo on a window.

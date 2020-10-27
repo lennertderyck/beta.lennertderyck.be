@@ -7,7 +7,7 @@ permalink: about/index.html
 
 ### My story
 
-Let's introduce myself.
+Let me introduce myself.
 
 My name is Lennert and I'm a student Front-end-develoment at Artevelde University College Ghent.
 

@@ -12,13 +12,13 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282850/1560461808253_ocdj7c.png
 
 ---
-Deze opdracht hield in dat we een website moesten maken voor een product dat gefinancierd wordt door crowdfunding.
+A school assignment were I had to create a website for a self-chosen crowdfunding product.
 
 De site moest minstens 5 pagina's hebben.
 
-Ik koos voor de [Nomatic Travel Bag](https://www.kickstarter.com/projects/1131502390/the-nomatic-travel-bag).
+I chose the [Nomatic Travel Bag](https://www.kickstarter.com/projects/1131502390/the-nomatic-travel-bag).
 
-Enkele pagina's ...
+Some pages that were included ...
 
 * Pledges
 * About

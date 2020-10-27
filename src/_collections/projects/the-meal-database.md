@@ -11,6 +11,6 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1587076798/Schermafbeelding_2020-04-17_om_00.36.34_pf2fir.png
 
 ---
-Opnieuw een opdracht om te leren omgaan met api's en JSON data.
+An other assignment about the use of the fetch web api.
 
-De gebruiker krijgt een zoekveld te zien waar hij of zij een ingrediënt in ingeeft. De applicatie zal verschillende recepten laten zien waar dit ingrediënt in gebruikt kan worden.
+The user gets a field where he or she can enter an ingredient. The app will display a variety of recipes with that ingredient.

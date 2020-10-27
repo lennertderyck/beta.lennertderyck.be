@@ -8,8 +8,9 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg
 
 ---
-De opdracht was het ontwerpen van een reeks iconen rond een zelfgekozen thema. Ik koos voor een hotel.   
+We had to design a set of icons for a 
+self-chosen theme. I chose a hotel building.
+
+The name 'Focused', comes from the interrupted frame around each of the icons. Just like a camera that focuses on an object. Each icon is incorporated in the frame.
   
-De naam 'Focused', komt van het onderbroken frame dat zich rond de iconen bevindt, net zoals op een camera een object gefocust wordt.. Het icoon wordt ook telkens mee verwerkt in het frame.   
-  
-De iconen werden uiteindelijk uitgevoerd op [forex](https://lennertderyck.be/grafische-termen#forex).
+The icons were plotted on sticker-vinyl and applied on a forex plate.

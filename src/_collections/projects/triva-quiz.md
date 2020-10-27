@@ -13,8 +13,8 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1587077094/Schermafbeelding_2020-04-17_om_00.41.49_t1khcf.png
 
 ---
-Dit was een examenopdracht waarbij een quizapplicatie ontwikkeld moest worden.
+This was an exam assignment where a quiz application had to be developed.
 
-Het was de bedoeling dat de gebruiker 10 vragen beantwoord en nadien een score te zien krijgt. Deze score moest bijgehouden worden, ook wanneer de gebruiker de browser afsluit.
+The user would answer 10 questions and then be shown a score. This score had to be saved even when the user closes the browser.
 
-Als laatste moest het ook mogelijk zijn om voorkeuren op te geven zoals de moeilijkheidsgraad en de categorie.
+Finally the user must have an option to choose the difficulty level and the category.

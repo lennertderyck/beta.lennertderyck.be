@@ -9,4 +9,4 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png
 
 ---
-De scouts waar ik leiding geef organiseert jaarlijks een spaghetti-avond om de kas te spijzen én om mensen samen te brengen. Ook dit jaar was het weer een succes! Ik verzorgde de grafische kant en ontwierp placemats en een banner.
+I created a banner and placemat for the annual spaghetti night on the scouts where I'm leader.

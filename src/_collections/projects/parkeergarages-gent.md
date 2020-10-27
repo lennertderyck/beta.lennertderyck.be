@@ -10,8 +10,6 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1587075996/Schermafbeelding_2020-04-17_om_00.26.10_e1gcz9.png
 
 ---
-Deze applicatie laat alle parkeergarages zien in centrum Gent.
+This application loads all the car parks from Ghent and shows them on a Map (Mapbox). When you click on a location it shows real-time data containing the amount of used and unused spots.
 
-Deze worden opgehaald via live data die na een bepaalde interval vernieuwd wordt. Niet alleen de parkings worden dus getoond, maar ook het aantal vrije parkeerplaatsen.
-
-Opnieuw een opdracht op het gebruik van api data.
+An assignment to learn about the use of api data.

@@ -14,22 +14,21 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1594845774/Schermafbeelding_2020-07-15_om_22.38.50_k6nl8d.png
 
 ---
-Tijdens een scoutsactiviteit zoals een weekend of een kamp worden er veel foto's genomen, maar deze moeten allemaal uitgezocht worden om de slechte er uit te halen. Voor enkele foto's is dit geen probleem, maar wanneer je bijna 2000 foto's moet doorzoeken is dit een karwij die wel wat tijd in beslag neemt.
+During a scoutsactivity a lot of photos are taken, but all these pictures have to be sorted before publishing them. For a few photos this is an easy job, but when you have almost 2000 pictures this is a huge job, taking a lot of time.
 
-Daarom had ik nood aan een eenvoudige oplossing om foto's te sorteren. Ik bedacht een applicatie die gebaseerd is op Tinder. Er wordt telkens een foto getoond en dan heeft men keuze uit twee knoppen om de foto als slecht of goed te markeren. Hierna worden de foto's verdeeld in folders naargelang de markering.
+That's why I developed an easy solution to sort pictures, based on the same principle as Tinder. You have two buttons, a like and dislike button, and another pair for jumping between pictures. You like or dislike some pictures and when you're ready and confirm the pictures are devided in two seperate folders. One for the liked and the other for the disliked pictures.
 
-De applicatie is volledig met webtechnologieën gebouwd. Hier voor heb ik gebruik gemaakt van GitHub's Electron en node.js.
+The entire application is build with web technology, Electron from GitHub and node.js.
 
-**Enkele functies**
+**Some functions**
 
-* afbeeldingen importeren
-* beoordeling goed of slecht toevoegen
-* afbeeldingen verplaatsen naar folders
-* locatie van afbeeldingen openen
+* importing pictures
+* like or dislike pictures
+* move pictures to a folder
+* open these folders
 
-**Toekomstige functie**
+**Feature functions**
 
-* bestanden hernoemen
-* zelf de naam kiezen van de folders
-* afbeeldingen van meerdere locaties bundelen
-* afbeeldingen in subfolders detecteren
+* renaming files
+* bundle pictures from multiple locations
+* detect pictures in subfolders

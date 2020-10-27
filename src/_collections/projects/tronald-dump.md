@@ -10,4 +10,4 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1587077322/Schermafbeelding_2020-04-17_om_00.48.18_ebkhjh.png
 
 ---
-Een opdracht voor school waar we leerden gebruik maken van API date via XMLHttpRequest. Deze api geeft alle domste uitspraken van Donald Trump op Twitter terug als JSON.
+An assignment for school to learn the basics of fetching api data. This application shows all the dumbest tweets from Donald Trump.

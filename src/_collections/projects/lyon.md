@@ -9,4 +9,4 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/LYON_003_SMALL-1142x639_zkdg8g.jpg
 
 ---
-Deze foto's werden genomen op een uitstap naar Lyon tijdens een reis in Frankrijk. Je kan de foto's gratis downloaden en voor alle doeleinden gebruiken.
+These pictures were taken on a trip to Lyon. They can be downloaded for free on Unsplash.

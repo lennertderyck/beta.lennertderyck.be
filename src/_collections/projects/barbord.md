@@ -13,6 +13,6 @@ galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1587078006/Schermafbeelding_2020-04-17_om_00.59.45_okt37s.png
 
 ---
-Betalingssysteem voor drank, snacks, etc. voor leiding in jeugdverenigingen.
+Stambord is a offline paymentsystem for drinks, snacks and more for leaders in youthorganisations, build with Electron and in the future also React.
 
-Oorspronkelijk ontwikkeld om het betaalprobleem op te lossen op m'n [eigen scouts](https://www.google.com/search?q=haegepoorters+destelbergen), nu beschikbaar voor elke vereniging die het betalen van drank, snacks etc. eenvoudig wil doen verlopen.
+First developed to solve a problem in my [own scouts](https://www.google.com/search?q=haegepoorters+destelbergen), now made public for every organisation who wants to use it.

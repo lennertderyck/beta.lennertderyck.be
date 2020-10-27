@@ -4,7 +4,7 @@
     {% if title == 'Home' or title == 'Home' %}
         <span class="crumble__main">Home</span>
     {% else %}
-        <a href="/" class="crumble__main">Home</a> / <span class="crumble__main">{{ title }}</span>{% if crumbs[2] == ' ' %}<span class="crumble__sub"> - {{ crumbs[2] }}</span>{% endif %}
+        <a href="/" class="crumble__main">Home</a> — <span class="crumble__main">{{ title }}</span>{% if crumbs[2] == ' ' %}<span class="crumble__sub"> - {{ crumbs[2] }}</span>{% endif %}
     {% endif %}
      
     
