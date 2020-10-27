@@ -17,9 +17,10 @@ const setCookieHook = (name) => {
 
 const cookieHook = (hook, callback = () => {null}) => {
     const $target = node(`[data-cookie-hook="${hook}"]`)
-    if (cookies.get(`hook:${hook}`)) {
+    console.log((cookies.get(`hook:${hook}`)));
+    if (cookies.get(`hook:${hook}`) == null) {
         callback($target);
-        if ($target.classList.contains('notice')) $target.classList.add('notice--hidden');
+        if ($target.classList.contains('notice')) $target.classList.add('notice--show');
     };
 }
 

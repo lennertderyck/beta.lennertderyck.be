@@ -37,7 +37,7 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: var(--navbar-height);
     background-color: $colorDark;
     background-image: url('../images/LOGO_OUTLINE.svg');
@@ -117,7 +117,11 @@
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    [data-label="navMain"] {
+        padding-top: 5rem;
+    }
+}
 
 @media (min-width: 992px) {}
 

@@ -121,6 +121,7 @@ const createNotice = (container, {title, content}) => {
     `);
     n.prepend(container);
     feather.replace();
+    return n;
 }
 
 Node.prototype.closeNotice = function () {

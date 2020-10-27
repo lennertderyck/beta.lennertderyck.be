@@ -77,7 +77,7 @@
     
     
     
-        <span class="crumble__main">Projects</span>
+        <a href="/" class="crumble__main">Home</a> / <span class="crumble__main">Projects</span>
     
      
     
@@ -108,26 +108,30 @@
                     </div>
                 </div>
             </div>
-
-            
+    
             <div data-label="navMain">
                 <div class="wrapper">
                     <div class="container">
-                        <div class="row">
+                        <div class="row flex-column-reverse flex-md-row">
                             <div class="col-sm-12 col-lg">
-                                <h6 class="mb-4">Contact details</h6>
-                                <ul class="unlistify mb-5">
-                                    <li><a href="mailto:hello@lennertderyck.be">hello@lennertderyck.be</a></li>
-                                    <li><a href="tel:+32497753762">+32 4 977 53 762</a></li>
-                                </ul>
-                                
-                                <h6 class="mb-4">Follow me</h6>
-                                <ul class="unlistify mb-5">
-                                    <li><a target="_blank" href="https://github.com/lennertderyck">GitHub</a></li>
-                                    <li><a target="_blank" href="https://open.spotify.com/user/twoledery">Spotify</a></li>
-                                    <li><a target="_blank" href="https://instagram.com/lennertderyck">Instagram</a></li>
-                                    <li><a target="_blank" href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-6 col-md-12 d-none d-md-block">
+                                        <h6 class="mb-4">Contact details</h6>
+                                        <ul class="unlistify mb-5">
+                                            <li><a href="mailto:hello@lennertderyck.be">hello@lennertderyck.be</a></li>
+                                            <li><a href="tel:+32497753762">+32 4 977 53 762</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-md-12">
+                                        <h6 class="mb-4">Follow me</h6>
+                                        <ul class="unlistify mb-5 d-flex d-md-block">
+                                            <li class="px-2 px-md-0"><a target="_blank" href="https://github.com/lennertderyck">GitHub</a></li>
+                                            <li class="px-2 px-md-0"><a target="_blank" href="https://open.spotify.com/user/twoledery">Spotify</a></li>
+                                            <li class="px-2 px-md-0"><a target="_blank" href="https://instagram.com/lennertderyck">Instagram</a></li>
+                                            <li class="px-2 px-md-0"><a target="_blank" href="https://unsplash.com/@lennertderyck">Unsplash</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 
                                 <div class="d-flex align-items-center opaque--50" data-action="trackerNote">
                                     <i data-feather="eye-off" class="feather--small mr-3"></i>
@@ -140,7 +144,7 @@
                             <div class="col-sm-12 col-lg-8">
                                 <div class="d-flex align-items-start justify-content-between mb-5">
                                     <h6 class="mb-0">Where do you want to go</h6>
-                                    <a href="/" class="btn color--gold btn--outline color--white mt-n3">Go home</a>
+                                    <!-- <a href="/" class="btn color--gold btn--outline color--white mt-n3">Go home</a> -->
                                 </div>
                                 <div class="row mb-4" data-label="navExits">
                                     <a href="/services" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
@@ -161,19 +165,20 @@
                                     </a>
                                 </div>
                                 
-                                
-                                <div class="d-flex align-items-center justify-content-between mb-5">
-                                    <h6 class="mb-0">This may be interesting too</h6>
-                                </div>
-                                <div class="row" data-label="navExits">
-                                    <a href="/docs/sesam" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
-                                        <h5 class="font-weight-normal font--sub">Sesam docs</h5>
-                                        <p class="opaque--50">More on Sesam collapse</p>
-                                    </a>
-                                    <a href="/docs/flexgrid" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
-                                        <h5 class="font-weight-normal font--sub">Flexgrid docs</h5>
-                                        <p class="opaque--50">Part of Cutlery.js</p>
-                                    </a>
+                                <div class="d-none d-md-block">
+                                    <div class="d-flex align-items-center justify-content-between mb-5">
+                                        <h6 class="mb-0">This may be interesting too</h6>
+                                    </div>
+                                    <div class="row" data-label="navExits">
+                                        <a href="/docs/sesam" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                            <h5 class="font-weight-normal font--sub">Sesam docs</h5>
+                                            <p class="opaque--50">More on Sesam collapse</p>
+                                        </a>
+                                        <a href="/docs/flexgrid" class="col-6 mb-4 nav__exit" style="--delay: .3s;">
+                                            <h5 class="font-weight-normal font--sub">Flexgrid docs</h5>
+                                            <p class="opaque--50">Part of Cutlery.js</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -197,10 +202,7 @@
         <div class="container container--sm" data-label="contentBody">
             
 <div class="container--str-full">
-    <div class="d-flex flex-column justify-content-center" data-label="portfolioCarousel" data-section-mode="normal/inverted">
-    <!-- <div class="container mb-3">
-        <h2 class="font--sub font-weight--600 text-center">Recent work</h2>
-    </div> -->
+    <!-- <div class="d-flex flex-column justify-content-center" data-label="portfolioCarousel" data-section-mode="normal/inverted">
     <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
@@ -208,6 +210,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1457382713369-161d1d986f54_ld6jys.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -216,9 +221,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1457382713369-161d1d986f54_ld6jys.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -226,6 +228,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/IMG_20170529_151707-compressor_sldodc.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Print</h6>
@@ -234,9 +239,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/IMG_20170529_151707-compressor_sldodc.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -244,6 +246,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282826/LOGO_CITYFEST-648x1024_unsqeb.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Branding</h6>
@@ -252,9 +257,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282826/LOGO_CITYFEST-648x1024_unsqeb.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -262,6 +264,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Schermafbeelding_2019-11-06_om_22.41.02_hpzg0r.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Illustratief</h6>
@@ -270,9 +275,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Schermafbeelding_2019-11-06_om_22.41.02_hpzg0r.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -280,6 +282,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282820/Schermafbeelding-2018-06-20-om-22.49.28-1024x524_ogkjco.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -288,9 +293,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282820/Schermafbeelding-2018-06-20-om-22.49.28-1024x524_ogkjco.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -298,6 +300,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282842/GEBOORTEK_LOGO_IGOR-1024x589_qjovjt.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Print</h6>
@@ -306,9 +311,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282842/GEBOORTEK_LOGO_IGOR-1024x589_qjovjt.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -316,6 +318,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/poffertjes_0_q2bypt.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Print</h6>
@@ -324,9 +329,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/poffertjes_0_q2bypt.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -334,6 +336,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282814/pnu7n9jraiym6inadwwm_hdehlu.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -342,9 +347,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282814/pnu7n9jraiym6inadwwm_hdehlu.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -352,6 +354,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Sign</h6>
@@ -360,9 +365,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -370,6 +372,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18-03_jnxua9.svg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Print</h6>
@@ -378,9 +383,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18-03_jnxua9.svg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -388,6 +390,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282841/DSC2761-compressor_p3kjdy.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Branding</h6>
@@ -396,9 +401,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282841/DSC2761-compressor_p3kjdy.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -406,6 +408,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/photo-1504882980278-1bb26861a895_1_xjwtzg.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Fotografie</h6>
@@ -414,9 +419,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/photo-1504882980278-1bb26861a895_1_xjwtzg.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -424,6 +426,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -432,9 +437,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -442,6 +444,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/osw_uitnodiging_fb_banner-1024x379-1_hp9sdx.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Online</h6>
@@ -450,9 +455,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/osw_uitnodiging_fb_banner-1024x379-1_hp9sdx.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -460,6 +462,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216519/Schermafbeelding_2020-04-07_om_01.38.15_nr2pog.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -468,9 +473,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216519/Schermafbeelding_2020-04-07_om_01.38.15_nr2pog.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -478,6 +480,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282809/pf_gh_personal_startpage_dark_sxpl8q.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -486,9 +491,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282809/pf_gh_personal_startpage_dark_sxpl8q.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -496,6 +498,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -504,9 +509,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -514,6 +516,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282823/Schermafbeelding_2019-12-25_om_17.55.21_zqlz74.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -522,9 +527,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282823/Schermafbeelding_2019-12-25_om_17.55.21_zqlz74.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -532,6 +534,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Print</h6>
@@ -540,9 +545,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -550,6 +552,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MOCKUP_TBS_RAAM_typgua.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Branding</h6>
@@ -558,9 +563,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MOCKUP_TBS_RAAM_typgua.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -568,6 +570,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MV5BZDI4YTQzOTktYTgzNC00ZmE4LWFlNmQtZTQwYmRkZmRhYWIzXkEyXkFqcGdeQXVyNTI5NjIyMw_._V1__oewbtm.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -576,9 +581,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MV5BZDI4YTQzOTktYTgzNC00ZmE4LWFlNmQtZTQwYmRkZmRhYWIzXkEyXkFqcGdeQXVyNTI5NjIyMw_._V1__oewbtm.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -586,6 +588,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216279/Schermafbeelding_2020-04-07_om_01.37.40_yu1trd.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -594,9 +599,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216279/Schermafbeelding_2020-04-07_om_01.37.40_yu1trd.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -604,6 +606,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Middel_1_jwuoax.svg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Print</h6>
@@ -612,9 +617,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Middel_1_jwuoax.svg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -622,6 +624,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -630,9 +635,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -640,6 +642,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586215865/7Q8jYBD_irlqp9.png" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Web</h6>
@@ -648,9 +653,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586215865/7Q8jYBD_irlqp9.png" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -658,6 +660,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1523715655481-7dea0f4bda16_ocib6t.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6>Fotografie</h6>
@@ -666,9 +671,6 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
-                            <div class="project__preview">
-                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1523715655481-7dea0f4bda16_ocib6t.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </li>
@@ -676,6 +678,9 @@
                 <li class="glide__slide">
                     <div class="project" style="--backgr: #e6aeb4;">
                         <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282808/photo-1510493648510-d11f5bf55f33_oegtk4.jpg" alt="">
+                            </div>
                             <div class="project__summ">
                                 <div class="wrapper">
                                     <h6></h6>
@@ -684,8 +689,506 @@
                                     <a href="" class="btn btn--box mt-4">view project</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left text-black-50" data-glide-dir="<"><i data-feather="arrow-left"></i></i></button>
+                <button class="glide__arrow glide__arrow--right text-black-50" data-glide-dir=">"><i data-feather="arrow-right"></i></i></button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="d-flex flex-column justify-content-center" data-label="portfolioCarousel" data-section-mode="normal/inverted">
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1457382713369-161d1d986f54_ld6jys.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Stambord</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/IMG_20170529_151707-compressor_sldodc.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Print</h6>
+                                    <h2 class="project__title">Bongobon herwerking</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282826/LOGO_CITYFEST-648x1024_unsqeb.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Branding</h6>
+                                    <h2 class="project__title">Cityfest</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Schermafbeelding_2019-11-06_om_22.41.02_hpzg0r.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Illustratief</h6>
+                                    <h2 class="project__title">Cityscape</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282820/Schermafbeelding-2018-06-20-om-22.49.28-1024x524_ogkjco.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Essential Apps</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282842/GEBOORTEK_LOGO_IGOR-1024x589_qjovjt.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Print</h6>
+                                    <h2 class="project__title">Geboortekaart Igor</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/poffertjes_0_q2bypt.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Print</h6>
+                                    <h2 class="project__title">Grootouderfeest</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282814/pnu7n9jraiym6inadwwm_hdehlu.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Haegepoorters.be</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/PROJECT_FOCUSED-1024x768_qw0kbk.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Sign</h6>
+                                    <h2 class="project__title">Hotel Iconografie</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282846/BANDJES_WOLOKAMP_18-03_jnxua9.svg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Print</h6>
+                                    <h2 class="project__title">Kampaandenken Wolokamp '18</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282841/DSC2761-compressor_p3kjdy.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Branding</h6>
+                                    <h2 class="project__title">Koleur Gantoise</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/photo-1504882980278-1bb26861a895_1_xjwtzg.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Fotografie</h6>
+                                    <h2 class="project__title">Lyon</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/nomatic-travel-pack-on-back_vlakge.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Nomatic Travel Bag</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282812/osw_uitnodiging_fb_banner-1024x379-1_hp9sdx.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Online</h6>
+                                    <h2 class="project__title">Open Scouts Weekend '16</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216519/Schermafbeelding_2020-04-07_om_01.38.15_nr2pog.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Parkeergarages Gent</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282809/pf_gh_personal_startpage_dark_sxpl8q.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Personal startpage</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Photo Sorter</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282823/Schermafbeelding_2019-12-25_om_17.55.21_zqlz74.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">QR pay</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Print</h6>
+                                    <h2 class="project__title">Spaghettiavond</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MOCKUP_TBS_RAAM_typgua.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Branding</h6>
+                                    <h2 class="project__title">The Bicycle Shop</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MV5BZDI4YTQzOTktYTgzNC00ZmE4LWFlNmQtZTQwYmRkZmRhYWIzXkEyXkFqcGdeQXVyNTI5NjIyMw_._V1__oewbtm.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">The Docks</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216279/Schermafbeelding_2020-04-07_om_01.37.40_yu1trd.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">The Meal Database</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282824/Middel_1_jwuoax.svg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Print</h6>
+                                    <h2 class="project__title">Tombola tickets</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Triva Quiz</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1586215865/7Q8jYBD_irlqp9.png" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Web</h6>
+                                    <h2 class="project__title">Tronald dump</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
+                            <div class="project__preview">
+                                <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1523715655481-7dea0f4bda16_ocib6t.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6>Fotografie</h6>
+                                    <h2 class="project__title">Untitled</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="glide__slide">
+                    <div class="project" style="--backgr: #e6aeb4;">
+                        <div class="project__wrapper">
                             <div class="project__preview">
                                 <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1581282808/photo-1510493648510-d11f5bf55f33_oegtk4.jpg" alt="">
+                            </div>
+                            <div class="project__summ">
+                                <div class="wrapper">
+                                    <h6></h6>
+                                    <h2 class="project__title">Web workshop</h2>
+                                    <p class="project__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur placeat porro assumenda! Obcaecati, excepturi aperiam modi unde, a eveniet qui necessitatibus tempora corrupti earum error laboriosam, eligendi ratione optio consequatur.</p>
+                                    <a href="" class="btn btn--box mt-4">view project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -723,7 +1226,7 @@
         const glideOptions = {
             type: 'carousel',
             startAt: 0,
-            perView: 2,
+            perView: 3,
             
             breakpoints:  {
                 500: {
@@ -732,8 +1235,11 @@
                 870: {
                     perView: 1
                 },
-                1200: {
+                1400: {
                     perView: 2
+                },
+                1920: {
+                    perView: 3
                 }
             }
         }

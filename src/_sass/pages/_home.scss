@@ -34,19 +34,20 @@
         
         position: relative; 
         width: auto;
-        margin: 3rem;
-        // background-color: var(--backgr);
+        margin: 3rem 0px;
+        // margin-top: 10rem;
+        padding: 0 15px;
         
         &:hover {
-            transform: translate(-10px, -10px);
+            transform: none;
             
             .project__preview {
-                transform: translate(-10px, calc(-50% - 10px));
+                transform: none;
             }
         }
         
         &__wrapper {  
-            display: flex;
+            display: block;
             align-items: center;
             justify-content: center;
             height: 100%;
@@ -56,10 +57,11 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                width: 100%;
                 height: 100%;
-                padding: 3rem 2rem 3rem 11rem;
+                padding: 3rem;
                 z-index: 1;
-                background-color: #F0F1F2;
+                background-color: #F0F1F2;  
                 
                 * {color: $colorDark;}
                 
@@ -71,19 +73,20 @@
                 }
                 
                 .project__description {
+                    display: none;
                     color: grey;
                 }
             }
             
             .project__preview {
-                position: absolute;
-                left: -3rem;
-                top: 50%;
-                max-width: 180px;
-                height: calc(100% - 6rem);
-                z-index: 1;
-                box-shadow: 10px 10px 30px #0000001a;
-                transform: translate(-10px, -50%);
+                position: relative;
+                top: 0px;
+                left: 0px;
+                max-width: 100%;
+                height: 200px;
+                z-index: 3;
+                box-shadow: none;
+                transform: none;
                 
                 img {
                     width: 100%;
@@ -134,3 +137,52 @@
         max-width: 100%;
     }
 }
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    [data-label="portfolioCarousel"] {
+        .project {
+            margin: 3rem;
+            margin-top: 3rem;
+            padding: 0;
+            
+            &:hover {
+                transform: translate(-10px, -10px);
+                
+                .project__preview {
+                    transform: translate(-10px, calc(-50% - 10px));
+                }
+            }
+            
+            &__wrapper {
+                display: flex;
+                
+                .project__preview {
+                    position: absolute;
+                    left: -3rem;
+                    top: 50%;
+                    max-width: 180px;
+                    height: calc(100% - 6rem);
+                    transform: translate(-10px, -50%);
+                    box-shadow: 10px 10px 30px #0000001a;
+                }
+                
+                .project__summ {
+                    padding: 2rem 2rem 2rem 11rem;
+                    
+                    .project__description {
+                        display: block;
+                    }
+                }
+                
+            }
+            
+        }
+        
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

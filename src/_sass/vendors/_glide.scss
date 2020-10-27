@@ -1,4 +1,8 @@
 .glide {
+    .glide__slides {
+        display: flex;
+    }
+    
     &__arrows .glide__arrow{
         position: relative; 
     }
