@@ -1,4 +1,4 @@
-import {node, eventCallback, updateClipboard, getScore, saveScore, sesam, setCookieHook, linkRouting} from './index.js'
+import {node, eventCallback, updateClipboard, getScore, saveScore, sesam, setCookieHook, linkRouting, detailPreview} from './index.js'
 
 document.addEventListener('click', (e) => {
     eventCallback('pre', (target) => {
@@ -19,6 +19,20 @@ document.addEventListener('click', (e) => {
     eventCallback('[data-cookie-set]', (target) => {
         const value = target.dataset.cookieSet;
         setCookieHook(value);
+    }, false)
+    
+    eventCallback('[data-sesam-trigger="galeryPreview"]', (target) => {
+        detailPreview.onClick(target)
+    }, false)
+})
+
+node('.preview').addEventListener('click', () => {
+    eventCallback('.preview__control--prev', (target) => {
+        detailPreview.prev(target)
+    }, false)
+    
+    eventCallback('.preview__control--next', (target) => {
+        detailPreview.next(target)
     }, false)
 })
 

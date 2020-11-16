@@ -128,13 +128,75 @@ Node.prototype.closeNotice = function () {
     this.classList.add('notice--hidden');
 }
 
+const detailPreview = {
+    index: null,
+    parent: null,
+    preview: null,
+    max: null, 
+    
+    onClick: (target) => {
+        const name = target.getAttribute('data-sesam-trigger');
+        const parent = detailPreview.parent = target.parentElement
+        detailPreview.index = [...parent.children].indexOf(target)
+        detailPreview.max = parent.children.length;
+        
+        const $view = document.querySelector(`[data-sesam-target="${name}"] .preview__view img`)
+        const imageUri = target.querySelector('img').src;
+        $view.src = imageUri
+    },
+    
+    setPreview: (target) => {
+        detailPreview.preview = target.closest('.preview').querySelector('.preview__view img')
+    },
+    
+    indexMin: () => {
+        return detailPreview.index = detailPreview.index-1
+    },
+    
+    indexPlus: () => {
+        return detailPreview.index = detailPreview.index+1
+    },
+    
+    buttonDisable: (target, disabled = true) => {
+        if (disabled) target.classList.add('disabled')
+        if (!disabled) target.classList.remove('disabled')
+    },
+    
+    prev: (target) => {
+        if (detailPreview.index != 0) {
+            detailPreview.setPreview(target);
+            const imageUri = detailPreview.parent.querySelectorAll('.preview__item')[detailPreview.indexMin()].querySelector('img').src;
+            detailPreview.preview.src = imageUri;
+            // detailPreview.buttonDisable(false);
+        }
+        
+        // if (detailPreview.index == 0) {
+        //     detailPreview.buttonDisable()
+        // }
+    },
+    
+    next: (target) => {
+        if (detailPreview.index != detailPreview.max-1) {
+            detailPreview.setPreview(target);
+            const imageUri = detailPreview.parent.querySelectorAll('.preview__item')[detailPreview.indexPlus()].querySelector('img').src;
+            detailPreview.preview.src = imageUri;
+            // detailPreview.buttonDisable(false);
+        } 
+        
+        // if (detailPreview.index == detailPreview.max-1) {
+        //     detailPreview.buttonDisable();
+        // }
+    }
+}
+
 
 export {
     lazyLoading,
     getAverageRGB,
     menuHeightCompensate,
     setScrollProgress,
-    createNotice
+    createNotice,
+    detailPreview
 }
 
 

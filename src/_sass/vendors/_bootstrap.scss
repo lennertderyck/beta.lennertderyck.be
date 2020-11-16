@@ -4,3 +4,18 @@
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+.row--wide {
+    [class^="col"] {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        &:first-child {
+            padding-left: 15px;
+        }
+        
+        &:last-child {
+            padding-right: 15px;
+        }
+    }
+}

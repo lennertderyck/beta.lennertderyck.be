@@ -1,0 +1,15 @@
+.flex-grid {
+    --columns: 3;
+    --gap: 2rem;
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(var(--columns), calc(100%/var(--columns) - ((var(--gap) * (var(--columns) - 1)) / var(--columns))));
+    grid-template-rows: none;
+    
+    .flex-grid__item {
+        background-color: rgb(214, 214, 214);
+        word-break: break-all;
+        // height: 200px;
+        // grid-row: 1 / 1;
+    }
+}

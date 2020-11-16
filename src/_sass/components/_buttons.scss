@@ -1,5 +1,20 @@
+button {
+    background-color: none;
+    border: none;
+    
+    &, &:focus, &:focus-within {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
 .btn {
     padding: 0 0.6rem;
+    
+    &.disabled {
+        opacity: .5;
+        cursor: default;
+    }
     
     &--box {
         display: block;

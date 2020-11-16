@@ -18,7 +18,8 @@ export {
     getAverageRGB,
     setScrollProgress,
     menuHeightCompensate,
-    createNotice
+    createNotice,
+    detailPreview
 } from './ui.js';
 
 export {

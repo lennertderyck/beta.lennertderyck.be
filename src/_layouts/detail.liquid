@@ -2,18 +2,65 @@
 layout: default
 ---
 
-<div class="bg--outline navbar--compensate">
+<div class="bg--outline">
     <div class="section section--padding">
         <div class="container container--sm animate__animated animate__fadeInUp animate__fast">
             <h6 class="color--grey">{{ project.data.tags | first }}</h6>
             <h1 class="font-weight--600">{{ project.data.title }}</h1>
-            <a href="{{ project.data.project-url }}" target="_blank" class="btn color--gold btn--outline mt-4">visit project</a>
+            {% if project.data.project-url != "" %} 
+                <a href="{{ project.data.project-url }}" target="_blank" class="btn btn--box mt-4">visit project</a>
+            {% endif %}
         </div>
+        <!-- <div class="container--str animate__animated animate__fadeInUp mt-5" style="animation-delay: .1s;">
+            <img src="{{ project.data.ft-img }}" width="100%" height="300px" alt="">
+        </div> -->
     </div>
-    <div class="section animate__animated animate__fadeInUp" style="animation-delay: .3s; --animate-duration: .6s;">
+    <div class="section section--padding animate__animated animate__fadeInUp" style="animation-delay: .3s; --animate-duration: .6s;">
         <div class="container container--sm" data-label="contentBody">
-            {{ project.templateContent }}
+            <div class="row row--wide">
+                <div class="col">
+                    <h6 class="mb-3">About this project</h6>
+                    {{ project.templateContent }}
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <h6>Client</h6>
+                        <p>{{ project.data.client }}</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Year</h6>
+                        <p>2020</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Live project</h6>
+                        {% if project.data.project-url != "" %} 
+                            <a href="{{ project.data.project-url }}" class="" rel="noopener">view project <i data-feather="external-link" class="feather--small"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container--str animate__animated animate__fadeInUp mt-5" style="animation-delay: .6s;">
+            <div class="flex-grid" data-label="galery">
+                {% for img in project.data.galery %}
+                    <div class="flex-grid__item preview__item" data-sesam-trigger="galeryPreview"><img src="{{ img }}" width="100%" loading="lazy" alt=""></div>
+                {% endfor %}
+            </div>
         </div>
     </div> 
 </div>
+
+<div class="preview" data-sesam-target="galeryPreview" data-sesam-backdrop="true" data-sesam-scrollBlock="true">
+    <div class="wrapper">
+        <div class="preview__view">
+            <img src="https://res.cloudinary.com/lennertderyck/image/upload/v1594845786/Schermafbeelding_2020-07-15_om_22.39.14_r1omtx.png" width="100%" alt="">
+        </div>
+        <div class="preview__controls">
+            <button class="btn btn--box preview__control preview__control--prev"><i data-feather="arrow-left"></i></button>
+            <button class="btn btn--box preview__control preview__control--close" data-sesam-trigger="galeryPreview">close</button>
+            <button class="btn btn--box preview__control preview__control--next"><i data-feather="arrow-right"></i></button>
+        </div>
+    </div>
+</div>
+
 {% include footer %}

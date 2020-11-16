@@ -1,4 +1,5 @@
 ---
+published: false
 tags: Print
 title: Bongobon herwerking
 client: Edugo Campus Glorieux

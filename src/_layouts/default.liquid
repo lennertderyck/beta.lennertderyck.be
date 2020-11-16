@@ -9,7 +9,7 @@
     <title>
         {% if title %}
             {{ title }}
-        {% elsif %}
+        {% else %}
             {{ project.data.title ||  'front-end-development' }}
         {% endif %} – Lennert De Ryck
     </title>
@@ -26,7 +26,7 @@
     
     <!-- seo -->
     <!-- <meta name="robots" content="noindex, nofollow, nosnippet"> -->
-    <meta name="description" content="11ty boilerplate">
+    <meta name="description" content="Lennert De Ryck – Student Full-stack JavaScript">
     <meta name="keywords" content="11ty, eleventy, boilerplate">
     
     <!-- open graph -->
@@ -79,9 +79,7 @@
                     <div class="nav__bar">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="nav__crumbles">
-                                {% if layout != "detail" %}
-                                    {% include breadcrumbs %}
-                                {% endif %}
+                                {% include breadcrumbs %}
                             </div>
                             <!-- <div class="nav__logo h-100 w-auto">
                                 <img src="{{ './static/images/LOGO_LDR_ZWART.svg' | url}}" alt="" height="30px">

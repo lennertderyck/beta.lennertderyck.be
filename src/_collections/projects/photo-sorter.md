@@ -3,7 +3,8 @@ tags: Web
 title: Photo Sorter
 client: Persoonlijk
 project-url: https://github.com/lennertderyck/photo-sorter
-ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png
+# ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png
+ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1594845786/Schermafbeelding_2020-07-15_om_22.39.14_r1omtx.png
 galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1594845810/Schermafbeelding_2020-07-15_om_22.41.01_hxnnul.png
 - https://res.cloudinary.com/lennertderyck/image/upload/v1594845800/Schermafbeelding_2020-07-15_om_22.40.45_hdk882.png
@@ -27,7 +28,7 @@ The entire application is build with web technology, Electron from GitHub and no
 * move pictures to a folder
 * open these folders
 
-**Feature functions**
+**Future functions**
 
 * renaming files
 * bundle pictures from multiple locations
