@@ -15,6 +15,7 @@ module.exports = (eleventyConfig) => {
     // layout alias
     eleventyConfig.addLayoutAlias('default', 'default.liquid');
     eleventyConfig.addLayoutAlias('page', 'page.liquid');
+    eleventyConfig.addLayoutAlias('detail', 'detail.liquid');
     
     // shortcodes
     eleventyConfig.addShortcode('svg', async (path) => {

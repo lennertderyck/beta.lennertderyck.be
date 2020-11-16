@@ -15,7 +15,8 @@
                                     <h6>{{ project.data.tags | first }}</h6>
                                     <h2 class="project__title">{{ project.data.title }}</h2>
                                     <p class="project__description">{{ project.templateContent | strip_html | truncate: 130 }}</p>
-                                    <a href="{{ project.data.project-url }}" class="btn btn--box mt-4" target="_blank" rel="noopener">view project</a>
+                                    <!-- <a href="{{ project.data.project-url }}" class="btn btn--box mt-4" target="_blank" rel="noopener">view project</a> -->
+                                    <a href="/work/{{ project.data.title | slug }}" class="btn btn--box mt-4" target="_blank" rel="noopener">view project</a>
                                 </div>
                             </div>
                         </div>

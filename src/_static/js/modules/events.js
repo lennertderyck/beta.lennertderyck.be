@@ -1,4 +1,4 @@
-import {node, eventCallback, updateClipboard, getScore, saveScore, sesam, setCookieHook} from './index.js'
+import {node, eventCallback, updateClipboard, getScore, saveScore, sesam, setCookieHook, linkRouting} from './index.js'
 
 document.addEventListener('click', (e) => {
     eventCallback('pre', (target) => {

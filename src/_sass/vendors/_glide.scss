@@ -3,6 +3,12 @@
         display: flex;
     }
     
+    &__slide {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    
     &__arrows .glide__arrow{
         position: relative; 
     }

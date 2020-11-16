@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="bg--outline navbar--compensate">
+    <div class="section section--padding">
+        <div class="container container--sm animate__animated animate__fadeInUp animate__fast">
+            <h6 class="color--grey">{{ project.data.tags | first }}</h6>
+            <h1 class="font-weight--600">{{ project.data.title }}</h1>
+            <a href="{{ project.data.project-url }}" target="_blank" class="btn color--gold btn--outline mt-4">visit project</a>
+        </div>
+    </div>
+    <div class="section animate__animated animate__fadeInUp" style="animation-delay: .3s; --animate-duration: .6s;">
+        <div class="container container--sm" data-label="contentBody">
+            {{ project.templateContent }}
+        </div>
+    </div> 
+</div>
+{% include footer %}

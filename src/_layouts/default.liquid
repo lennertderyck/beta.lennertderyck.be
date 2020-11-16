@@ -6,7 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ title || 'front-end-development' }} – Lennert De Ryck</title>
+    <title>
+        {% if title %}
+            {{ title }}
+        {% elsif %}
+            {{ project.data.title ||  'front-end-development' }}
+        {% endif %} – Lennert De Ryck
+    </title>
     <!-- <title>Front-end-developer | Lennert De Ryck</title> -->
 
     <!-- meta -->
@@ -73,7 +79,9 @@
                     <div class="nav__bar">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="nav__crumbles">
-                                {% include breadcrumbs %}
+                                {% if layout != "detail" %}
+                                    {% include breadcrumbs %}
+                                {% endif %}
                             </div>
                             <!-- <div class="nav__logo h-100 w-auto">
                                 <img src="{{ './static/images/LOGO_LDR_ZWART.svg' | url}}" alt="" height="30px">
@@ -195,7 +203,7 @@
                 870: {
                     perView: 1
                 },
-                1400: {
+                1500: {
                     perView: 2
                 },
                 1920: {
