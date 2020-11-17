@@ -21,4 +21,9 @@ I like clean design, nice illustrations and stunning photography; With a lot of 
 
 Nowadays I focus on webdesign & -development, but my passion for print is still there. Tactile, tangible, analog, as only one medium can. With a background in graphic design I try to combine code and design in the best possible way.
 
+Some of my personal favorite projects:
+- [Photo Sorter]({{ '/work/photo-sorter' | url})
+- [Trivia quiz]({{ '/work/trivia-quiz' | url})
+- [Tronald Dump]({{ '/work/trivia-quiz' | url})
+
 {% include tools %}
