@@ -1,7 +1,9 @@
 ---
+published: false
 tags: Web
 title: The Docks
 client: Arteveldehogeschool
+year: 2018
 project-url: https://git.lennertderyck.be/the-docks/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/MV5BZDI4YTQzOTktYTgzNC00ZmE4LWFlNmQtZTQwYmRkZmRhYWIzXkEyXkFqcGdeQXVyNTI5NjIyMw_._V1__oewbtm.jpg
 galery:

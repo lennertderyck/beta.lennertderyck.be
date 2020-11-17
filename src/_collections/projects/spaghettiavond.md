@@ -2,6 +2,7 @@
 tags: Print
 title: Spaghettiavond
 client: Scouts Haegepoorters Destelbergen
+year: 2018
 project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282825/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276_ajc4z1.png
 galery:
@@ -10,3 +11,7 @@ galery:
 
 ---
 I created a banner and placemat for the annual spaghetti night on the scouts where I'm leader.
+
+<---->
+
+The banner is used on Facebook and placemat is printed.

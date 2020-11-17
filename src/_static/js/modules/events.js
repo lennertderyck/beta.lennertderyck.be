@@ -21,18 +21,16 @@ document.addEventListener('click', (e) => {
         setCookieHook(value);
     }, false)
     
-    eventCallback('[data-sesam-trigger="galeryPreview"]', (target) => {
-        detailPreview.onClick(target)
-    }, false)
-})
-
-node('.preview').addEventListener('click', () => {
-    eventCallback('.preview__control--prev', (target) => {
+    eventCallback('.preview .preview__control--prev', (target) => {
         detailPreview.prev(target)
     }, false)
     
-    eventCallback('.preview__control--next', (target) => {
+    eventCallback('.preview .preview__control--next', (target) => {
         detailPreview.next(target)
+    }, false)
+    
+    eventCallback('[data-sesam-trigger="galeryPreview"]', (target) => {
+        detailPreview.onClick(target)
     }, false)
 })
 

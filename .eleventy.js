@@ -6,6 +6,13 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addWatchTarget("./src/");
     eleventyConfig.addPlugin(syntaxHighlight);
     
+    eleventyConfig.setFrontMatterParsingOptions({
+      excerpt: true,
+      // Optional, default is "---"
+      excerpt_separator: "<---->",
+      excerpt_alias: 'excerpt'
+    });
+    
     // Copy `img/` to `_site/img`
     eleventyConfig.addPassthroughCopy({ 
       'src/_static': 'static/',

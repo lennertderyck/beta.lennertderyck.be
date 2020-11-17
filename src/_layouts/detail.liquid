@@ -11,16 +11,15 @@ layout: default
                 <a href="{{ project.data.project-url }}" target="_blank" class="btn btn--box mt-4">visit project</a>
             {% endif %}
         </div>
-        <!-- <div class="container--str animate__animated animate__fadeInUp mt-5" style="animation-delay: .1s;">
-            <img src="{{ project.data.ft-img }}" width="100%" height="300px" alt="">
-        </div> -->
     </div>
-    <div class="section section--padding animate__animated animate__fadeInUp" style="animation-delay: .3s; --animate-duration: .6s;">
+    <div class="section animate__animated animate__fadeInUp" style="animation-delay: .3s; --animate-duration: .6s;">
         <div class="container container--sm" data-label="contentBody">
             <div class="row row--wide">
                 <div class="col">
                     <h6 class="mb-3">About this project</h6>
-                    {{ project.templateContent }}
+                    <p>
+                        {{ project.data.excerpt }}
+                    </p>
                 </div>
                 <div class="col">
                     <div class="mb-3">
@@ -29,23 +28,42 @@ layout: default
                     </div>
                     <div class="mb-3">
                         <h6>Year</h6>
-                        <p>2020</p>
+                        <p>{{ project.data.year }}</p>
                     </div>
-                    <div class="mb-3">
-                        <h6>Live project</h6>
-                        {% if project.data.project-url != "" %} 
-                            <a href="{{ project.data.project-url }}" class="" rel="noopener">view project <i data-feather="external-link" class="feather--small"></i></a>
-                        {% endif %}
-                    </div>
+                    {% if project.data.project-url != "" %} 
+                        <div class="mb-3">
+                            <h6>Live project</h6>
+                            <a href="{{ project.data.project-url }}" class="" rel="noopener">visit project <i data-feather="external-link" class="feather--small"></i></a>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
-        <div class="container--str animate__animated animate__fadeInUp mt-5" style="animation-delay: .6s;">
+        <div class="container--str animate__animated animate__fadeInUp mt-5" style="animation-delay: .1s;">
+            <img src="{{ project.data.ft-img }}" width="100%" height="300px" alt="">
+        </div>
+    </div> 
+    <div class="section section--padding animate__animated animate__fadeInUp" style="animation-delay: .6s; --animate-duration: .6s;">
+        <div class="container container--sm" data-label="contentBody">
+            <div class="row row--wide">
+                <div class="col">
+                    <!-- <h6 class="mb-3">More on this project</h6> -->
+                    {{ project.templateContent }}
+                </div>
+            </div>
+        </div>
+        <div class="container--str animate__animated animate__fadeInUp mt-5"> 
             <div class="flex-grid" data-label="galery">
                 {% for img in project.data.galery %}
                     <div class="flex-grid__item preview__item" data-sesam-trigger="galeryPreview"><img src="{{ img }}" width="100%" loading="lazy" alt=""></div>
                 {% endfor %}
             </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center mt-5">
+            {% if project.data.project-url != "" %} 
+                <a href="{{ project.data.project-url }}" target="_blank" class="btn btn--box">visit project</a><div class="mx-3">or</div>
+            {% endif %}
+            <a href="/contact" class="btn color--gold btn--outline">discover more work</a>
         </div>
     </div> 
 </div>

@@ -2,6 +2,7 @@
 tags: Web
 title: Triva Quiz
 client: Arteveldehogeschool
+year: 2020
 project-url: https://webpgm2-exam.netlify.com/
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1586216761/bryan-garces-IXUM4cJynP0-unsplash.1626367_obecmp.jpg
 galery:
@@ -14,6 +15,8 @@ galery:
 
 ---
 This was an exam assignment where a quiz application had to be developed.
+
+<---->
 
 The user would answer 10 questions and then be shown a score. This score had to be saved even when the user closes the browser.
 

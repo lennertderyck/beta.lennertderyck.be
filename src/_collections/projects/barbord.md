@@ -2,6 +2,7 @@
 tags: Web
 title: Stambord
 client: Persoonlijk
+year: 2019
 project-url: https://github.com/lennertderyck/stambord
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282810/photo-1457382713369-161d1d986f54_ld6jys.jpg
 galery:
@@ -14,5 +15,7 @@ galery:
 
 ---
 Stambord is a offline paymentsystem for drinks, snacks and more for leaders in youthorganisations, build with Electron and in the future also React.
+
+<---->
 
 First developed to solve a problem in my [own scouts](https://www.google.com/search?q=haegepoorters+destelbergen), now made public for every organisation who wants to use it.

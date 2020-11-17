@@ -1,8 +1,28 @@
 [data-theme="detail"] {
+    main {
+        padding-bottom: var(--navbar-height);
+    }
+    
     [data-label="galery"] {
         .flex-grid__item {
             border: 2px solid #f7f7f7; 
+            
+            img {
+                height: 100%;
+            }
+            
+            &:hover {
+                transform: translate(-5px, -5px);
+            }
         }
+        
+        // &:hover .flex-grid__item {
+        //     filter: blur(2px);
+            
+        //     &:hover {
+        //         filter: blur(0px);
+        //     }
+        // }
     }
     
     [data-sesam-target="galeryPreview"] {
@@ -34,6 +54,7 @@
             img {
                 max-width: 80vw;
                 max-height: 80vh;
+                background-color: white;
             }
         }
         

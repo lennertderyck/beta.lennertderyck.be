@@ -2,6 +2,7 @@
 tags: Fotografie
 title: Lyon
 client: Persoonlijk
+year: 2018
 project-url: https://unsplash.com/collections/2259410/lyon
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1581282807/photo-1504882980278-1bb26861a895_1_xjwtzg.jpg
 galery:
@@ -10,3 +11,5 @@ galery:
 
 ---
 These pictures were taken on a trip to Lyon. They can be downloaded for free on Unsplash.
+
+<---->
