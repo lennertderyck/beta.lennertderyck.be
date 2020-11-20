@@ -1,6 +1,6 @@
 ---
 tags: Print
-title: Spaghettiavond
+title: Spaghetti night
 client: Scouts Haegepoorters Destelbergen
 year: 2018
 project-url: ''
