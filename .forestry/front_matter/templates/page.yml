@@ -20,3 +20,5 @@ fields:
   config:
     required: true
   default: ''
+pages:
+- src/_pages/react-native.md
