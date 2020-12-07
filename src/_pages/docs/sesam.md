@@ -2,7 +2,7 @@
 layout: page
 title: Sesam collapse
 subTitle: docs
-permalink: docs/sesam/index.html
+permalink: /docs/sesam/
 ---
 
 ### About
