@@ -9,10 +9,14 @@ fields:
   default: page
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: subTitle
-  label: subTitle
+  label: Subtitle
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
+  description: Permalink must end with <strong>/</strong>
+  config:
+    required: true
+  default: ''
