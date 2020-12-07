@@ -148,9 +148,9 @@ a.color--white {
 }
 
 [data-label='contentBody'] {
-    *:not(h1, h2, h3, h4, h5, h6) {
-        font-family: $fontMain;
-    }
+    // *:not(h1, h2, h3, h4, h5, h6, pre, code) {
+    //     font-family: $fontMain;
+    // }
 
     > h1,
     > h2,
