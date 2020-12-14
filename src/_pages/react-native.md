@@ -50,3 +50,36 @@ New component
 Stylesheet
 
     rnss
+
+### Offline support
+
+#### NetInfo
+
+Komt vanuit expo-community package
+
+```bash
+expo install @react-native-community/netinfo
+```
+```js
+import NetInfo from '@react-native-community/netinfo';
+```
+
+NetInfo ophalen
+```js
+    NetInfo.fetch // Returns promise
+```
+
+**Met eventListener**
+```js
+NetInfo.addEventListener(info => console.log(info))
+```
+
+Niet vergeten unsubscriben!
+```js
+const netInfoUnsubscribe = NetInfo.addEventListener(info => console.log(info))
+```
+
+```js
+// later in application
+netInfoUnsubscribe()
+```
