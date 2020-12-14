@@ -97,3 +97,26 @@ import NetInfo, { useNetInfo } from '@react-native-community/netinfo';
 ```js
 const netInfo = useNetInfo()
 ```
+
+### Caching
+
+#### AsyncStorage
+
+Equivalent van LocalStorage
+
+```bash
+expo install @react-native-async-storage/async-storage
+```
+
+```js
+```
+
+const data = async () => {
+	try {
+    	await AsyncStorage.setItem('user', JSON.stringify({ name: 'Willem vermandere' }))
+        const value = await AsyncStorage.getItem('user')
+        const user = JSON.parse(await value)
+    } catch (err) {
+    	console.log(err)
+    }
+}
