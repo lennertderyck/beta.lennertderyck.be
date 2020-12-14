@@ -60,13 +60,15 @@ Komt vanuit expo-community package
 ```bash
 expo install @react-native-community/netinfo
 ```
+
 ```js
 import NetInfo from '@react-native-community/netinfo';
 ```
 
 NetInfo ophalen
+
 ```js
-    NetInfo.fetch // Returns promise
+NetInfo.fetch // Returns promise
 ```
 
 #### NetInfo EventListener
@@ -76,6 +78,7 @@ NetInfo.addEventListener(info => console.log(info))
 ```
 
 Niet vergeten unsubscriben!
+
 ```js
 const netInfoUnsubscribe = NetInfo.addEventListener(info => console.log(info))
 ```
@@ -86,6 +89,7 @@ netInfoUnsubscribe()
 ```
 
 #### NetInfo Hook
+
 ```js
 import NetInfo, { useNetInfo } from '@react-native-community/netinfo';
 ```
