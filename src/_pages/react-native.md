@@ -69,7 +69,8 @@ NetInfo ophalen
     NetInfo.fetch // Returns promise
 ```
 
-**Met eventListener**
+#### NetInfo EventListener
+
 ```js
 NetInfo.addEventListener(info => console.log(info))
 ```
@@ -82,4 +83,13 @@ const netInfoUnsubscribe = NetInfo.addEventListener(info => console.log(info))
 ```js
 // later in application
 netInfoUnsubscribe()
+```
+
+#### NetInfo Hook
+```js
+import NetInfo, { useNetInfo } from '@react-native-community/netinfo';
+```
+
+```js
+const netInfo = useNetInfo()
 ```
