@@ -2,8 +2,8 @@
 tags: Web
 title: School projects branding
 client: Arteveldehogeschool
-year: 2019 - 2021
-project-url: https://git.ahs.lennertderyck.be/aj-1920/
+year: 2017 - 2021
+project-url: ''
 ft-img: https://res.cloudinary.com/lennertderyck/image/upload/v1608555830/LOGO_POSTBOX_PREVIEW_jtsc8q.svg
 galery:
 - https://res.cloudinary.com/lennertderyck/image/upload/v1608555830/LOGO_POSTBOX_PREVIEW_jtsc8q.svg
