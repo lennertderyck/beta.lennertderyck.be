@@ -19,18 +19,18 @@ An API that returns the details of a reservation via Google Forms.
 
 <---->
 
-With little time to create a whole front- and back-end, we needed a fast solution so people could register for our annual spaghetti night. So we used Google Forms so people could register.
+With little time to create a whole front- and back-end, we needed a fast solution so people could register for our annual spaghetti night. With this in mind, we set up a Google Form.
 
-The only problem was that we had to calculate howmuch people have to pay, and that isn't easy using Google Forms. So we came up with an good solution.
+The only problem was that we had to calculate howmuch people have to pay, since that isn't easy using Google Forms we came up with an good solution.
 
-We enabled the option in Google Forms to push the results to an Excel sheet, then we enabled the option for that sheet to be published on the internet in CSV format.
+We enabled an option so Google Forms could push the results to an Excel sheet, then we enabled the option for that sheet to be published on the internet in CSV format.
 
-The advantage of this system is that we can edit these records, so we can change the payment-status after we recieved the users payment.
+The advantage of this system is that we can edit these records. This means that we could change the payment-status after we recieved the users payment.
 
-After this was published we could fetch the CSV, convert it to JSON data and process it. We wrote a serverless function that does all the processing and we added the possibility to filter the data by adding url-parameters. After the API was done we made an interface where all the data is processed and shown to the user.
+After the document was published we could fetch the CSV, convert it to JSON data and process it. We wrote a serverless function that does all the processing and we added the possibility to filter the data by adding url-parameters. After the API was done we made an interface where all the data is processed and shown to the user.
 
 You can visit the API [here](https://spaghetti.haegepoorters.be/api?email=webmaster@haegepoorters.be).
 
-We installed a plugin for Google Forms that can send a personal confirmation-mail after registering, so now when someone registers we send them an email with a personalized url.
+We installed a plugin for Google Forms that sends a personal confirmation-mail after registering. If someone registers we send them an email with a personalized url that contains their emailadress as a url argument.
 
-One extra feature we've added to the UI is the CMD/CRTL+F shortcut sou could easily search for another emailadres.
+One extra feature we've added to the UI is the CMD/CRTL+F shortcut so you can easily search for another emailadres.
