@@ -1,0 +1,12 @@
+.text-modern, .label, h6 {
+    @include label;
+    
+    &--inherit {
+        font-size: inherit;
+    }
+}
+
+h6 {
+    @apply text-gold-dark;
+    font-weight: 500;
+}

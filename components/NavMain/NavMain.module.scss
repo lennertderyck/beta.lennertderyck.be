@@ -1,0 +1,73 @@
+.wrapper {
+    @apply container z-50 px-0;
+    
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.bar {
+    @apply bg-dark-500 w-full p-6 flex justify-between;
+    
+    * {
+        color: white;
+    }
+    
+    &.openState {
+        background: white;
+        
+        * {
+            @apply text-dark-500;
+        }
+    }
+}
+
+.barToggle {
+    font-size: 90%;
+}
+
+.crumbs {
+    
+}
+
+
+.navScreen {
+    @apply bg-dark-500 z-40;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    transform: translateY(100%);
+    
+    background-image: url('https://beta.lennertderyck.be/static/images/LOGO_OUTLINE.svg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 30vw center;
+    background-attachment: fixed;
+    
+    *:not(h6) {
+        color: white;
+    }
+    
+    &.openState {
+        transform: translateY(0%);
+    }
+}
+
+.mainNavGroup:hover {
+    li {
+        @apply opacity-50;
+        
+        &:hover {
+            @apply opacity-100;
+        }
+    }
+}
